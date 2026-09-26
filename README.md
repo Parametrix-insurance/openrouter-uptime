@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T17:45:18+00:00 UTC)
+## Current status (2026-09-26T18:01:05+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 867, degraded 80, down 18, idle 440.
+up 863, degraded 80, down 17, idle 445.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 50% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 86% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 68% | 98% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | 0% |
+| `minimax/minimax-m3` | `mara` | Mara | 78% | n/a |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 78% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 52% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 79% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 71% | 96% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 59% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 77% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 73% | n/a |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 52% | 39% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 60% | 31% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 55% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 43% | 32% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 37% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
