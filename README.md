@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T19:31:07+00:00 UTC)
+## Current status (2026-09-26T19:45:56+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 863, degraded 74, down 21, idle 447.
+up 863, degraded 78, down 18, idle 446.
 
-Currently down (21):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 80% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 80% | 94% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 79% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 59% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 59% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | 71% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 88% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 77% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 70% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `wafer` | Wafer | 58% | n/a |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 29% |
-| `qwen/qwen-2.5-coder-32b-instruct` | `cloudflare` | Cloudflare | 69% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 26% | 29% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 68% | 87% |
 | `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 76% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 59% | n/a |
-| plus 6 more | | | | |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
