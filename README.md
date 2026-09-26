@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T21:00:57+00:00 UTC)
+## Current status (2026-09-26T21:16:26+00:00 UTC)
 
 458 models polled, 1404 inference endpoints:
-up 877, degraded 66, down 25, idle 436.
+up 878, degraded 70, down 18, idle 438.
 
-Currently down (25):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (25):
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 100% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 80% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 56% | 77% |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 40% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 46% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 79% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 70% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 60% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 36% | 51% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 72% | 48% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 73% | n/a |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 57% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 32% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 58% | 93% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
