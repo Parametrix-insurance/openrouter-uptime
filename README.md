@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T19:15:59+00:00 UTC)
+## Current status (2026-09-27T19:31:16+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 849, degraded 94, down 27, idle 435.
+up 850, degraded 94, down 27, idle 434.
 
 Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 32% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 48% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 70% | 77% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 53% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 28% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 42% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 47% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `sail-research/fp4` | Sail Research | 79% | 94% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 47% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 72% | 69% |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 47% | 95% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 45% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 77% |
 | plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
