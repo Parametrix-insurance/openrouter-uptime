@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T02:46:22+00:00 UTC)
+## Current status (2026-09-27T03:00:58+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 864, degraded 51, down 17, idle 473.
+up 848, degraded 59, down 21, idle 477.
 
-Currently down (17):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (17):
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 31% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 83% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 78% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 58% | 71% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 82% |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 61% | 67% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 44% | 51% |
-| `qwen/qwen-2.5-coder-32b-instruct` | `cloudflare` | Cloudflare | 67% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 48% | 49% |
+| `qwen/qwen-2.5-coder-32b-instruct` | `cloudflare` | Cloudflare | 52% | 27% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 16% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 24% | 19% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 48% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| plus 2 more | | | | |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 26% | 100% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 37% | 56% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
