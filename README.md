@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T05:01:52+00:00 UTC)
+## Current status (2026-09-27T05:15:15+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 822, degraded 64, down 23, idle 496.
+up 826, degraded 72, down 23, idle 484.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 36% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | 35% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 52% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 47% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 99% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 79% | 71% |
 | `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 69% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 78% | 96% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 18% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 69% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 46% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 77% | 32% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 66% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 33% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
