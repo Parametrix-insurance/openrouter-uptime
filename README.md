@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T17:46:23+00:00 UTC)
+## Current status (2026-09-27T18:01:31+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 842, degraded 88, down 22, idle 453.
+up 857, degraded 88, down 26, idle 434.
 
-Currently down (22):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 55% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 62% | 48% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 85% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 78% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 56% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | 82% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 49% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 88% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 96% |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 20% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 73% | 53% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 30% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 70% | 59% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 76% | 92% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 34% | n/a |
-| plus 7 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
