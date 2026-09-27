@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T23:59:06+00:00 UTC)
+## Current status (2026-09-27T00:15:55+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 867, degraded 57, down 12, idle 469.
+up 859, degraded 73, down 19, idle 454.
 
-Currently down (12):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 50% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 100% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 2% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 40% |
-| `qwen/qwen3-vl-235b-a22b-thinking` | `alibaba` | Alibaba | 76% | n/a |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 49% | 44% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 68% | 65% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 79% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 42% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 73% | 68% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 30% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 65% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 78% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 71% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
