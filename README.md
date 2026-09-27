@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T13:31:33+00:00 UTC)
+## Current status (2026-09-27T13:46:36+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 858, degraded 65, down 20, idle 462.
+up 856, degraded 63, down 20, idle 466.
 
 Currently down (20):
 
@@ -97,18 +97,18 @@ Currently down (20):
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 45% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 83% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 100% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 100% |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 75% | 6% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 59% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 43% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 62% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 99% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 55% | 99% |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 55% | n/a |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 29% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 76% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 35% | 54% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 79% | 73% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 39% | n/a |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 52% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 78% | 75% |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
