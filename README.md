@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T18:30:56+00:00 UTC)
+## Current status (2026-09-27T18:46:01+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 841, degraded 92, down 27, idle 445.
+up 835, degraded 98, down 23, idle 449.
 
-Currently down (27):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 36% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 41% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 39% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 30% | 99% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 87% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 72% | 89% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 49% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 26% | 19% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 34% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 49% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 80% | 97% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 25% | 39% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 84% |
-| plus 12 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 45% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 65% | 57% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
