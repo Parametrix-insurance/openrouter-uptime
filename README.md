@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T11:45:51+00:00 UTC)
+## Current status (2026-09-27T12:02:04+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 856, degraded 73, down 21, idle 455.
+up 862, degraded 57, down 16, idle 470.
 
-Currently down (21):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 48% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 28% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 46% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 43% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 66% | 99% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 71% | 83% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 30% |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 66% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 65% | 51% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 100% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 42% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 46% | 46% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 39% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 54% | 49% |
+| `z-ai/glm-5.3-flash` | `open-inference/fp4` | OpenInference | 0% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
