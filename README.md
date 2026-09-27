@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T16:01:03+00:00 UTC)
+## Current status (2026-09-27T16:15:55+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 877, degraded 69, down 26, idle 433.
+up 856, degraded 89, down 24, idle 436.
 
-Currently down (26):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 56% | 92% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 68% | 69% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 79% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 61% | 97% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 74% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
 | `mistralai/mistral-nemo` | `novita/fp8` | Novita | 35% | 100% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 51% | 100% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 79% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | n/a |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 45% | 98% |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 75% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 82% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 44% |
-| plus 11 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 77% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 35% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 66% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
