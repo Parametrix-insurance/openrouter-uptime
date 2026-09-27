@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T18:01:31+00:00 UTC)
+## Current status (2026-09-27T18:16:40+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 857, degraded 88, down 26, idle 434.
+up 849, degraded 91, down 25, idle 440.
 
-Currently down (26):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 36% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | 82% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 49% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 88% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 74% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 96% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | 0% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
 | `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 68% | 20% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 73% | 53% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 75% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 99% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 70% | 96% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 67% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| plus 11 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 80% | 80% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
