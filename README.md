@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T12:45:45+00:00 UTC)
+## Current status (2026-09-27T13:00:39+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 853, degraded 74, down 24, idle 454.
+up 855, degraded 74, down 19, idle 457.
 
-Currently down (24):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | 0% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 41% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 62% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 78% | 43% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 64% |
-| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 40% | n/a |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 71% | 9% |
-| `moonshotai/kimi-k2.5` | `venice` | Venice | 60% | 69% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 69% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 74% |
+| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 0% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 40% | 93% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 57% | 100% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 52% | 100% |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 56% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 85% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 39% | 37% |
-| plus 9 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 38% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
