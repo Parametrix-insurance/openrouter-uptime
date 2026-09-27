@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T19:00:26+00:00 UTC)
+## Current status (2026-09-27T19:15:59+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 854, degraded 84, down 21, idle 446.
+up 849, degraded 94, down 27, idle 435.
 
-Currently down (21):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | 38% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 39% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 46% | 16% |
-| `deepseek/deepseek-v4.1-flash` | `sail-research/fp4` | Sail Research | 77% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 56% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 48% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 70% | 77% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 53% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 28% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 42% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 30% |
-| `openai/gpt-oss-120b` | `together` | Together | 80% | 70% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 71% | 71% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
