@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T18:46:01+00:00 UTC)
+## Current status (2026-09-27T19:00:26+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 835, degraded 98, down 23, idle 449.
+up 854, degraded 84, down 21, idle 446.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 35% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 65% | 38% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 39% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 34% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 49% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 80% | 97% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 46% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 25% | 39% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 46% | 16% |
+| `deepseek/deepseek-v4.1-flash` | `sail-research/fp4` | Sail Research | 77% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 46% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 44% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 56% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 45% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 65% | 57% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 30% |
+| `openai/gpt-oss-120b` | `together` | Together | 80% | 70% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 71% | 71% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
