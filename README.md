@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T02:16:25+00:00 UTC)
+## Current status (2026-09-27T02:31:08+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 842, degraded 62, down 32, idle 469.
+up 846, degraded 62, down 25, idle 472.
 
-Currently down (32):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 48% | n/a |
-| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 47% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 12% | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 57% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 40% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 34% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 79% | 66% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 81% |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m2.7` | `mara` | Mara | 77% | 87% |
-| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 3% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 45% | 20% |
-| plus 17 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 76% | 100% |
+| `minimax/minimax-m2.7` | `deepinfra/turbo` | DeepInfra | 5% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 38% | 100% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 83% |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 76% | 72% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
