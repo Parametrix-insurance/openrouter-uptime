@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T10:30:40+00:00 UTC)
+## Current status (2026-09-27T10:43:20+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 864, degraded 65, down 23, idle 453.
+up 870, degraded 62, down 18, idle 455.
 
-Currently down (23):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 42% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 38% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 32% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 47% | 99% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 83% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 75% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 78% | 68% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 40% | 14% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 68% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 80% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 77% | 74% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 78% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 58% | 67% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 33% | 37% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 76% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 49% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 48% | 44% |
+| `qwen/qwen-2.5-72b-instruct` | `novita/bf16` | Novita | 76% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 77% | 100% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
