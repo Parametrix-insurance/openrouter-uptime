@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T23:16:18+00:00 UTC)
+## Current status (2026-09-27T23:30:49+00:00 UTC)
 
 458 models polled, 1403 inference endpoints:
-up 839, degraded 86, down 16, idle 462.
+up 840, degraded 90, down 15, idle 458.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 60% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 79% | 99% |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 61% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 58% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 70% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 30% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 77% | 94% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 56% | 71% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 80% | 87% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 33% | 56% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 75% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 78% | 67% |
-| `z-ai/glm-4.6` | `novita/bf16` | Novita | 72% | 95% |
-| plus 1 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 30% | 32% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 70% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 31% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 75% | 97% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 52% | n/a |
+| `z-ai/glm-5.2` | `coreweave/fp4` | CoreWeave | 70% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
