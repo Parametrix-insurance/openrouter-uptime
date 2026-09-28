@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T06:46:24+00:00 UTC)
+## Current status (2026-09-28T07:01:35+00:00 UTC)
 
-458 models polled, 1403 inference endpoints:
-up 852, degraded 89, down 22, idle 440.
+458 models polled, 1396 inference endpoints:
+up 853, degraded 96, down 25, idle 422.
 
-Currently down (22):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 77% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 51% |
-| `meta/muse-glimmer-30b` | `phala` | Phala | 0% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 83% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 49% |
-| `openai/gpt-oss-120b` | `together` | Together | 44% | 100% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 66% | n/a |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 67% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 66% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 15% | n/a |
-| plus 7 more | | | | |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 71% | 10% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 60% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 41% | 42% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 59% | 75% |
+| `meta/muse-glimmer-30b` | `phala` | Phala | 61% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 69% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 78% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 79% |
+| `nvidia/nemotron-3.5-lightning` | `deepinfra/bf16` | DeepInfra | 79% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 77% |
+| `openai/gpt-oss-120b` | `together` | Together | 58% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | 100% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
