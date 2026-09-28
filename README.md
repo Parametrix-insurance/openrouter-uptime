@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T00:00:55+00:00 UTC)
+## Current status (2026-09-28T00:15:50+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 854, degraded 84, down 13, idle 451.
+up 837, degraded 90, down 21, idle 454.
 
-Currently down (13):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 80% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 74% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 25% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 53% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 76% | 58% |
 | `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 66% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 37% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 83% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 71% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 45% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 66% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 72% | 95% |
+| `xiaomi/mimo-v2.5` | `venice/fp8` | Venice | 69% | 24% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
