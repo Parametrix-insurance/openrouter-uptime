@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T06:30:48+00:00 UTC)
+## Current status (2026-09-28T06:46:24+00:00 UTC)
 
 458 models polled, 1403 inference endpoints:
-up 872, degraded 76, down 26, idle 429.
+up 852, degraded 89, down 22, idle 440.
 
-Currently down (26):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | 27% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 59% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 72% | 80% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 72% | 87% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 66% |
-| `meta/muse-glimmer-30b` | `phala` | Phala | 2% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 53% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 69% | 99% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 77% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 75% | 51% |
+| `meta/muse-glimmer-30b` | `phala` | Phala | 0% | n/a |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 77% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 73% | 63% |
-| plus 11 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 83% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 69% | 49% |
+| `openai/gpt-oss-120b` | `together` | Together | 44% | 100% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 66% | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 67% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 66% | 100% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 15% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
