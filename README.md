@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T02:00:24+00:00 UTC)
+## Current status (2026-09-28T02:15:34+00:00 UTC)
 
-458 models polled, 1402 inference endpoints:
-up 851, degraded 71, down 24, idle 456.
+458 models polled, 1401 inference endpoints:
+up 875, degraded 75, down 21, idle 430.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 75% | 82% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 42% | 66% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 67% | 87% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 75% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 73% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 33% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 57% | 5% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| plus 9 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 69% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 38% | 38% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 75% | 43% |
+| `qwen/qwen3-coder` | `novita/fp8` | Novita | 36% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 73% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 70% | 91% |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 41% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 63% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 58% | 40% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
