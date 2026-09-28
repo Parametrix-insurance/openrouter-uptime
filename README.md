@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T00:30:59+00:00 UTC)
+## Current status (2026-09-28T00:46:13+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 839, degraded 88, down 29, idle 446.
+up 844, degraded 87, down 21, idle 450.
 
-Currently down (29):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v3.1-terminus` | `atlas-cloud/fp8` | AtlasCloud | 63% | 38% |
+| `deepseek/deepseek-v3.1-terminus` | `streamlake` | StreamLake | 63% | 39% |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 46% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 24% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 76% | 46% |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 56% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 70% | 75% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 80% | 67% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 40% |
-| plus 14 more | | | | |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | 0% |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 71% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 31% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 70% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 75% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
