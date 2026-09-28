@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T05:31:15+00:00 UTC)
+## Current status (2026-09-28T05:46:41+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 859, degraded 84, down 20, idle 439.
+up 838, degraded 85, down 23, idle 456.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 34% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 70% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 48% | 100% |
-| `meta/muse-glimmer-30b` | `phala` | Phala | 45% | 0% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 50% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 66% | 85% |
+| `meta/muse-glimmer-30b` | `phala` | Phala | 36% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 71% | 73% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 57% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 64% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 78% | n/a |
 | `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 79% | n/a |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 17% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 68% | 71% |
-| plus 5 more | | | | |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 75% | 97% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 68% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
