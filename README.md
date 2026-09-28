@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T23:45:51+00:00 UTC)
+## Current status (2026-09-28T00:00:55+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 855, degraded 80, down 16, idle 451.
+up 854, degraded 84, down 13, idle 451.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 80% | 79% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 80% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 84% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 94% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 50% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 58% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 25% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 40% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `xiaomi/fp8` | Xiaomi | 79% | 90% |
-| plus 1 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 80% | 74% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 25% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 100% |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 37% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 77% | 83% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
