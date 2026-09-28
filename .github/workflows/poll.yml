@@ -38,7 +38,20 @@ jobs:
       MIN_INTERVAL_MIN: "12"
 
     steps:
+      # The repository is ~2 GB of archives and a full checkout took ~210 s of
+      # every run, including the two in three that poll nothing. A blobless
+      # clone with only the top-level files, scripts/ and status/ takes a few
+      # seconds; file contents are fetched on demand, and the day's data files
+      # are added once the guard says a poll is due.
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/*/
+            /scripts/
+            /status/
 
       - uses: actions/setup-python@v5
         with:
@@ -55,6 +68,17 @@ jobs:
           git fetch --quiet origin "${GITHUB_REF_NAME}"
           git checkout --quiet "origin/${GITHUB_REF_NAME}" -- status/latest.json || true
           python3 scripts/should_poll.py
+
+      # poll.py appends to derived/<today>.csv, so that file must be present:
+      # a missing one would be recreated with only this run's rows and commit
+      # over the day so far. raw/<today>/ only gains a file. Near midnight the
+      # poll may write tomorrow's paths instead; those are new, which is safe,
+      # and `git add --sparse` below stages them.
+      - name: Check out today's data files
+        if: steps.guard.outputs.poll == 'true'
+        run: |
+          day=$(date -u +%F)
+          git sparse-checkout add "/derived/${day}.csv" "/raw/${day}/"
 
       # The only step whose failure should abort the run. What it writes --
       # raw/, derived/, status/ -- is unrecoverable if lost, because OpenRouter
@@ -79,7 +103,9 @@ jobs:
           set -euo pipefail
           git config user.name  "openrouter-uptime-bot"
           git config user.email "actions@github.com"
-          git add -A
+          # --sparse: without it, paths outside the checkout (tomorrow's files
+          # after midnight) are refused and the add fails.
+          git add -A --sparse
           if git diff --cached --quiet; then
             echo "no changes"
             exit 0
