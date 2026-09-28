@@ -20,7 +20,7 @@
 
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/dthinkr/openrouter-uptime.git}"
+REPO_URL="${REPO_URL:-https://github.com/Parametrix-insurance/openrouter-uptime.git}"
 BRANCH="${BRANCH:-main}"
 WORKDIR="${WORKDIR:-/data/repo}"
 

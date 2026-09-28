@@ -64,7 +64,7 @@ loop), and pins a single replica.
 | Variable | Value |
 | --- | --- |
 | `GITHUB_TOKEN` | the fine-grained PAT from step 1 |
-| `REPO_URL` | `https://github.com/dthinkr/openrouter-uptime.git` |
+| `REPO_URL` | `https://github.com/Parametrix-insurance/openrouter-uptime.git` |
 | `BRANCH` | `main` |
 | `WORKDIR` | `/data/repo` |
 | `MIN_INTERVAL_MIN` | `12` |

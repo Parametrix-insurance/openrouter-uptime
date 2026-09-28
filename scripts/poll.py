@@ -49,7 +49,7 @@ DERIVED = ROOT / "derived"
 STATUS = ROOT / "status"
 RAW = ROOT / "raw"
 API = "https://openrouter.ai/api/v1"
-UA = {"User-Agent": "openrouter-uptime (github.com/dthinkr/openrouter-uptime)"}
+UA = {"User-Agent": "openrouter-uptime (github.com/Parametrix-insurance/openrouter-uptime)"}
 WORKERS = 12
 RETRIES = 3
 
