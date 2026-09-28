@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T14:15:38+00:00 UTC)
+## Current status (2026-09-28T14:31:27+00:00 UTC)
 
-458 models polled, 1398 inference endpoints:
-up 845, degraded 153, down 30, idle 370.
+458 models polled, 1400 inference endpoints:
+up 849, degraded 152, down 29, idle 370.
 
-Currently down (30):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | 75% |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 66% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 71% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 71% | 82% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 78% | 100% |
-| `google/gemma-4-31b-it` | `friendli` | Friendli | 80% | 79% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 78% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 66% |
+| `google/gemma-4-31b-it` | `friendli` | Friendli | 79% | 72% |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 89% |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 74% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 48% | 55% |
-| `moonshotai/kimi-k2.7-code` | `venice/int4` | Venice | 76% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 82% |
-| plus 15 more | | | | |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 78% | 89% |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 79% | 67% |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 80% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 23% | n/a |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 48% | 57% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 79% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 45% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 80% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 78% | 63% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
