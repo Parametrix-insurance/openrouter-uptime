@@ -1,6 +1,6 @@
 name: liveness
 
-# The collectors' failure mode is silence. A crashed cron leaves the data
+# The collector's failure mode is silence. A crashed cron leaves the data
 # thinning rather than gone, and the only alarm until now lived in the daily
 # publish job: a 6-hour threshold checked once a day. On 2026-09-01 the
 # collector was down for 105 minutes before a person happened to look, and
@@ -8,10 +8,9 @@ name: liveness
 #
 # This asks one question every hour -- how old is the latest poll on main --
 # and fails, which is what emails the repository owner, when the answer is
-# longer than the collectors could plausibly explain. Healthy cadence is 15
-# minutes with a 12-minute floor; the longest gap in a normal day is about
-# 30. Sixty minutes is three consecutive missed Railway ticks with all three
-# Actions attempts in that hour dropped too.
+# longer than the collector could plausibly explain. The poll workflow tries
+# every 5 minutes behind a 12-minute floor, so healthy cadence is 15 minutes;
+# sixty minutes means about ten consecutive attempts were dropped or failed.
 #
 # Deliberately its own workflow. An alarm that shares a job with heavy work
 # inherits that work's failures: an OOM in the audit step is how the daily
@@ -44,8 +43,8 @@ jobs:
           # No checkout: the repository is ~1 GB of archives and this needs one
           # file. raw.githubusercontent.com caches for a few minutes, which the
           # threshold absorbs.
-          url = ("https://raw.githubusercontent.com/dthinkr/openrouter-uptime/"
-                 "main/status/latest.json")
+          url = ("https://raw.githubusercontent.com/"
+                 f"{os.environ['GITHUB_REPOSITORY']}/main/status/latest.json")
           limit = float(os.environ["MAX_AGE_MINUTES"])
           with urllib.request.urlopen(url, timeout=30) as r:
               generated = json.load(r)["generated"]
@@ -54,6 +53,5 @@ jobs:
           print(f"latest poll {generated}, {age:.1f} min ago (limit {limit:g} min)")
           if age > limit:
               sys.exit(f"::error::collector is silent: latest poll is {age:.0f} min "
-                       f"old, limit {limit:g}. Check the Railway service "
-                       f"openrouter-uptime-collector and the poll workflow.")
+                       f"old, limit {limit:g}. Check the poll workflow's recent runs.")
           PY

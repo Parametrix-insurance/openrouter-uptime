@@ -3,9 +3,9 @@
 An independent, git-timestamped uptime registry for **every model on
 [OpenRouter](https://openrouter.ai)** and each of its inference providers.
 
-Two independent collectors poll OpenRouter's public API every 15 minutes --
-a Railway cron as the primary and a GitHub Action as the fallback, each
-standing down when the other has polled recently. Every run saves the raw
+A GitHub Action polls OpenRouter's public API every 15 minutes. It is
+scheduled every 5 and stands down when the previous poll is under 12 minutes
+old, so a run GitHub drops costs 5 minutes rather than 15. Every run saves the raw
 responses, records the status of every routing endpoint (~1,150 across ~400
 catalog models) plus provider metadata, and commits the result. Every poll is
 a timestamped snapshot in `raw/` and `derived/`, so any endpoint's
@@ -14,11 +14,6 @@ Measured sampling characteristics -- duty cycle, gaps, per-hour density --
 are published in [`status/coverage.json`](status/coverage.json).
 
 No API key required. Everything comes from OpenRouter's public endpoints.
-
-**Mirrors:** this repo is the source of truth; a tidy Parquet copy is refreshed
-daily on
-[HuggingFace](https://huggingface.co/datasets/venvoo/openrouter-uptime) and
-[Kaggle](https://www.kaggle.com/datasets/spicycorn/openrouter-uptime).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="status/strip-dark.svg">
