@@ -8,9 +8,9 @@ name: liveness
 #
 # This asks one question every hour -- how old is the latest poll on main --
 # and fails, which is what emails the repository owner, when the answer is
-# longer than the collector could plausibly explain. The poll workflow fires
-# three times an hour with a 12-minute floor; sixty minutes means all three
-# attempts in an hour were dropped or failed.
+# longer than the collector could plausibly explain. The poll workflow tries
+# every 5 minutes behind a 12-minute floor, so healthy cadence is 15 minutes;
+# sixty minutes means about ten consecutive attempts were dropped or failed.
 #
 # Deliberately its own workflow. An alarm that shares a job with heavy work
 # inherits that work's failures: an OOM in the audit step is how the daily

@@ -2,15 +2,17 @@ name: poll
 
 on:
   schedule:
-    # Three attempts an hour, deliberately off the top of the hour.
+    # An attempt every 5 minutes (GitHub's minimum), off the top of the hour,
+    # for a poll every 15.
     #
     # GitHub's scheduler drops runs outright rather than merely delaying them,
     # and :00 is its most congested slot -- under `cron: "0 * * * *"` this
     # collector delivered 43% of its nominal rate over 33 days, with the 01:00
     # UTC hour never sampled at all. Over-scheduling converts a dropped run
-    # into a late one; scripts/should_poll.py turns the surplus attempts into
-    # no-ops, so the extra fires cost a few seconds each and nothing else.
-    - cron: "7,27,47 * * * *"
+    # into one 5 minutes late; scripts/should_poll.py turns the surplus
+    # attempts into no-ops against its 12-minute floor, so every third attempt
+    # polls and the rest cost a few seconds each.
+    - cron: "2-59/5 * * * *"
   workflow_dispatch:
     inputs:
       force:

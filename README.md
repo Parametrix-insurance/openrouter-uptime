@@ -3,8 +3,9 @@
 An independent, git-timestamped uptime registry for **every model on
 [OpenRouter](https://openrouter.ai)** and each of its inference providers.
 
-A GitHub Action polls OpenRouter's public API up to three times an hour,
-standing down when the previous poll is under 12 minutes old. Every run saves the raw
+A GitHub Action polls OpenRouter's public API every 15 minutes. It is
+scheduled every 5 and stands down when the previous poll is under 12 minutes
+old, so a run GitHub drops costs 5 minutes rather than 15. Every run saves the raw
 responses, records the status of every routing endpoint (~1,150 across ~400
 catalog models) plus provider metadata, and commits the result. Every poll is
 a timestamped snapshot in `raw/` and `derived/`, so any endpoint's
