@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T01:15:52+00:00 UTC)
+## Current status (2026-09-28T01:31:31+00:00 UTC)
 
 458 models polled, 1402 inference endpoints:
-up 848, degraded 80, down 19, idle 455.
+up 848, degraded 83, down 25, idle 446.
 
-Currently down (19):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 73% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 47% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 77% | 86% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 60% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 63% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 79% | 93% |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 75% | n/a |
-| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 72% | 81% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 33% | 38% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 72% | n/a |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 55% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 21% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 48% | n/a |
+| `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 74% | 77% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 32% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
