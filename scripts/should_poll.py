@@ -4,10 +4,7 @@
 The collector is deliberately over-scheduled. GitHub's cron drops runs rather
 than merely delaying them -- that is why coverage sat at 43% of the nominal
 hourly rate -- so the workflow fires several times an hour and relies on this
-guard to turn the surplus attempts into no-ops. The same guard lets a second
-collector (Railway) run on a tighter cadence without the two of them
-double-polling: whoever arrives first writes, the other sees a fresh timestamp
-and stands down.
+guard to turn the surplus attempts into no-ops.
 
 Freshness is read from status/latest.json, which poll.py rewrites on every
 successful run. A missing or unparseable file means "poll" -- on a cold start
@@ -29,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # LATEST_OVERRIDE lets a caller test freshness against a snapshot other than
 # the working tree's -- the push-race check feeds it the remote's latest.json
-# to ask "did the other collector already cover this window?" using exactly
+# to ask "did another run already cover this window?" using exactly
 # this file's definition of fresh, rather than a second copy of the rule.
 LATEST = Path(os.environ["LATEST_OVERRIDE"]) if os.environ.get("LATEST_OVERRIDE") \
     else ROOT / "status" / "latest.json"
