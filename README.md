@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-28T09:15:57+00:00 UTC)
+## Current status (2026-09-28T09:31:39+00:00 UTC)
 
 458 models polled, 1396 inference endpoints:
-up 855, degraded 120, down 12, idle 409.
+up 850, degraded 125, down 19, idle 402.
 
-Currently down (12):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 25% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 70% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 78% | 83% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 68% | 63% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 78% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 74% | 62% |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 52% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 66% |
-| `z-ai/glm-5.2` | `decart/mxfp4` | Decart | 55% | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 72% | 98% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 73% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 66% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 74% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 62% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 52% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 76% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 42% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 68% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 31% | n/a |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 69% | 79% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 65% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
