@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T18:45:52+00:00 UTC)
+## Current status (2026-10-10T19:03:13+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 896, degraded 69, down 41, idle 395.
+up 907, degraded 67, down 34, idle 393.
 
-Currently down (41):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 74% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 68% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 73% | 100% |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 60% |
-| `google/gemma-4-31b-it` | `friendli` | Friendli | 87% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 40% |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 93% | 100% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 80% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 33% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 100% |
-| plus 26 more | | | | |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 100% |
+| `google/gemma-4-31b-it` | `friendli` | Friendli | 87% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 69% | 80% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 77% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 18% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 7% | 0% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 29% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | 100% |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
