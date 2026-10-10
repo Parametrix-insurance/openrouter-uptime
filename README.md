@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T19:30:30+00:00 UTC)
+## Current status (2026-10-10T19:45:45+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 897, degraded 64, down 40, idle 400.
+up 882, degraded 69, down 35, idle 415.
 
-Currently down (40):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `anthropic/claude-sonnet-4.5` | `google-vertex/global` | Google | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 80% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 12% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 40% | 33% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 80% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 3% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 30% | 25% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 59% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 14% | 40% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 3% | 0% |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 47% | 0% |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 28% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 20% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 80% |
-| plus 25 more | | | | |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
