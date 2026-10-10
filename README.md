@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T19:45:45+00:00 UTC)
+## Current status (2026-10-10T20:01:54+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 882, degraded 69, down 35, idle 415.
+up 894, degraded 65, down 37, idle 405.
 
-Currently down (35):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `anthropic/claude-sonnet-4.5` | `google-vertex/global` | Google | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 40% | 33% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 35% | 0% |
+| `deepseek/deepseek-r1-0528` | `novita/fp8` | Novita | 57% | 80% |
 | `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 80% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 3% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 14% | 40% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 3% | 0% |
-| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 47% | 0% |
-| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 28% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 100% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 29% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 82% | n/a |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 9% | n/a |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 3% | 20% |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 4% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| plus 20 more | | | | |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
