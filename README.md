@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T23:02:59+00:00 UTC)
+## Current status (2026-10-10T23:18:09+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 901, degraded 57, down 20, idle 423.
+up 918, degraded 55, down 24, idle 404.
 
-Currently down (20):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 79% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 45% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | 100% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 27% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 20% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 37% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 20% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 50% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 47% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 80% |
-| `x-ai/grok-4.20` | `xai/zdr` | xAI | 69% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 14% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 70% | 40% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
