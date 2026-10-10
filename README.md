@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T18:30:39+00:00 UTC)
+## Current status (2026-10-10T18:45:52+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 903, degraded 66, down 41, idle 391.
+up 896, degraded 69, down 41, idle 395.
 
 Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 77% | 20% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 90% | 40% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 26% | n/a |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | 0% |
-| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 56% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 59% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 90% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 69% | 40% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 0% |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 93% | 60% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 14% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 77% | 20% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 73% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 74% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 68% | 0% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 60% |
+| `google/gemma-4-31b-it` | `friendli` | Friendli | 87% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 40% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 93% | 100% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 80% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 33% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 100% |
 | plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
