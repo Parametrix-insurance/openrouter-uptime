@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T20:16:49+00:00 UTC)
+## Current status (2026-10-10T20:31:08+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 906, degraded 68, down 37, idle 390.
+up 888, degraded 78, down 33, idle 402.
 
-Currently down (37):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 20% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 60% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 45% | 100% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 57% | n/a |
-| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 37% | 100% |
-| `minimax/minimax-m3` | `mara` | Mara | 17% | 0% |
-| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 10% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-r1-0528` | `novita/fp8` | Novita | 53% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 33% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 71% | 75% |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 67% | 100% |
+| `minimax/minimax-m3` | `mara` | Mara | 7% | 0% |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
-| plus 22 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
+| `openai/gpt-oss-20b` | `groq` | Groq | 0% | 0% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
