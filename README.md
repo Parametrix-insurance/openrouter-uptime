@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T20:01:54+00:00 UTC)
+## Current status (2026-10-10T20:16:49+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 894, degraded 65, down 37, idle 405.
+up 906, degraded 68, down 37, idle 390.
 
 Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 35% | 0% |
-| `deepseek/deepseek-r1-0528` | `novita/fp8` | Novita | 57% | 80% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 29% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 82% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 9% | n/a |
-| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 3% | 20% |
-| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 4% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 60% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 45% | 100% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 57% | n/a |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 37% | 100% |
+| `minimax/minimax-m3` | `mara` | Mara | 17% | 0% |
+| `minimax/minimax-m3` | `modelrun/fp4` | ModelRun | 10% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | 100% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
 | plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
