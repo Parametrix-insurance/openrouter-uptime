@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-10T23:18:09+00:00 UTC)
+## Current status (2026-10-10T23:31:26+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 918, degraded 55, down 24, idle 404.
+up 917, degraded 54, down 22, idle 408.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 37% | 40% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 45% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 63% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 46% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 33% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 37% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 20% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 40% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 48% | 80% |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 14% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 70% | 40% |
-| plus 9 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 27% | 75% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 76% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
