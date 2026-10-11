@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T09:47:14+00:00 UTC)
+## Current status (2026-10-11T10:01:30+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 921, degraded 42, down 21, idle 416.
+up 906, degraded 44, down 21, idle 429.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 14% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 80% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 46% | 80% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 41% | 60% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 27% | 100% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 25% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 70% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 57% | 40% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 45% | 0% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 7% | 0% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 25% | 20% |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 19% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 20% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 80% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
