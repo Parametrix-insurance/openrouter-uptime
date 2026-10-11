@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T05:32:37+00:00 UTC)
+## Current status (2026-10-11T05:47:38+00:00 UTC)
 
 458 models polled, 1399 inference endpoints:
-up 905, degraded 47, down 21, idle 426.
+up 893, degraded 50, down 15, idle 441.
 
-Currently down (21):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 47% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `alibaba` | Alibaba | 52% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 43% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `alibaba` | Alibaba | 52% | 50% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 40% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 43% | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 10% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 40% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 63% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 3% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 12% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 25% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
