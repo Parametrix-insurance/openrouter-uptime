@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T16:30:25+00:00 UTC)
+## Current status (2026-10-11T16:46:12+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 906, degraded 50, down 29, idle 415.
+up 901, degraded 49, down 22, idle 428.
 
-Currently down (29):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 43% | 0% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 37% | 60% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 67% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 7% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 18% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 67% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 7% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 10% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 13% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 27% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| plus 14 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 14% | 67% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
+| `openai/gpt-6-luna` | `azure` | Azure | 47% | 20% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 40% | 20% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
