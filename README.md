@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T11:02:11+00:00 UTC)
+## Current status (2026-10-11T11:16:19+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 896, degraded 49, down 34, idle 421.
+up 913, degraded 44, down 33, idle 410.
 
-Currently down (34):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 36% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 0% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 63% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 71% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 26% | 60% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 21% | 20% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 4% | 0% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 14% | 20% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 29% | 50% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 52% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 19% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 14% | 0% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 0% | 0% |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 10% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| plus 19 more | | | | |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
