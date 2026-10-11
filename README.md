@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T10:32:24+00:00 UTC)
+## Current status (2026-10-11T10:46:14+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 906, degraded 48, down 29, idle 417.
+up 899, degraded 42, down 28, idle 431.
 
-Currently down (29):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 60% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 48% | 40% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 32% | 40% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 21% | 0% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 36% | 40% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 37% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 81% | 50% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 41% | 50% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 32% | 50% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 4% | 0% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 30% | 60% |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 44% | 100% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 14 more | | | | |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
