@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T09:16:19+00:00 UTC)
+## Current status (2026-10-11T09:31:38+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 911, degraded 46, down 31, idle 412.
+up 910, degraded 50, down 26, idle 414.
 
-Currently down (31):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 80% | 40% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 11% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 36% | 20% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 48% | 0% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 20% | 100% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 4% | 20% |
-| `moonshotai/kimi-k3` | `phala` | Phala | 21% | 20% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 21% | 33% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 36% | 40% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 45% | 40% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 12% | 0% |
+| `moonshotai/kimi-k3` | `phala` | Phala | 17% | 0% |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 33% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
 | `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 0% | n/a |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 16 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
