@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T00:16:09+00:00 UTC)
+## Current status (2026-10-11T00:32:47+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 889, degraded 69, down 19, idle 424.
+up 893, degraded 69, down 19, idle 420.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 100% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 27% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 69% | 60% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 57% | 40% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 0% |
-| `openai/gpt-6-sol` | `azure` | Azure | 7% | 40% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
 | `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `x-ai/grok-4.20` | `xai/zdr` | xAI | 61% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | n/a | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 40% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 25% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `venice/fp8` | Venice | 86% | 80% |
+| `x-ai/grok-4.20` | `xai/zdr` | xAI | 53% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 43% | 60% |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
