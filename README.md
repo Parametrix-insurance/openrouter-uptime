@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T04:46:16+00:00 UTC)
+## Current status (2026-10-11T05:03:09+00:00 UTC)
 
 458 models polled, 1399 inference endpoints:
-up 898, degraded 47, down 19, idle 435.
+up 904, degraded 35, down 19, idle 441.
 
 Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | 100% |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 50% | 20% |
-| `deepseek/deepseek-v4-flash-0731` | `alibaba` | Alibaba | 50% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 20% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 9% | 100% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 53% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `alibaba` | Alibaba | 43% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 59% | 100% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 20% | 40% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 20% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 3% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 44% | 100% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 40% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 27% | 20% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 37% | 40% |
+| `openai/gpt-oss-20b` | `groq` | Groq | 30% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 27% | 100% |
 | plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
