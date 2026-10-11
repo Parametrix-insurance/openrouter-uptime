@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T23:02:09+00:00 UTC)
+## Current status (2026-10-11T23:16:26+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 907, degraded 44, down 12, idle 437.
+up 900, degraded 52, down 12, idle 436.
 
 Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8#e5367c7a22` | Alibaba | 37% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 0% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8#e5367c7a22` | Alibaba | 50% | n/a |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 16% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 26% | 100% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 83% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 67% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 25% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 12% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
