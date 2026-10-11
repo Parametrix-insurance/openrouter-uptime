@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T22:32:53+00:00 UTC)
+## Current status (2026-10-11T22:45:38+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 908, degraded 39, down 19, idle 435.
+up 907, degraded 46, down 14, idle 434.
 
-Currently down (19):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-opus-4.6` | `azure/global` | Azure | 0% | n/a |
-| `google/gemini-3.1-flash-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 21% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 60% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 47% | 100% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 38% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 67% | 40% |
-| `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 48% | 75% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 57% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
-| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 75% | 100% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 44% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 37% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | 100% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 50% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
