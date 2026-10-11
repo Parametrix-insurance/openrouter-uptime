@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T21:31:03+00:00 UTC)
+## Current status (2026-10-11T21:45:37+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 910, degraded 46, down 18, idle 427.
+up 897, degraded 41, down 17, idle 446.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 8% | 100% |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 33% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 0% | n/a |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 20% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 27% | 0% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 46% | 100% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 33% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| plus 3 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 18% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 40% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 37% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 17% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
