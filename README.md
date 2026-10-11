@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T17:32:45+00:00 UTC)
+## Current status (2026-10-11T17:47:36+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 921, degraded 40, down 25, idle 414.
+up 911, degraded 41, down 24, idle 424.
 
-Currently down (25):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#1` | BaseTen | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#2` | BaseTen | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 40% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 20% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `inception/mercury-2.5` | `inception` | Inception | 13% | 60% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 68% | 80% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 60% | 80% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 9% | n/a |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | 0% |
-| plus 10 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#1` | BaseTen | 43% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#2` | BaseTen | 43% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 60% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | n/a |
+| `inception/mercury-2.5` | `inception` | Inception | 27% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 52% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 57% | 67% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
