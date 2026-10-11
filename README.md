@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T20:01:00+00:00 UTC)
+## Current status (2026-10-11T20:16:17+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 895, degraded 49, down 26, idle 430.
+up 896, degraded 52, down 24, idle 428.
 
-Currently down (26):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 10% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 40% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 20% | n/a |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 57% | 40% |
 | `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 63% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 47% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 27% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 39% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 67% | 100% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 67% | 100% |
 | `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 14% | n/a |
-| plus 11 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
