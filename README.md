@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T17:02:46+00:00 UTC)
+## Current status (2026-10-11T17:16:38+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 885, degraded 55, down 20, idle 440.
+up 897, degraded 56, down 24, idle 423.
 
-Currently down (20):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `inception/mercury-2.5` | `inception` | Inception | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#1` | BaseTen | 10% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#2` | BaseTen | 10% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inception/mercury-2.5` | `inception` | Inception | 3% | 20% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 24% | 100% |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 13% | 20% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 10% | 60% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 20% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 7% | 0% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 20% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `stepfun/step-3.5-flash` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| plus 5 more | | | | |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 37% | 80% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 18% | 20% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 3% | 20% |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 15% | 50% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
