@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T21:17:15+00:00 UTC)
+## Current status (2026-10-11T21:31:03+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 923, degraded 40, down 20, idle 418.
+up 910, degraded 46, down 18, idle 427.
 
-Currently down (20):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 80% |
 | `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 30% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 53% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 8% | 100% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 33% | 40% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 41% | 20% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 60% | 0% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 27% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 44% | 25% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 46% | 100% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 33% | 100% |
 | `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
