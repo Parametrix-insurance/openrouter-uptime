@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T19:01:28+00:00 UTC)
+## Current status (2026-10-11T19:15:23+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 921, degraded 47, down 23, idle 409.
+up 924, degraded 48, down 22, idle 406.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 60% | 0% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 57% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 10% | 0% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 70% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 72% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `inception/mercury-2.5` | `inception` | Inception | 27% | 20% |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | n/a |
+| `inception/mercury-2.5` | `inception` | Inception | 33% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 0% | n/a |
 | `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | n/a |
 | `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | n/a |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 88% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 0% |
-| `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 75% | n/a |
-| plus 8 more | | | | |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
