@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T22:00:30+00:00 UTC)
+## Current status (2026-10-11T22:16:21+00:00 UTC)
 
 458 models polled, 1401 inference endpoints:
-up 900, degraded 42, down 21, idle 438.
+up 913, degraded 41, down 22, idle 425.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 80% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `meta/muse-spark-1.3` | `meta` | Meta | 37% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 17% | 40% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 60% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 46% | 75% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 13% | 80% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 22% | 25% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | n/a |
+| `inception/mercury-2.5` | `inception` | Inception | 20% | 100% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 0% | 0% |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 29% | 100% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 53% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 0% |
+| `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 44% | 80% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 57% | 80% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 65% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 6 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
