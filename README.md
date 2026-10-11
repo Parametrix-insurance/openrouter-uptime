@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T18:48:20+00:00 UTC)
+## Current status (2026-10-11T19:01:28+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 919, degraded 52, down 21, idle 408.
+up 921, degraded 47, down 23, idle 409.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 60% | 0% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 57% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 73% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 20% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 50% |
-| `inception/mercury-2.5` | `inception` | Inception | 17% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 68% | 100% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 73% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 27% | 0% |
-| `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 50% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 48% | 40% |
-| plus 6 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `inception/mercury-2.5` | `inception` | Inception | 27% | 20% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | n/a |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 88% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 0% |
+| `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 75% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
