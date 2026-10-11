@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T18:32:49+00:00 UTC)
+## Current status (2026-10-11T18:48:20+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 916, degraded 49, down 15, idle 420.
+up 919, degraded 52, down 21, idle 408.
 
-Currently down (15):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 60% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inception/mercury-2.5` | `inception` | Inception | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 68% | 33% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 5% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 10% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 50% |
+| `inception/mercury-2.5` | `inception` | Inception | 17% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 68% | 100% |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 47% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 40% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 57% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 70% | 40% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 10% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 73% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 27% | 0% |
+| `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 50% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 48% | 40% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
