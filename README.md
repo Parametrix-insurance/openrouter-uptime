@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T00:46:15+00:00 UTC)
+## Current status (2026-10-11T01:01:56+00:00 UTC)
 
-458 models polled, 1401 inference endpoints:
-up 899, degraded 54, down 19, idle 429.
+458 models polled, 1400 inference endpoints:
+up 884, degraded 44, down 17, idle 455.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 93% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 89% | 100% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 40% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 62% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 70% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 40% | 20% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 71% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 21% | 20% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 40% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 63% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `venice/fp8` | Venice | 86% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 48% | 75% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 40% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 86% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
