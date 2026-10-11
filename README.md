@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T15:46:17+00:00 UTC)
+## Current status (2026-10-11T16:01:48+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 904, degraded 54, down 31, idle 411.
+up 886, degraded 54, down 27, idle 433.
 
-Currently down (31):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 43% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 47% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 57% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `dekallm` | DekaLLM | 12% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | 67% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 73% | 20% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 37% | 0% |
 | `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 3% | 20% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 21% | 67% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 60% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 30% | 60% |
-| plus 16 more | | | | |
+| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 27% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 43% | 40% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
