@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T19:17:03+00:00 UTC)
+## Current status (2026-10-12T19:30:30+00:00 UTC)
 
 459 models polled, 1400 inference endpoints:
-up 920, degraded 57, down 30, idle 393.
+up 925, degraded 62, down 23, idle 390.
 
-Currently down (30):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 54% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 25% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 67% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 77% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 31% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 24% | n/a |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 33% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 25% | n/a |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 57% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 15 more | | | | |
+| `openai/gpt-oss-120b` | `mara` | Mara | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 27% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 17% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 7% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
