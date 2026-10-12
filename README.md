@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T04:02:45+00:00 UTC)
+## Current status (2026-10-12T04:17:35+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 905, degraded 53, down 19, idle 423.
+up 908, degraded 56, down 23, idle 413.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 33% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 79% | 20% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 50% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inception/mercury-2.5` | `inception` | Inception | 47% | 20% |
+| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 53% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 59% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 50% | n/a |
 | `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 27% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 3% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 12% | 50% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | 0% |
-| plus 4 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 47% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 24% | 50% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 40% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
