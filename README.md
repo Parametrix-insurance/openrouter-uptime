@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T21:16:32+00:00 UTC)
+## Current status (2026-10-12T21:31:55+00:00 UTC)
 
 459 models polled, 1400 inference endpoints:
-up 927, degraded 62, down 14, idle 397.
+up 942, degraded 51, down 17, idle 390.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `relace` | Relace | 20% | 20% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 44% | 50% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 25% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 0% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 9% | 67% |
+| `deepseek/deepseek-v4.1-flash` | `relace` | Relace | 37% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | 50% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 33% | 100% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 33% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 8% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 40% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 66% | 100% |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 37% | 20% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 60% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
-| `z-ai/glm-5.2` | `alibaba/fp8#c8b9c9316d` | Alibaba | 0% | 0% |
-| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
