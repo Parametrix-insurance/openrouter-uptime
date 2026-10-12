@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T21:03:30+00:00 UTC)
+## Current status (2026-10-12T21:16:32+00:00 UTC)
 
 459 models polled, 1400 inference endpoints:
-up 934, degraded 63, down 15, idle 388.
+up 927, degraded 62, down 14, idle 397.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 43% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 59% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 0% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `relace` | Relace | 20% | 20% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 44% | 50% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 25% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 0% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 9% | 67% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 50% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 65% | 80% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 40% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 66% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 17% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
+| `z-ai/glm-5.2` | `alibaba/fp8#c8b9c9316d` | Alibaba | 0% | 0% |
 | `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
-| `z-ai/glm-5.3` | `modelrun/fp4` | ModelRun | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
