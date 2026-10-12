@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T07:17:24+00:00 UTC)
+## Current status (2026-10-12T07:31:09+00:00 UTC)
 
 458 models polled, 1397 inference endpoints:
-up 935, degraded 66, down 23, idle 373.
+up 933, degraded 67, down 22, idle 375.
 
-Currently down (23):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 33% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 43% | 20% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 45% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 33% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 28% | 100% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 71% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 43% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 72% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 57% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 29% | 50% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 33% | 100% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | n/a | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
-| plus 8 more | | | | |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 67% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 66% | 25% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
