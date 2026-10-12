@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T06:45:49+00:00 UTC)
+## Current status (2026-10-12T07:00:50+00:00 UTC)
 
 458 models polled, 1397 inference endpoints:
-up 917, degraded 68, down 16, idle 396.
+up 921, degraded 60, down 22, idle 394.
 
-Currently down (16):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 96% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 60% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | 40% | n/a |
+| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 87% | 67% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 25% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 43% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 10% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | 100% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 40% | 0% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 22% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 20% | 20% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | 50% |
-| plus 1 more | | | | |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
+| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 31% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
