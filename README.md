@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T21:46:17+00:00 UTC)
+## Current status (2026-10-12T22:02:55+00:00 UTC)
 
-459 models polled, 1400 inference endpoints:
-up 948, degraded 46, down 17, idle 389.
+459 models polled, 1401 inference endpoints:
+up 952, degraded 46, down 16, idle 387.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 80% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 31% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 48% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | 100% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 17% | 0% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 50% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 56% | 100% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 27% | 100% |
+| `openai/gpt-oss-120b` | `crusoe/bf16` | Crusoe | 17% | 60% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 67% | n/a |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 58% | 0% |
 | `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
 | `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
 | `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
-| plus 2 more | | | | |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
