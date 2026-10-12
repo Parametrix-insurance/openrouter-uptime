@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T04:31:57+00:00 UTC)
+## Current status (2026-10-12T04:45:41+00:00 UTC)
 
-458 models polled, 1399 inference endpoints:
-up 901, degraded 62, down 24, idle 412.
+458 models polled, 1398 inference endpoints:
+up 906, degraded 54, down 23, idle 415.
 
-Currently down (24):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 25% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inception/mercury-2.5` | `inception` | Inception | 7% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inception/mercury-2.5` | `inception` | Inception | 7% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 77% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 20% | 60% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 37% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 60% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 10% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 60% | 100% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 90% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 25% | 25% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 33% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 79% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai/zdr` | xAI | 0% | n/a |
-| plus 9 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 33% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 20% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
