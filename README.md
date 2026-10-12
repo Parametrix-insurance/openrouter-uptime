@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T08:17:16+00:00 UTC)
+## Current status (2026-10-12T08:31:02+00:00 UTC)
 
-458 models polled, 1397 inference endpoints:
-up 950, degraded 59, down 23, idle 365.
+458 models polled, 1398 inference endpoints:
+up 962, degraded 58, down 21, idle 357.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 50% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 61% | 100% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 17% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 67% | n/a |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 10% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 47% | 20% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 9% | 100% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 3% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 13% | 60% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 40% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 15% | 75% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 57% | 80% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 58% | 100% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| plus 8 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 57% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 38% | 100% |
+| `x-ai/grok-4.20` | `xai/zdr` | xAI | 37% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
