@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T05:48:06+00:00 UTC)
+## Current status (2026-10-12T06:03:20+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 924, degraded 55, down 22, idle 397.
+up 925, degraded 56, down 22, idle 395.
 
 Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 50% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 40% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | n/a |
-| `inception/mercury-2.5` | `inception` | Inception | 50% | 0% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 43% | 33% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inception/mercury-2.5` | `inception` | Inception | 17% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 13% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
 | `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 37% | 60% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 40% | 60% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 73% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 47% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 50% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 63% | 0% |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
