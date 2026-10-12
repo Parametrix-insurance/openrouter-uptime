@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T00:15:56+00:00 UTC)
+## Current status (2026-10-12T00:31:51+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 906, degraded 58, down 14, idle 422.
+up 906, degraded 56, down 19, idle 419.
 
-Currently down (14):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 66% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 64% | 100% |
 | `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
 | `minimax/minimax-m2.7` | `atlas-cloud/fp8` | AtlasCloud | 67% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
-| `x-ai/grok-4.20` | `xai/zdr` | xAI | 73% | 60% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 44% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
-| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 57% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 60% | 60% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 58% | n/a |
+| `x-ai/grok-4.20` | `xai/zdr` | xAI | 67% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 47% | 40% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
