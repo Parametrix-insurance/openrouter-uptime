@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T09:46:15+00:00 UTC)
+## Current status (2026-10-12T10:02:11+00:00 UTC)
 
-458 models polled, 1398 inference endpoints:
-up 944, degraded 59, down 24, idle 371.
+458 models polled, 1399 inference endpoints:
+up 935, degraded 65, down 24, idle 375.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 100% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 50% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 61% | 100% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 10% | 50% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 45% | 100% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 31% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 62% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 55% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 34% | 0% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 29% | 0% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 10% | 25% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 57% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 17% | 60% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 23% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
