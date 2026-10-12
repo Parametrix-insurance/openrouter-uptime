@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T14:16:02+00:00 UTC)
+## Current status (2026-10-12T14:31:15+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 953, degraded 72, down 37, idle 336.
+up 949, degraded 73, down 35, idle 341.
 
-Currently down (37):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 63% | 100% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 12% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 39% | 25% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 38% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 20% | 20% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 67% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 88% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 11% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 22 more | | | | |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | n/a | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | n/a | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | 60% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 77% | 100% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 75% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 46% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 17% | 40% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 44% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 41% | 100% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 10% | 0% |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
