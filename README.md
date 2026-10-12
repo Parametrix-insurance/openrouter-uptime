@@ -85,24 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T22:33:17+00:00 UTC)
+## Current status (2026-10-12T22:48:15+00:00 UTC)
 
 459 models polled, 1401 inference endpoints:
-up 928, degraded 59, down 9, idle 405.
+up 925, degraded 53, down 11, idle 412.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 71% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 63% | 40% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 20% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 52% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 63% | 100% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 7% | 33% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 11% | 25% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
+| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
+| `z-ai/glm-5.3` | `modelrun/fp4` | ModelRun | 67% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
