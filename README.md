@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T08:45:29+00:00 UTC)
+## Current status (2026-10-12T09:02:30+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 933, degraded 64, down 17, idle 384.
+up 948, degraded 55, down 18, idle 377.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 7% | 20% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 17% | 20% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 57% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 100% |
+| `meta/muse-glimmer-30b` | `together` | Together | 40% | 60% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 33% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 48% | 40% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 60% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | 50% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 21% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 43% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 36% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 56% | 40% |
+| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 20% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 53% | 80% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 28% | 0% |
 | `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 70% | 100% |
-| plus 2 more | | | | |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
