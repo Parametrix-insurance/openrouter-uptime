@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T03:15:47+00:00 UTC)
+## Current status (2026-10-12T03:30:50+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 914, degraded 56, down 17, idle 413.
+up 916, degraded 48, down 17, idle 419.
 
 Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 24% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 57% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 63% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 27% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `x-ai/grok-4.3` | `xai/zdr` | xAI | 65% | 67% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 21% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 5% | 0% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 57% | 60% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 40% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 0% | 0% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `siliconflow/fp8` | SiliconFlow | 73% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 33% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 77% | 100% |
+| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 20% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 18% | 0% |
 | plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
