@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T09:18:01+00:00 UTC)
+## Current status (2026-10-12T09:30:52+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 963, degraded 59, down 18, idle 358.
+up 960, degraded 61, down 22, idle 355.
 
-Currently down (18):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 33% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 31% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 29% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 100% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 50% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 73% | n/a |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 43% | 60% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 14% | 0% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 11% | 40% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 6% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 50% | 40% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 38% | 0% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 17% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 4% | 0% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 30% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 23% | 40% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
