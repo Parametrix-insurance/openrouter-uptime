@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T05:02:13+00:00 UTC)
+## Current status (2026-10-12T05:17:18+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 919, degraded 41, down 21, idle 417.
+up 921, degraded 50, down 24, idle 403.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 40% | 50% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 63% | 40% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 100% |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 40% | 33% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 40% | 100% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 97% | 80% |
+| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 44% | n/a |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 100% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 69% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 10% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 63% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 23% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 57% | 100% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 31% | 100% |
-| plus 6 more | | | | |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
