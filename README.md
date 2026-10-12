@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T15:18:10+00:00 UTC)
+## Current status (2026-10-12T15:31:30+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 935, degraded 67, down 31, idle 365.
+up 934, degraded 65, down 28, idle 371.
 
-Currently down (31):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 20% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 88% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 77% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 40% |
+| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 50% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 90% | 40% |
 | `minimax/minimax-m2-her` | `minimax` | Minimax | 73% | 100% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 48% | 20% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | n/a | n/a |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 38% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 16 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 3% | 20% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
