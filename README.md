@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T02:46:55+00:00 UTC)
+## Current status (2026-10-12T03:02:15+00:00 UTC)
 
 458 models polled, 1400 inference endpoints:
-up 906, degraded 54, down 17, idle 423.
+up 913, degraded 56, down 16, idle 415.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8#9961def773#2` | BaseTen | 48% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 20% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 60% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inception/mercury-2.5` | `inception` | Inception | 13% | 20% |
-| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 15% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `x-ai/grok-4.3` | `xai/zdr` | xAI | 60% | 80% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 58% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 60% | 80% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 38% | 25% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 33% | 100% |
+| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 38% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| plus 2 more | | | | |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
