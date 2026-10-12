@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T12:00:29+00:00 UTC)
+## Current status (2026-10-12T12:15:22+00:00 UTC)
 
 458 models polled, 1399 inference endpoints:
-up 955, degraded 67, down 23, idle 354.
+up 955, degraded 76, down 20, idle 348.
 
-Currently down (23):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 19% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 56% | 100% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 25% | 50% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 53% | 20% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 67% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 60% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 57% | 40% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 33% | n/a |
 | `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 36% | 33% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 25% | n/a |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 0% | n/a |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `mara` | Mara | 56% | 67% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 39% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 82% | 0% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 89% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
