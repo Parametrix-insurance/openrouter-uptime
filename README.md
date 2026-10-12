@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T09:02:30+00:00 UTC)
+## Current status (2026-10-12T09:18:01+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 948, degraded 55, down 18, idle 377.
+up 963, degraded 59, down 18, idle 358.
 
 Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 57% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 40% | 60% |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 33% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 48% | 40% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 33% | 0% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 31% | 0% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 29% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 36% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 56% | 40% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 20% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 50% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 38% | 0% |
+| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 17% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 53% | 80% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 28% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 4% | 0% |
 | `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
 | plus 3 more | | | | |
 
