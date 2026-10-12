@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T13:17:16+00:00 UTC)
+## Current status (2026-10-12T13:30:58+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 945, degraded 77, down 27, idle 349.
+up 941, degraded 79, down 29, idle 349.
 
-Currently down (27):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 50% | 20% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 80% | 100% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 71% | 67% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 57% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 37% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 34% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 57% | 100% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 57% | 20% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 67% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 75% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 40% | 50% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 22% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 38% | 100% |
 | `mistralai/mistral-large-4-0` | `mistral` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 54% | 0% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 33% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 12 more | | | | |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 40% | 0% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
