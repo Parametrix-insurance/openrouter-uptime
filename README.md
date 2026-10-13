@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T09:01:22+00:00 UTC)
+## Current status (2026-10-13T09:18:05+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 933, degraded 67, down 23, idle 379.
+up 929, degraded 79, down 26, idle 368.
 
-Currently down (23):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 13% | 40% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 13% | 20% |
-| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 53% | 60% |
-| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 55% | n/a |
+| `moonshotai/kimi-k2.7-code` | `alibaba/fp8` | Alibaba | 0% | n/a |
 | `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 30% | 0% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 37% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6-luna` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 3% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | 25% |
-| plus 8 more | | | | |
+| `openai/gpt-oss-20b` | `groq` | Groq | 87% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 100% |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 30% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 25% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
