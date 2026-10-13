@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T08:32:41+00:00 UTC)
+## Current status (2026-10-13T08:47:35+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 950, degraded 71, down 23, idle 358.
+up 941, degraded 62, down 24, idle 375.
 
-Currently down (23):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 60% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 67% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 46% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 69% | 100% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 40% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 60% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 0% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 18% | 100% |
-| plus 8 more | | | | |
+| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 10% | 40% |
+| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
+| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 80% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-6-luna` | `azure` | Azure | 57% | 40% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 63% | 60% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
