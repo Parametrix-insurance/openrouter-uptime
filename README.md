@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T18:31:05+00:00 UTC)
+## Current status (2026-10-13T18:45:59+00:00 UTC)
 
-464 models polled, 1410 inference endpoints:
-up 899, degraded 115, down 30, idle 366.
+461 models polled, 1405 inference endpoints:
+up 898, degraded 105, down 26, idle 376.
 
-Currently down (30):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 50% | 100% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 50% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `reka` | Reka | 50% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 33% | 60% |
+| `deepseek/deepseek-v4-pro-0813` | `reka` | Reka | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 37% | 0% |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 100% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 52% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 70% | 100% |
-| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 80% | 100% |
-| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 37% | 50% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 25% | n/a |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 69% | n/a |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
+| `openai/gpt-5.6-luna-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 64% | 100% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 15 more | | | | |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 17% | 100% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-21 17:30** — **6 models removed from the catalog in one poll**: `minimax/minimax-m3:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, `thinkingmachines/inkling:batch`.
 - **2026-09-21 20:31** — **3 models added to the catalog in one poll**: `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
 - **2026-09-22 15:01** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-20b:batch`.
 - **2026-09-22 15:15** — **5 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-flash-vision-exp:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `meta/muse-glimmer-30b:batch`, `z-ai/glm-5.2:batch`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-06 23:31** — provider `openai` changed its status page.
 - **2026-10-06 23:48** — provider `openai` changed its status page.
 - **2026-10-09 16:17** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
+- **2026-10-13 18:45** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
