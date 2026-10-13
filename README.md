@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T20:33:01+00:00 UTC)
+## Current status (2026-10-13T20:48:01+00:00 UTC)
 
-461 models polled, 1406 inference endpoints:
-up 938, degraded 66, down 28, idle 374.
+461 models polled, 1407 inference endpoints:
+up 956, degraded 57, down 23, idle 371.
 
-Currently down (28):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 47% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 33% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 27% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 23% | 60% |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 75% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
-| `inception/mercury-2.5` | `inception` | Inception | 23% | 20% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 60% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 67% | 60% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 36% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 60% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 3% | 20% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 83% | 100% |
 | `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 69% | 100% |
-| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 75% | n/a |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 29% | n/a |
-| plus 13 more | | | | |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 33% | 33% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 44% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
