@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T20:48:01+00:00 UTC)
+## Current status (2026-10-13T21:01:45+00:00 UTC)
 
-461 models polled, 1407 inference endpoints:
-up 956, degraded 57, down 23, idle 371.
+461 models polled, 1408 inference endpoints:
+up 950, degraded 58, down 24, idle 376.
 
-Currently down (23):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 27% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 23% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 36% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 60% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 3% | 20% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 83% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 67% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 12% | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 17% | 60% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 40% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 27% | 60% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 90% | 100% |
 | `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 33% | 33% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 79% | 80% |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 33% | n/a |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 33% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
 | `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 44% | 100% |
-| plus 8 more | | | | |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
