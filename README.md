@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T05:15:21+00:00 UTC)
+## Current status (2026-10-13T05:31:40+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 923, degraded 68, down 22, idle 389.
+up 914, degraded 65, down 25, idle 398.
 
-Currently down (22):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `cohere/command-r-08-2024` | `cohere` | Cohere | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 50% | 40% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 20% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 53% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 60% |
+| `cohere/command-r-08-2024` | `cohere` | Cohere | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 43% | 100% |
+| `deepseek/deepseek-v4-flash` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 47% | 60% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | 100% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 62% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 60% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 53% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 75% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 67% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 30% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 0% | n/a |
-| plus 7 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 20% | 40% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
