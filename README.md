@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T23:15:47+00:00 UTC)
+## Current status (2026-10-13T23:31:34+00:00 UTC)
 
-461 models polled, 1408 inference endpoints:
-up 919, degraded 55, down 15, idle 419.
+463 models polled, 1411 inference endpoints:
+up 916, degraded 64, down 17, idle 414.
 
-Currently down (15):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 50% | 80% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | 50% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 40% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 40% | 0% |
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 44% | 33% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 58% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 37% | 80% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 20% | 60% |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 44% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
 | `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 0% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 41% | 40% |
-| `xiaomi/mimo-v2.6-pro-ultraspeed` | `xiaomi/fp8` | Xiaomi | 41% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
