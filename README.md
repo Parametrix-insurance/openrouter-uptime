@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T12:16:33+00:00 UTC)
+## Current status (2026-10-13T12:31:28+00:00 UTC)
 
 461 models polled, 1404 inference endpoints:
-up 932, degraded 83, down 20, idle 369.
+up 934, degraded 79, down 26, idle 365.
 
-Currently down (20):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-opus-4.6` | `azure/global` | Azure | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 13% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 56% | 0% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 20% | 60% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 17% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 48% | 67% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 29% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 33% | 33% |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 89% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
