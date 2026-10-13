@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T14:31:17+00:00 UTC)
+## Current status (2026-10-13T14:45:43+00:00 UTC)
 
 461 models polled, 1404 inference endpoints:
-up 946, degraded 72, down 30, idle 356.
+up 936, degraded 86, down 24, idle 358.
 
-Currently down (30):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 23% | 40% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 53% | 20% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 53% | 20% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 57% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 15% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 9% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 70% | 100% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 13% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 55% | 60% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 55% | 60% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 3% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 10% | 20% |
 | `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 37% | 0% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 15 more | | | | |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 60% | 60% |
+| `qwen/qwen3.5-9b` | `together` | Together | 60% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
