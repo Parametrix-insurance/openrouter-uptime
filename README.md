@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T04:00:46+00:00 UTC)
+## Current status (2026-10-13T04:18:19+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 926, degraded 62, down 25, idle 389.
+up 912, degraded 80, down 19, idle 391.
 
-Currently down (25):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 10% | 40% |
 | `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 0% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 67% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 37% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | 0% |
-| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 36% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `google/gemma-4-26b-a4b-it:free` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 33% | n/a |
+| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 20% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| plus 10 more | | | | |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 40% | 40% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 0% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
