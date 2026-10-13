@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T16:47:12+00:00 UTC)
+## Current status (2026-10-13T17:03:06+00:00 UTC)
 
 462 models polled, 1409 inference endpoints:
-up 923, degraded 95, down 40, idle 351.
+up 933, degraded 79, down 26, idle 371.
 
-Currently down (40):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 73% | 100% |
-| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 27% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 40% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 54% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 54% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 64% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 38% | 60% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 28% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 80% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 60% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 37% | 20% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 20% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 27% | 100% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 25 more | | | | |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 33% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 45% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
