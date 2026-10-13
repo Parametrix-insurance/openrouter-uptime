@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T05:02:21+00:00 UTC)
+## Current status (2026-10-13T05:15:21+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 920, degraded 57, down 21, idle 404.
+up 923, degraded 68, down 22, idle 389.
 
-Currently down (21):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 62% | 100% |
+| `cohere/command-r-08-2024` | `cohere` | Cohere | 0% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 50% | 40% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 20% | n/a |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 83% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 50% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 50% | 25% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 53% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 53% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 60% | 20% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 48% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 17% | 50% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 67% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 57% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 30% | 0% |
 | `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 41% | 50% |
-| plus 6 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
