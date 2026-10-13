@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T19:00:54+00:00 UTC)
+## Current status (2026-10-13T19:18:08+00:00 UTC)
 
 461 models polled, 1406 inference endpoints:
-up 929, degraded 65, down 27, idle 385.
+up 923, degraded 77, down 28, idle 378.
 
-Currently down (27):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 57% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 37% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 50% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 13% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 34% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 25% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 23% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 20% |
 | `nvidia/nemotron-3.5-content-safety` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
-| `openai/gpt-5.6-luna` | `openai/flex` | OpenAI | 67% | 60% |
-| `openai/gpt-5.6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-5.6-luna` | `openai/flex` | OpenAI | 60% | 80% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 63% | 100% |
 | `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 12 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `venice/int4` | Venice | 65% | 100% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
