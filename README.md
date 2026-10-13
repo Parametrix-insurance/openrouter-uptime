@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T22:03:04+00:00 UTC)
+## Current status (2026-10-13T22:15:21+00:00 UTC)
 
 461 models polled, 1409 inference endpoints:
-up 924, degraded 66, down 27, idle 392.
+up 907, degraded 84, down 20, idle 398.
 
-Currently down (27):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 30% | 40% |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 17% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `cloudflare` | Cloudflare | 35% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 80% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 10% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 20% |
 | `google/gemini-4-argon` | `google-vertex/global/priority` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 86% | 100% |
-| `inception/mercury-2.5` | `inception` | Inception | 10% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 3% | 0% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 83% | 100% |
+| `inception/mercury-2.5` | `inception` | Inception | 23% | 100% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 13% | 60% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 53% | 20% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 67% | 100% |
-| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 59% | 50% |
-| plus 12 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 40% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | n/a |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 17% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 3% | 20% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
