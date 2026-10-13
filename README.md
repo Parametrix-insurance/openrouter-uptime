@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T02:15:39+00:00 UTC)
+## Current status (2026-10-13T02:30:50+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 917, degraded 51, down 21, idle 413.
+up 911, degraded 58, down 20, idle 413.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 30% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 67% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 4% | 25% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 58% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 77% | 40% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 32% | 50% |
-| `x-ai/grok-4.3` | `xai/zdr` | xAI | 85% | 50% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 59% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 25% | n/a |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 83% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
-| plus 6 more | | | | |
+| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 46% | 67% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
