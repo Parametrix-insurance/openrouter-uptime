@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T18:01:18+00:00 UTC)
+## Current status (2026-10-13T18:18:00+00:00 UTC)
 
-463 models polled, 1410 inference endpoints:
-up 947, degraded 55, down 29, idle 379.
+464 models polled, 1411 inference endpoints:
+up 928, degraded 82, down 32, idle 369.
 
-Currently down (29):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 73% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 24% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 80% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | 25% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 64% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 60% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 80% | 100% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 10% | 40% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 43% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 37% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 57% | 100% |
+| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 80% | 20% |
+| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 80% | 20% |
+| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 100% | n/a |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 87% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 33% | 80% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 37% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
-| plus 14 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 47% | 100% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 25% | 50% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
