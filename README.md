@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T11:32:03+00:00 UTC)
+## Current status (2026-10-13T11:48:02+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 944, degraded 64, down 22, idle 372.
+up 931, degraded 68, down 23, idle 380.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 90% | 40% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 17% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 86% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 18% | 50% |
-| `moonshotai/kimi-k2.6` | `cloudflare` | Cloudflare | 25% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 50% | 67% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | 0% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 23% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 60% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 81% | 67% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 83% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 93% | 100% |
 | `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 83% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 15% | n/a |
-| plus 7 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 18% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 33% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
