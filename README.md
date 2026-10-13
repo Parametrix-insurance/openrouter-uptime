@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T08:47:35+00:00 UTC)
+## Current status (2026-10-13T09:01:22+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 941, degraded 62, down 24, idle 375.
+up 933, degraded 67, down 23, idle 379.
 
-Currently down (24):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 69% | 100% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 40% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 60% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 13% | 40% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 10% | 40% |
+| `mistralai/mistral-large-4-0` | `mistral/zdr` | Mistral | 13% | 20% |
+| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 53% | 60% |
 | `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 67% | n/a |
-| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 80% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 55% | n/a |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 57% | 40% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 63% | 60% |
-| plus 9 more | | | | |
+| `openai/gpt-6-luna` | `azure` | Azure | 30% | 0% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 37% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | 25% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
