@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T00:01:40+00:00 UTC)
+## Current status (2026-10-13T00:17:52+00:00 UTC)
 
-459 models polled, 1400 inference endpoints:
-up 928, degraded 57, down 13, idle 402.
+459 models polled, 1401 inference endpoints:
+up 920, degraded 72, down 19, idle 390.
 
-Currently down (13):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 68% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 5% | 33% |
+| `deepseek/deepseek-v4-flash-0731` | `cohere` | Cohere | 90% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 40% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 53% | 20% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 31% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 97% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `moonshotai/kimi-k2.6` | `cloudflare` | Cloudflare | 33% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 85% | 100% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 63% | 40% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 17% | 20% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 56% | 50% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 25% | 33% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 63% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 20% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 30% | 25% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 56% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
