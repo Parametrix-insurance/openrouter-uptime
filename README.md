@@ -85,24 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T23:45:38+00:00 UTC)
+## Current status (2026-10-13T00:01:40+00:00 UTC)
 
 459 models polled, 1400 inference endpoints:
-up 942, degraded 53, down 9, idle 396.
+up 928, degraded 57, down 13, idle 402.
 
-Currently down (9):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | n/a | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 68% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 5% | 33% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 64% | 60% |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 83% | 75% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 33% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 85% | 100% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 63% | 40% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 17% | 20% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 56% | 50% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 25% | 33% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
