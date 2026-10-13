@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T21:01:45+00:00 UTC)
+## Current status (2026-10-13T21:17:12+00:00 UTC)
 
 461 models polled, 1408 inference endpoints:
-up 950, degraded 58, down 24, idle 376.
+up 935, degraded 70, down 20, idle 383.
 
-Currently down (24):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 67% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 12% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 17% | 60% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 40% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 27% | 60% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 90% | 100% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 60% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 79% | 80% |
-| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 33% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 100% |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 67% | n/a |
 | `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 33% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 62% | 60% |
 | `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| plus 9 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 64% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 63% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
