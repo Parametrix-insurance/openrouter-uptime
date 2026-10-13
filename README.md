@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T09:18:05+00:00 UTC)
+## Current status (2026-10-13T09:31:27+00:00 UTC)
 
-459 models polled, 1402 inference endpoints:
-up 929, degraded 79, down 26, idle 368.
+459 models polled, 1403 inference endpoints:
+up 945, degraded 81, down 22, idle 355.
 
-Currently down (26):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (26):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `moonshotai/kimi-k2.7-code` | `alibaba/fp8` | Alibaba | 0% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
 | `openai/gpt-6-luna` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 3% | 0% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-20b` | `groq` | Groq | 87% | 100% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 100% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 30% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 25% | 100% |
-| plus 11 more | | | | |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 28% | 67% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 59% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 6% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
