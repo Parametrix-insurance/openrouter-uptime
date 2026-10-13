@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T06:31:48+00:00 UTC)
+## Current status (2026-10-13T06:46:47+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 921, degraded 73, down 19, idle 389.
+up 907, degraded 82, down 13, idle 400.
 
-Currently down (19):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 90% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 60% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 50% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 67% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 12% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 43% | 60% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 14% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 29% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 24% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 41% | 40% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 43% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
