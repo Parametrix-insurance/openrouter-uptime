@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T01:44:02+00:00 UTC)
+## Current status (2026-10-13T02:02:29+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 916, degraded 60, down 19, idle 407.
+up 921, degraded 49, down 18, idle 414.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 44% | n/a |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 14% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-4.1-mini` | `azure` | Azure | 70% | 40% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 60% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 33% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 27% | 0% |
-| plus 4 more | | | | |
+| `openai/gpt-4.1-mini` | `azure` | Azure | 63% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 63% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 22% | 100% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 43% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 20% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
