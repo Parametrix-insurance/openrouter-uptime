@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T20:01:42+00:00 UTC)
+## Current status (2026-10-13T20:15:32+00:00 UTC)
 
-461 models polled, 1407 inference endpoints:
-up 920, degraded 70, down 28, idle 389.
+461 models polled, 1406 inference endpoints:
+up 927, degraded 71, down 28, idle 380.
 
 Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 50% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 43% | 100% |
 | `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 20% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 20% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 100% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 17% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 17% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 3% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 90% | 40% |
 | `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 100% |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 100% | n/a |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 40% | 40% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 50% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | 0% |
 | plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
