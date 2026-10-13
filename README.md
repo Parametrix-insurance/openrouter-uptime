@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T07:16:15+00:00 UTC)
+## Current status (2026-10-13T07:30:36+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 926, degraded 83, down 22, idle 371.
+up 936, degraded 77, down 16, idle 373.
 
-Currently down (22):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 21% | 0% |
-| `minimax/minimax-m2.7` | `groq` | Groq | 57% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 76% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 40% |
+| `meta/muse-glimmer-30b` | `together` | Together | 27% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 46% | 40% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 60% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `novita/fp8` | Novita | 60% | 80% |
-| `xiaomi/mimo-v2.6-flash` | `darkbloom/fp4` | Darkbloom | 67% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 41% | 40% |
-| plus 7 more | | | | |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 43% | 0% |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 71% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `darkbloom/fp4` | Darkbloom | 57% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 52% | 60% |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
