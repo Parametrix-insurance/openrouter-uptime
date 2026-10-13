@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T22:15:21+00:00 UTC)
+## Current status (2026-10-13T22:31:54+00:00 UTC)
 
 461 models polled, 1409 inference endpoints:
-up 907, degraded 84, down 20, idle 398.
+up 932, degraded 61, down 15, idle 401.
 
-Currently down (20):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 10% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 20% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 23% | 80% |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 7% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 100% |
 | `google/gemini-4-argon` | `google-vertex/global/priority` | Google | n/a | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 83% | 100% |
-| `inception/mercury-2.5` | `inception` | Inception | 23% | 100% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 13% | 60% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 40% |
-| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | n/a |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 17% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 60% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 33% | n/a |
 | `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 3% | 20% |
-| plus 5 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 41% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 25% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
