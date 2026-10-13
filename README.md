@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T10:33:14+00:00 UTC)
+## Current status (2026-10-13T10:48:06+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 926, degraded 73, down 28, idle 375.
+up 931, degraded 59, down 29, idle 383.
 
-Currently down (28):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 71% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 57% | 100% |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 30% | 100% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 33% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 60% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | n/a |
-| `inception/mercury-2.5` | `inception` | Inception | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 25% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 100% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 80% | 60% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 67% | 67% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 67% | 67% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 90% | n/a |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 40% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
+| `inception/mercury-2.5` | `inception` | Inception | 10% | 60% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 100% |
-| `openai/gpt-6-luna` | `azure` | Azure | 27% | 0% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 33% | 20% |
-| plus 13 more | | | | |
+| `openai/gpt-6-luna` | `azure` | Azure | 7% | 0% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
