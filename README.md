@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T03:03:13+00:00 UTC)
+## Current status (2026-10-13T03:18:04+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 917, degraded 63, down 20, idle 402.
+up 915, degraded 60, down 22, idle 405.
 
-Currently down (20):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 54% | 67% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 40% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 43% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 18% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 27% | 80% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 27% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 0% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 38% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 87% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 17% | n/a |
-| `x-ai/grok-4.3` | `xai/zdr` | xAI | 73% | 100% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 47% | 80% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
+| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 37% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-27b` | `deepinfra/bf16` | DeepInfra | 60% | 20% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 42% | 0% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
-| plus 5 more | | | | |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
