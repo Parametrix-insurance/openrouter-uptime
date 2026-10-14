@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T20:01:05+00:00 UTC)
+## Current status (2026-10-14T20:16:00+00:00 UTC)
 
-462 models polled, 1412 inference endpoints:
-up 945, degraded 74, down 15, idle 378.
+462 models polled, 1411 inference endpoints:
+up 948, degraded 69, down 18, idle 376.
 
-Currently down (15):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 43% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 13% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 60% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 47% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 50% | n/a |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `wafer` | Wafer | 40% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 7% | 0% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 46% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 40% | 40% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 60% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 3% | 0% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 62% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
-| `z-ai/glm-5.3` | `modelrun/fp4` | ModelRun | 25% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `makora/fp8` | Makora | 53% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 57% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 40% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
