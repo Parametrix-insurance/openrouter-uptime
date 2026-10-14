@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T08:16:32+00:00 UTC)
+## Current status (2026-10-14T08:32:39+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 922, degraded 83, down 32, idle 371.
+up 936, degraded 75, down 32, idle 365.
 
 Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `sail-research/fp4` | Sail Research | 100% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 80% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 25% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 25% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 13% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 74% | 0% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 86% | 80% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 29% | 67% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 50% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 30% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 10% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 30% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 10% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 10% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 50% | 100% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 25% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 0% |
 | plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
