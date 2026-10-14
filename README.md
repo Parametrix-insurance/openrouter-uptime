@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T13:30:22+00:00 UTC)
+## Current status (2026-10-14T13:47:58+00:00 UTC)
 
 462 models polled, 1409 inference endpoints:
-up 914, degraded 104, down 25, idle 366.
+up 912, degraded 105, down 25, idle 367.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-4.5` | `azure/global` | Azure | 25% | n/a |
-| `anthropic/claude-opus-5.5` | `azure/global` | Azure | 58% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 3% | 20% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 18% | 100% |
-| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 100% | 100% |
+| `anthropic/claude-haiku-4.5` | `azure/global` | Azure | 50% | 60% |
+| `anthropic/claude-opus-5.5` | `azure/global` | Azure | 60% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 17% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 3% | 0% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 50% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | n/a |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 20% | 0% |
-| `openai/gpt-5` | `azure` | Azure | 33% | n/a |
 | `openai/gpt-5.6-sol` | `azure/us` | Azure | 40% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 50% | 20% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 23% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 33% | 0% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
