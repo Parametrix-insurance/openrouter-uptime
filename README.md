@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T12:31:15+00:00 UTC)
+## Current status (2026-10-14T12:46:29+00:00 UTC)
 
 462 models polled, 1409 inference endpoints:
-up 911, degraded 83, down 33, idle 382.
+up 917, degraded 78, down 36, idle 378.
 
-Currently down (33):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 40% | 100% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 38% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 40% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 60% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 57% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 13% | 50% |
 | `google/gemini-2.5-pro` | `google-vertex/us` | Google | 0% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 38% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 13% | 50% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/us` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 53% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 37% | 100% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 50% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 33% | 50% |
-| `moonshotai/kimi-k3` | `makora/fp4` | Makora | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 43% | 80% |
-| `openai/gpt-4.1` | `azure` | Azure | 13% | 0% |
-| plus 18 more | | | | |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 54% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 50% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 30% | 25% |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
