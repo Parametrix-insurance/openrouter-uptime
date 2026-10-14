@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T16:32:03+00:00 UTC)
+## Current status (2026-10-14T16:46:04+00:00 UTC)
 
-462 models polled, 1411 inference endpoints:
-up 938, degraded 78, down 32, idle 363.
+462 models polled, 1412 inference endpoints:
+up 924, degraded 69, down 32, idle 387.
 
 Currently down (32):
 
@@ -98,14 +98,14 @@ Currently down (32):
 | `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 73% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 80% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 73% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 75% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 75% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 93% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 11% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 20% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | 75% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 83% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 66% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 46% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 7% | 50% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 7% | 0% |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
