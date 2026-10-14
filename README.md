@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T06:17:01+00:00 UTC)
+## Current status (2026-10-14T06:33:00+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 916, degraded 63, down 32, idle 397.
+up 929, degraded 64, down 27, idle 388.
 
-Currently down (32):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 40% | 80% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 75% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 90% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 7% | 40% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 50% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 10% | 0% |
-| `minimax/minimax-m2.7` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 38% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 60% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 13% | 40% |
+| `meta/muse-wonder` | `meta` | Meta | 47% | 100% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 93% | 60% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 44% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 17 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 0% |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 33% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 5% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
