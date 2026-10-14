@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T00:45:46+00:00 UTC)
+## Current status (2026-10-14T01:02:15+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 904, degraded 51, down 18, idle 435.
+up 878, degraded 70, down 17, idle 443.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 80% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 46% | n/a |
-| `google/gemma-4-31b-it` | `modelrun/fp4` | ModelRun | 40% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 50% |
-| `minimax/minimax-m2.7` | `groq` | Groq | 43% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 33% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 77% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 83% | 100% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 38% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 50% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 17% | 80% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
-| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 30% | 0% |
+| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 100% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 67% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 67% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `qwen/qwen3.8-27b` | `modelrun/fp4` | ModelRun | 50% | n/a |
-| plus 3 more | | | | |
+| `tencent/hy3` | `atlas-cloud/fp8` | AtlasCloud | 81% | 60% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
