@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T12:01:41+00:00 UTC)
+## Current status (2026-10-14T12:16:37+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 950, degraded 67, down 24, idle 367.
+up 925, degraded 82, down 21, idle 380.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 100% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 7% | 40% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 80% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 6% | n/a |
-| `meta/muse-glimmer-30b` | `together` | Together | 39% | 100% |
-| `moonshotai/kimi-k3` | `makora/fp4` | Makora | 36% | 0% |
-| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 100% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 40% |
-| `openai/gpt-4.1` | `azure` | Azure | 27% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 67% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 80% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 20% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 0% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 57% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 33% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 40% | 75% |
+| `moonshotai/kimi-k3` | `makora/fp4` | Makora | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-4.1` | `azure` | Azure | 10% | 40% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 23% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
 | `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
-| plus 9 more | | | | |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
