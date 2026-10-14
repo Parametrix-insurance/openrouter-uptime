@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T08:46:20+00:00 UTC)
+## Current status (2026-10-14T09:02:32+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 933, degraded 75, down 27, idle 373.
+up 944, degraded 69, down 33, idle 362.
 
-Currently down (27):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `sail-research/fp4` | Sail Research | 35% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 47% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 40% |
-| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 3% | 20% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 43% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 10% | 0% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 3% | 20% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 10% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 20% | 40% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 86% | 60% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 20% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 93% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 12 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 70% | 0% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
