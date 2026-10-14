@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T03:02:13+00:00 UTC)
+## Current status (2026-10-14T03:15:51+00:00 UTC)
 
 462 models polled, 1410 inference endpoints:
-up 901, degraded 66, down 33, idle 410.
+up 909, degraded 70, down 30, idle 401.
 
-Currently down (33):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 20% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 20% | 20% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 80% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 33% | 60% |
+| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 47% | 80% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 53% | 100% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 50% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 60% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 39% | n/a |
-| plus 18 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 36% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 3% | 20% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
