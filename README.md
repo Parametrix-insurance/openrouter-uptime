@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T04:02:40+00:00 UTC)
+## Current status (2026-10-14T04:17:35+00:00 UTC)
 
 462 models polled, 1410 inference endpoints:
-up 908, degraded 66, down 32, idle 404.
+up 891, degraded 79, down 24, idle 416.
 
-Currently down (32):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 27% | 80% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 43% | 80% |
 | `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 57% | 60% |
 | `google/gemma-4-26b-a4b-it:free` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 60% |
 | `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 12% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 30% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 53% | 20% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 40% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 47% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | 25% |
-| plus 17 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 23% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 3% | 20% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
