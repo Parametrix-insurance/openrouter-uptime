@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T01:32:28+00:00 UTC)
+## Current status (2026-10-14T01:45:55+00:00 UTC)
 
 462 models polled, 1409 inference endpoints:
-up 873, degraded 65, down 34, idle 437.
+up 882, degraded 59, down 30, idle 438.
 
-Currently down (34):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 82% | n/a |
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 27% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 40% | 0% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 43% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 47% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 43% | 60% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 47% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 55% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `atlas-cloud/fp8` | AtlasCloud | 100% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `atlas-cloud/fp8` | AtlasCloud | 47% | 0% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 50% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `atlas-cloud/fp8` | AtlasCloud | 50% | 60% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 47% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 0% | 0% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | n/a |
+| `meituan/longcat-2.0` | `atlas-cloud/fp8` | AtlasCloud | 53% | 60% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 17% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 19 more | | | | |
+| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 48% | 50% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
