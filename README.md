@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T11:46:26+00:00 UTC)
+## Current status (2026-10-14T12:01:41+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 939, degraded 72, down 22, idle 375.
+up 950, degraded 67, down 24, idle 367.
 
-Currently down (22):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 100% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 80% | 100% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex/global` | Google | 17% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 38% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 38% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 52% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 48% | 67% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 47% | 40% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 20% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 50% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| plus 7 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 7% | 40% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 80% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `cloudflare/fp8` | Cloudflare | 6% | n/a |
+| `meta/muse-glimmer-30b` | `together` | Together | 39% | 100% |
+| `moonshotai/kimi-k3` | `makora/fp4` | Makora | 36% | 0% |
+| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 100% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 40% |
+| `openai/gpt-4.1` | `azure` | Azure | 27% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 67% | 60% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
