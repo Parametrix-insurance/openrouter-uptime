@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T20:16:00+00:00 UTC)
+## Current status (2026-10-14T20:31:44+00:00 UTC)
 
 462 models polled, 1411 inference endpoints:
-up 948, degraded 69, down 18, idle 376.
+up 929, degraded 73, down 17, idle 392.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `wafer` | Wafer | 40% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 7% | 0% |
-| `minimax/minimax-m2.7` | `groq` | Groq | 46% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 40% | 40% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 60% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 60% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 3% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `makora/fp8` | Makora | 53% | 0% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 57% | 0% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | 0% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 40% |
-| plus 3 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 17% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 43% | 100% |
+| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 70% | n/a |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 60% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `venice/fp8` | Venice | 37% | 20% |
+| `xiaomi/mimo-v2.6-flash` | `makora/fp8` | Makora | 47% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 84% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 43% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 41% | 80% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 40% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
