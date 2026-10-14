@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T19:03:10+00:00 UTC)
+## Current status (2026-10-14T19:18:12+00:00 UTC)
 
 462 models polled, 1412 inference endpoints:
-up 940, degraded 57, down 21, idle 394.
+up 926, degraded 67, down 19, idle 400.
 
-Currently down (21):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 100% | n/a |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | n/a |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 50% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 52% | 50% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 30% | 40% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 60% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 67% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 67% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 23% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 6% | 0% |
+| `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | 92% | 60% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 56% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 33% | 40% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
-| `scaledown/summarize` | `scaledown` | ScaleDown | 50% | 50% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 78% | 100% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 67% | 60% |
 | `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
-| plus 6 more | | | | |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 58% | 40% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
