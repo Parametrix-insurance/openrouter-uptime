@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T06:33:00+00:00 UTC)
+## Current status (2026-10-14T06:46:12+00:00 UTC)
 
 462 models polled, 1408 inference endpoints:
-up 929, degraded 64, down 27, idle 388.
+up 922, degraded 60, down 29, idle 397.
 
-Currently down (27):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 47% | 20% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 63% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 63% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 67% | 0% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 60% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 60% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 23% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 13% | 40% |
-| `meta/muse-wonder` | `meta` | Meta | 47% | 100% |
-| `moonshotai/kimi-k2.5` | `novita` | Novita | 93% | 60% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 44% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 0% |
-| `qwen/qwen3-235b-a22b-thinking-2507` | `venice/fp8` | Venice | 33% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 5% | n/a |
-| plus 12 more | | | | |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 76% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 47% | 100% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 93% | 100% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
