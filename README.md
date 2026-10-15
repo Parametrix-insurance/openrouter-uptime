@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T15:31:49+00:00 UTC)
+## Current status (2026-10-15T15:46:46+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 952, degraded 82, down 24, idle 356.
+up 968, degraded 63, down 26, idle 357.
 
-Currently down (24):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 33% | 20% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 22% | n/a |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 47% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 20% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 37% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 25% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 29% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 38% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 45% | 0% |
+| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 47% | 100% |
 | `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 79% | 67% |
-| plus 9 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 80% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 64% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 64% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 43% | 40% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
