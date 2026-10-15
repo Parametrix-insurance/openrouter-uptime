@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T16:31:57+00:00 UTC)
+## Current status (2026-10-15T16:49:29+00:00 UTC)
 
-462 models polled, 1414 inference endpoints:
-up 962, degraded 72, down 24, idle 356.
+462 models polled, 1416 inference endpoints:
+up 920, degraded 55, down 21, idle 420.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 0% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 22% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 44% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | n/a |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 38% | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 30% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 40% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 6% | n/a |
 | `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 52% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 38% | 0% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 50% | 0% |
-| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 27% | n/a |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 50% | n/a |
-| plus 9 more | | | | |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 11% | n/a |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 57% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 33% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 12% | n/a |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 0% | n/a |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
