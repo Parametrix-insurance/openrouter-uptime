@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T20:45:22+00:00 UTC)
+## Current status (2026-10-15T21:03:21+00:00 UTC)
 
 463 models polled, 1422 inference endpoints:
-up 940, degraded 69, down 26, idle 387.
+up 938, degraded 65, down 30, idle 389.
 
-Currently down (26):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 73% | 0% |
-| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 73% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 8% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 33% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 87% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 3% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 10% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 33% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 20% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 53% | n/a |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 57% | 80% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 4% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 40% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 7% | 0% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 5% | 0% |
+| `minimax/minimax-m2.7` | `gmicloud/fp8` | GMICloud | 60% | n/a |
+| `minimax/minimax-m3` | `mara` | Mara | 100% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 100% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 60% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 60% |
-| plus 11 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 20% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
