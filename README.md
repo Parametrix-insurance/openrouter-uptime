@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T21:30:43+00:00 UTC)
+## Current status (2026-10-15T21:46:32+00:00 UTC)
 
 463 models polled, 1423 inference endpoints:
-up 962, degraded 57, down 25, idle 379.
+up 958, degraded 51, down 25, idle 389.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 75% | 100% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 4% | 33% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 7% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 60% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 75% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 21% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 86% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 20% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 7% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 80% | 80% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 12% | 33% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 27% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 40% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 10% | 60% |
+| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 64% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 8% | 0% |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 42% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 17% | 50% |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
