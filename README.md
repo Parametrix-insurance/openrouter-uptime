@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T00:17:08+00:00 UTC)
+## Current status (2026-10-15T00:31:04+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 926, degraded 61, down 15, idle 412.
+up 931, degraded 60, down 18, idle 405.
 
-Currently down (15):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 52% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 76% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 75% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 53% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 68% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 100% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 23% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 57% | 60% |
-| `x-ai/grok-4.3` | `xai/zdr` | xAI | 63% | 0% |
+| `minimax/minimax-m2.7` | `atlas-cloud/fp8` | AtlasCloud | 25% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 50% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 33% | n/a |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 50% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 75% | 0% |
-| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
-| `z-ai/glm-5.3-flash` | `sail-research/us` | Sail Research | 17% | 0% |
-| `z-ai/glm-5.3-flash` | `gmicloud/fp8` | GMICloud | 77% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 47% | 40% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 20% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
