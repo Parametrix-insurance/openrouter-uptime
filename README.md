@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T21:46:32+00:00 UTC)
+## Current status (2026-10-15T22:02:28+00:00 UTC)
 
 463 models polled, 1423 inference endpoints:
-up 958, degraded 51, down 25, idle 389.
+up 952, degraded 51, down 21, idle 399.
 
-Currently down (25):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 60% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 75% | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 21% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 86% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 20% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 7% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 23% | 40% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 75% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 57% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 55% | 25% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 80% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 64% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 8% | 0% |
-| `moonshotai/kimi-k2.6` | `phala` | Phala | 42% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 17% | 50% |
-| plus 10 more | | | | |
+| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 53% | 100% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 18% | 0% |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 50% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 10% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 80% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-21 20:31** — **3 models added to the catalog in one poll**: `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
 - **2026-09-22 15:01** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-20b:batch`.
 - **2026-09-22 15:15** — **5 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-flash-vision-exp:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `meta/muse-glimmer-30b:batch`, `z-ai/glm-5.2:batch`.
 - **2026-09-22 18:15** — **3 models added to the catalog in one poll**: `openai/gpt-6-sol`, `openai/gpt-6-sol-pro`, `openai/gpt-6-sol:batch`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-06 23:48** — provider `openai` changed its status page.
 - **2026-10-09 16:17** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
 - **2026-10-13 18:45** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
+- **2026-10-15 22:02** — provider `makora` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
