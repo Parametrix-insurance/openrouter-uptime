@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T16:02:54+00:00 UTC)
+## Current status (2026-10-15T16:17:03+00:00 UTC)
 
-462 models polled, 1414 inference endpoints:
-up 962, degraded 68, down 21, idle 363.
+461 models polled, 1413 inference endpoints:
+up 960, degraded 76, down 26, idle 351.
 
-Currently down (21):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | 100% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 0% | 0% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 44% | 80% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 44% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 62% | 0% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 44% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 33% | 40% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 5% | 0% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 13% | 0% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
-| plus 6 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 25% | 33% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | n/a |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 34% | 75% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
+| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 70% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
