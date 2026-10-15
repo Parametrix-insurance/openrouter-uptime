@@ -85,29 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T00:45:51+00:00 UTC)
+## Current status (2026-10-15T01:02:00+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 923, degraded 58, down 21, idle 412.
+up 914, degraded 59, down 21, idle 420.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 45% | 50% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 75% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `novita/fp8` | Novita | 50% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 42% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 43% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 92% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 20% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 20% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `darkbloom/fp4` | Darkbloom | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 6% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 89% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 63% | 0% |
+| `qwen/qwen3.5-35b-a3b` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 10% | 0% |
 | `x-ai/grok-4.7` | `xai/zdr` | xAI | 93% | 100% |
 | plus 6 more | | | | |
 
