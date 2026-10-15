@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T16:17:03+00:00 UTC)
+## Current status (2026-10-15T16:31:57+00:00 UTC)
 
-461 models polled, 1413 inference endpoints:
-up 960, degraded 76, down 26, idle 351.
+462 models polled, 1414 inference endpoints:
+up 962, degraded 72, down 24, idle 356.
 
-Currently down (26):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | 100% |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 0% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 44% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 25% | 33% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 41% | n/a |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 34% | 75% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 38% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 30% | 0% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 52% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 38% | 0% |
 | `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 70% | 0% |
-| plus 11 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 50% | 0% |
+| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 27% | n/a |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 50% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
