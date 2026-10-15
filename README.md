@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T16:49:29+00:00 UTC)
+## Current status (2026-10-15T17:02:29+00:00 UTC)
 
 462 models polled, 1416 inference endpoints:
-up 920, degraded 55, down 21, idle 420.
+up 856, degraded 49, down 24, idle 487.
 
-Currently down (21):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 22% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 44% | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 33% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 33% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | 67% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 80% | 67% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 40% | 0% |
+| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 75% | n/a |
+| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | n/a |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 40% | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 6% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 11% | n/a |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 57% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 33% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 12% | n/a |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 0% | n/a |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 11% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 38% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 17% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
