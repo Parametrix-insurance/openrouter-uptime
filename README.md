@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T07:01:53+00:00 UTC)
+## Current status (2026-10-15T07:17:03+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 935, degraded 67, down 27, idle 385.
+up 959, degraded 69, down 22, idle 364.
 
-Currently down (27):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | 67% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `inclusionai/ling-3.1-flash` | `deepinfra/fp4` | DeepInfra | 84% | n/a |
 | `minimax/minimax-m1` | `minimax` | Minimax | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 50% | 80% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 50% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 57% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 71% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 30% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 78% | 60% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 50% | 50% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 37% | 0% |
-| plus 12 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 13% | 40% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 64% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 75% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 7% | 0% |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 97% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
