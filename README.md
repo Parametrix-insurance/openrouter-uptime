@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T06:17:49+00:00 UTC)
+## Current status (2026-10-15T06:32:36+00:00 UTC)
 
-462 models polled, 1413 inference endpoints:
-up 926, degraded 50, down 40, idle 397.
+462 models polled, 1414 inference endpoints:
+up 955, degraded 45, down 36, idle 378.
 
-Currently down (40):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | 50% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 50% | n/a |
 | `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 52% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 27% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 44% | 0% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 100% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 20% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `together` | Together | 27% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 24% | 0% |
-| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 67% | 100% |
-| plus 25 more | | | | |
+| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 20% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 33% | 80% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 19% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `together` | Together | 23% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 32% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m1` | `minimax` | Minimax | 0% | 0% |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
