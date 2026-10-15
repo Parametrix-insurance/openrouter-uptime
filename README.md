@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T12:17:47+00:00 UTC)
+## Current status (2026-10-15T12:32:02+00:00 UTC)
 
 462 models polled, 1415 inference endpoints:
-up 959, degraded 74, down 29, idle 353.
+up 963, degraded 60, down 35, idle 357.
 
-Currently down (29):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 100% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 40% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | 100% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 100% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 100% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 60% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 7% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `inclusionai/ling-3.1-flash` | `deepinfra/fp4` | DeepInfra | 72% | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 72% | 25% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 40% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 0% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-9b` | `together` | Together | 60% | 40% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 38% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 50% | n/a |
-| plus 14 more | | | | |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
