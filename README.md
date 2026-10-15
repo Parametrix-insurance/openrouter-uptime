@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T11:02:20+00:00 UTC)
+## Current status (2026-10-15T11:17:50+00:00 UTC)
 
 462 models polled, 1415 inference endpoints:
-up 953, degraded 52, down 21, idle 389.
+up 952, degraded 59, down 26, idle 378.
 
-Currently down (21):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 86% | 100% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 80% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 13% | 40% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 53% | 20% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 23% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 40% | 60% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 86% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 81% | 100% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 50% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 81% | 75% |
 | `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-9b` | `together` | Together | 40% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 10% | 0% |
-| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 48% | 25% |
+| `qwen/qwen3.5-9b` | `together` | Together | 47% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 48% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 58% | n/a |
-| plus 6 more | | | | |
+| `xiaomi/mimo-v2.5-pro` | `digitalocean` | DigitalOcean | 17% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 0% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
