@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T07:32:38+00:00 UTC)
+## Current status (2026-10-15T07:46:09+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 942, degraded 74, down 23, idle 375.
+up 951, degraded 69, down 23, idle 371.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 77% | 100% |
-| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 20% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `inclusionai/ling-3.1-flash` | `deepinfra/fp4` | DeepInfra | 25% | n/a |
 | `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 50% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 20% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 17% | 60% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 20% | 20% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 10% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 76% | 100% |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `qwen/qwen3.5-9b` | `darkbloom/fp4` | Darkbloom | 59% | n/a |
 | `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 5% | 0% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
