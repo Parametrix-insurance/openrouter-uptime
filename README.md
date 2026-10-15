@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T19:47:00+00:00 UTC)
+## Current status (2026-10-15T20:01:10+00:00 UTC)
 
 463 models polled, 1422 inference endpoints:
-up 936, degraded 55, down 18, idle 413.
+up 950, degraded 56, down 16, idle 400.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `aion-labs/aion-3.0` | `aion-labs` | AionLabs | 50% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 40% | 80% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 50% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 21% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 24% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 20% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 70% | 100% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 25% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 29% | 50% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 17% | 40% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 47% | 67% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 17% | 0% |
+| `qwen/qwen3.5-9b` | `together` | Together | 82% | 40% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 7% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 62% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 20% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
