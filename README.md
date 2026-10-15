@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T04:46:54+00:00 UTC)
+## Current status (2026-10-15T05:03:02+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 924, degraded 57, down 30, idle 403.
+up 924, degraded 67, down 26, idle 397.
 
-Currently down (30):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 68% | 0% |
-| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 33% | 60% |
-| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `cloudflare` | Cloudflare | 47% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 22% | 50% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 30% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `alibaba` | Alibaba | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 60% |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 80% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 43% | 80% |
-| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 22% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 50% | 100% |
-| plus 15 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 27% | 80% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
+| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 62% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 83% | 100% |
+| `stepfun/step-5-preview` | `deepinfra/fp8` | DeepInfra | 62% | 100% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
