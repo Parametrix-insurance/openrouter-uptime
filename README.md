@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T12:47:31+00:00 UTC)
+## Current status (2026-10-15T13:01:07+00:00 UTC)
 
 462 models polled, 1415 inference endpoints:
-up 961, degraded 62, down 30, idle 362.
+up 969, degraded 63, down 27, idle 356.
 
-Currently down (30):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `inclusionai/ling-3.1-flash` | `deepinfra/fp4` | DeepInfra | 25% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 43% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 43% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 81% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 3% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 3% | 20% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 75% | 100% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 15 more | | | | |
+| `openai/gpt-oss-120b` | `mara` | Mara | 77% | 100% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 15% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 52% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
