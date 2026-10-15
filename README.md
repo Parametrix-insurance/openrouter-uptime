@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T15:02:55+00:00 UTC)
+## Current status (2026-10-15T15:15:32+00:00 UTC)
 
-461 models polled, 1413 inference endpoints:
-up 952, degraded 74, down 27, idle 360.
+462 models polled, 1414 inference endpoints:
+up 954, degraded 86, down 18, idle 356.
 
-Currently down (27):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 33% | 0% |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 37% | 60% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3-pro-image-preview` | `google-ai-studio/global/flex` | Google AI Studio | 50% | 0% |
-| `google/gemini-3-pro-image-preview` | `google-ai-studio/global` | Google AI Studio | 40% | 0% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 50% | 20% |
-| `inclusionai/ling-3.1-flash` | `deepinfra/fp4` | DeepInfra | 62% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 53% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 19% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 53% | 100% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `google/gemini-3-pro-image-preview` | `google-ai-studio/global/flex` | Google AI Studio | 0% | n/a |
+| `google/gemini-3-pro-image-preview` | `google-ai-studio/global` | Google AI Studio | 30% | 100% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 40% | 40% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| plus 12 more | | | | |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 11% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 17% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 27% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 11% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 20% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
+| `z-ai/glm-5.1` | `phala` | Phala | n/a | n/a |
+| `z-ai/glm-5.2` | `phala/fp8` | Phala | 0% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
