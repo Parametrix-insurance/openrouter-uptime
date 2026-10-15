@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T14:30:48+00:00 UTC)
+## Current status (2026-10-15T14:48:04+00:00 UTC)
 
 461 models polled, 1413 inference endpoints:
-up 980, degraded 69, down 22, idle 342.
+up 953, degraded 82, down 21, idle 357.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 7% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 20% | 0% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 77% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 39% | 67% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 23% | 40% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 44% | n/a |
-| `openai/gpt-5.6-luna` | `openai/flex` | OpenAI | 77% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 50% | 100% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 20% | n/a |
-| plus 7 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
+| `openai/gpt-5.6-luna` | `openai/flex` | OpenAI | 77% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 39% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 20% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 23% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 57% | 20% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 3% | 20% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 40% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
