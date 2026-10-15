@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T02:33:10+00:00 UTC)
+## Current status (2026-10-15T02:47:37+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 901, degraded 78, down 30, idle 405.
+up 885, degraded 73, down 33, idle 423.
 
-Currently down (30):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 27% | 80% |
-| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 70% | 0% |
-| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 43% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 17% | 0% |
+| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 48% | 50% |
 | `deepseek/deepseek-v4-pro-0813` | `novita/fp8` | Novita | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 7% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepseek` | DeepSeek | 3% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 44% | 0% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 80% | n/a |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 63% | 80% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 83% | 100% |
-| plus 15 more | | | | |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
