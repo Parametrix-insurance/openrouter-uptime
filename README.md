@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T13:01:07+00:00 UTC)
+## Current status (2026-10-15T13:17:23+00:00 UTC)
 
-462 models polled, 1415 inference endpoints:
-up 969, degraded 63, down 27, idle 356.
+461 models polled, 1413 inference endpoints:
+up 960, degraded 75, down 30, idle 348.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 67% | 67% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 33% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 33% | 0% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 69% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 3% | 20% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 75% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 23% | 60% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 40% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 77% | 100% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 15% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 52% | n/a |
-| plus 12 more | | | | |
+| `openai/gpt-oss-120b` | `mara` | Mara | 64% | n/a |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 43% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 10% | n/a |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
