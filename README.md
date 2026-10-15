@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T01:02:00+00:00 UTC)
+## Current status (2026-10-15T01:17:21+00:00 UTC)
 
 462 models polled, 1414 inference endpoints:
-up 914, degraded 59, down 21, idle 420.
+up 904, degraded 63, down 25, idle 422.
 
-Currently down (21):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `novita/fp8` | Novita | 50% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/priority` | Google | 42% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 43% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `moonshotai/kimi-k2.6` | `streamlake/fp8` | StreamLake | 92% | n/a |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 40% | 80% |
+| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 30% | 80% |
+| `deepseek/deepseek-v4-pro-0813` | `novita/fp8` | Novita | 7% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 27% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | 80% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 33% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 43% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 56% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 63% | 0% |
-| `qwen/qwen3.5-35b-a3b` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 10% | 0% |
-| `x-ai/grok-4.7` | `xai/zdr` | xAI | 93% | 100% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 23% | 60% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
