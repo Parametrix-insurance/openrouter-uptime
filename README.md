@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T22:33:19+00:00 UTC)
+## Current status (2026-10-15T22:45:43+00:00 UTC)
 
 465 models polled, 1425 inference endpoints:
-up 948, degraded 53, down 25, idle 399.
+up 953, degraded 49, down 23, idle 400.
 
-Currently down (25):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 13% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 20% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 20% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 28% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 80% | n/a |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 79% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 17% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 27% | 20% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 40% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 14% | 0% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 57% | 100% |
 | `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 80% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 47% | 20% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 44% | 0% |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 20% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 33% | 100% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 40% | 20% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 85% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
