@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T06:01:05+00:00 UTC)
+## Current status (2026-10-16T06:17:44+00:00 UTC)
 
 465 models polled, 1451 inference endpoints:
-up 950, degraded 65, down 34, idle 402.
+up 939, degraded 88, down 27, idle 397.
 
-Currently down (34):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 31% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 13% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 50% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 32% | 50% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 3% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 53% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 37% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 79% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 79% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 61% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 86% | n/a |
 | `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
 | `microsoft/phi-4` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| plus 19 more | | | | |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 50% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 10% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
