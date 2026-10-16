@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T08:31:12+00:00 UTC)
+## Current status (2026-10-16T08:47:30+00:00 UTC)
 
 465 models polled, 1453 inference endpoints:
-up 959, degraded 86, down 29, idle 379.
+up 976, degraded 73, down 28, idle 376.
 
-Currently down (29):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 47% | 100% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 38% | 100% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 40% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 40% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 71% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 40% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | 20% |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 14% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 20% | n/a |
-| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/flex` | DeepInfra | 20% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 48% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 33% | 100% |
+| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `microsoft/phi-4` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| plus 14 more | | | | |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 50% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
