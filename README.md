@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T20:03:12+00:00 UTC)
+## Current status (2026-10-16T20:17:43+00:00 UTC)
 
-467 models polled, 1457 inference endpoints:
-up 963, degraded 73, down 30, idle 391.
+467 models polled, 1458 inference endpoints:
+up 950, degraded 74, down 34, idle 400.
 
-Currently down (30):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 40% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | n/a |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 41% | 60% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 46% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 50% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 12% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
-| plus 15 more | | | | |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 17% | 0% |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
