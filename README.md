@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T00:47:34+00:00 UTC)
+## Current status (2026-10-16T01:00:27+00:00 UTC)
 
 465 models polled, 1426 inference endpoints:
-up 924, degraded 52, down 27, idle 423.
+up 922, degraded 59, down 24, idle 421.
 
-Currently down (27):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 39% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 67% | 0% |
-| `google/gemini-3.1-flash-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 72% | 100% |
-| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 32% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 21% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 41% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 28% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 21% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 80% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 10% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 19% | 0% |
+| `mistralai/mistral-large-4-0` | `mistral` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 37% | 60% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 12 more | | | | |
+| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 46% | n/a |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 23% | 40% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
