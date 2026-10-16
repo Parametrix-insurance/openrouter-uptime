@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T23:17:28+00:00 UTC)
+## Current status (2026-10-16T23:33:13+00:00 UTC)
 
 467 models polled, 1461 inference endpoints:
-up 949, degraded 63, down 31, idle 418.
+up 941, degraded 68, down 31, idle 421.
 
 Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 19% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | 50% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | 50% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 37% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 45% | 40% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 0% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 71% | 33% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 74% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 0% | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 81% | n/a |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 62% | 100% |
-| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 0% |
 | plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
