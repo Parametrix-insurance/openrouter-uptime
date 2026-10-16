@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T03:01:23+00:00 UTC)
+## Current status (2026-10-16T03:17:28+00:00 UTC)
 
 465 models polled, 1450 inference endpoints:
-up 896, degraded 65, down 36, idle 453.
+up 928, degraded 68, down 31, idle 423.
 
-Currently down (36):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 17% | 20% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 13% | 40% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 13% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 3% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 43% | 60% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 13% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 13% | 80% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 6% | 20% |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 56% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 37% | 75% |
-| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/flex` | DeepInfra | 60% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 40% | n/a |
 | `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| plus 21 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 10% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
