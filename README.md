@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T02:32:32+00:00 UTC)
+## Current status (2026-10-17T02:46:34+00:00 UTC)
 
 468 models polled, 1462 inference endpoints:
-up 907, degraded 57, down 23, idle 475.
+up 902, degraded 53, down 29, idle 478.
 
-Currently down (23):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 38% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 13% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 38% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 58% | 33% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2.7` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 7% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 38% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 59% | 50% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 50% | 50% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 33% | 100% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 25% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | 0% |
-| plus 8 more | | | | |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
