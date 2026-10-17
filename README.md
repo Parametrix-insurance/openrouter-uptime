@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T11:15:34+00:00 UTC)
+## Current status (2026-10-17T11:32:06+00:00 UTC)
 
-470 models polled, 1467 inference endpoints:
-up 997, degraded 47, down 23, idle 400.
+470 models polled, 1470 inference endpoints:
+up 1010, degraded 51, down 28, idle 381.
 
-Currently down (23):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 86% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 40% | 0% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 33% | 80% |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 43% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 45% | 75% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 25% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 76% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 33% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 4% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 40% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 65% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 17% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 15% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 40% | 60% |
-| plus 8 more | | | | |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 30% | 60% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 70% | 40% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
