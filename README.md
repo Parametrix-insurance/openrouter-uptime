@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T01:01:57+00:00 UTC)
+## Current status (2026-10-17T01:17:08+00:00 UTC)
 
-468 models polled, 1463 inference endpoints:
-up 929, degraded 42, down 24, idle 468.
+468 models polled, 1462 inference endpoints:
+up 916, degraded 62, down 18, idle 466.
 
-Currently down (24):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 42% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 71% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 69% | 100% |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 57% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | n/a | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 47% | 100% |
-| plus 9 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 22% | 50% |
+| `reflection/beam-1.0-501b-a23b` | `coreweave/fp4` | CoreWeave | 77% | 100% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
