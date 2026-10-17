@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T04:32:59+00:00 UTC)
+## Current status (2026-10-17T04:46:42+00:00 UTC)
 
 469 models polled, 1463 inference endpoints:
-up 922, degraded 53, down 35, idle 453.
+up 915, degraded 48, down 29, idle 471.
 
-Currently down (35):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 33% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
 | `anthropic/claude-sonnet-5` | `azure/global` | Azure | 40% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 50% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `dekallm` | DekaLLM | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 29% | 100% |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 24% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 20% |
 | `google/gemini-2.5-pro` | `google-vertex/global` | Google | 0% | 0% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | 0% |
 | `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 0% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 44% | 0% |
-| plus 20 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
