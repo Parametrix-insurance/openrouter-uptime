@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T04:01:43+00:00 UTC)
+## Current status (2026-10-17T04:16:15+00:00 UTC)
 
 469 models polled, 1463 inference endpoints:
-up 925, degraded 52, down 31, idle 455.
+up 911, degraded 67, down 29, idle 456.
 
-Currently down (31):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 36% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 53% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 10% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 43% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 21% | 25% |
 | `google/gemini-2.5-pro` | `google-vertex/global` | Google | 0% | 0% |
 | `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | 0% |
 | `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 7% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 0% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
 | `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| plus 16 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 42% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 78% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
