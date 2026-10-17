@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T18:16:43+00:00 UTC)
+## Current status (2026-10-17T18:32:21+00:00 UTC)
 
 470 models polled, 1472 inference endpoints:
-up 953, degraded 68, down 32, idle 419.
+up 962, degraded 70, down 24, idle 416.
 
-Currently down (32):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 7% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 45% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 3% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 10% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 80% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 63% | 100% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | n/a |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m2.7` | `groq` | Groq | 27% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 31% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 80% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 17 more | | | | |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 30% | 60% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 50% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
