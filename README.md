@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T23:00:31+00:00 UTC)
+## Current status (2026-10-17T23:15:26+00:00 UTC)
 
 471 models polled, 1473 inference endpoints:
-up 937, degraded 56, down 20, idle 460.
+up 944, degraded 63, down 26, idle 440.
 
-Currently down (20):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 20% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 74% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 40% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 0% |
+| `meta-llama/llama-4-maverick` | `novita/fp8` | Novita | 73% | 40% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 48% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 22% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 20% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 40% | 20% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 100% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 46% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 60% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 43% | n/a |
-| plus 5 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 46% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
