@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-17T22:48:15+00:00 UTC)
+## Current status (2026-10-17T23:00:31+00:00 UTC)
 
 471 models polled, 1473 inference endpoints:
-up 938, degraded 55, down 18, idle 462.
+up 937, degraded 56, down 20, idle 460.
 
-Currently down (18):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 44% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 9% | n/a |
-| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 73% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 50% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 33% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 74% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 40% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 22% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 20% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 45% | 50% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 60% | 67% |
-| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 20% | 33% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 9% | 0% |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 100% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `phala` | Phala | 46% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 60% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `novita` | Novita | 43% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
