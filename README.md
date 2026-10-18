@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T06:02:43+00:00 UTC)
+## Current status (2026-10-18T06:17:44+00:00 UTC)
 
 471 models polled, 1476 inference endpoints:
-up 963, degraded 41, down 17, idle 455.
+up 958, degraded 49, down 18, idle 451.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 60% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 53% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 20% | 40% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 50% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 73% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 63% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `wafer/fast` | Wafer | 40% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `cohere` | Cohere | 77% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 34% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 77% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 27% | 40% |
-| `scaledown/summarize` | `scaledown` | ScaleDown | 73% | 60% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| plus 2 more | | | | |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 65% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 50% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
