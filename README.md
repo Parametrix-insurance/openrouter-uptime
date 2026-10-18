@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T06:31:27+00:00 UTC)
+## Current status (2026-10-18T06:48:13+00:00 UTC)
 
 471 models polled, 1476 inference endpoints:
-up 959, degraded 52, down 24, idle 441.
+up 927, degraded 55, down 22, idle 472.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 56% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 45% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 0% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 53% | 100% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 50% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 43% | 100% |
 | `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 39% | 100% |
-| plus 9 more | | | | |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
