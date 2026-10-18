@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T20:47:54+00:00 UTC)
+## Current status (2026-10-18T21:02:17+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 967, degraded 43, down 27, idle 437.
+up 958, degraded 43, down 19, idle 454.
 
-Currently down (27):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 86% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 56% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 4% | 33% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 29% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 60% | 80% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 6% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure/us` | Azure | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 20% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
 | `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| plus 12 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 87% | 100% |
+| `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 42% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 42% | 40% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
