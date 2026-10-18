@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T01:31:29+00:00 UTC)
+## Current status (2026-10-18T01:47:28+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 940, degraded 53, down 22, idle 459.
+up 949, degraded 49, down 23, idle 453.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 20% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 0% | n/a |
 | `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 56% | 40% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 14% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 47% | 40% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 60% | 0% |
+| `openai/gpt-5.6-sol` | `azure` | Azure | 7% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 7 more | | | | |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
