@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T07:46:38+00:00 UTC)
+## Current status (2026-10-18T08:00:23+00:00 UTC)
 
 471 models polled, 1476 inference endpoints:
-up 951, degraded 46, down 16, idle 463.
+up 941, degraded 45, down 13, idle 477.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `gmicloud/fp8` | GMICloud | 40% | 60% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 59% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 8% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 67% | 100% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 58% | 80% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
 | `qwen/qwen3-coder-30b-a3b-instruct` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 30% | 0% |
-| plus 1 more | | | | |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 25% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 36% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
