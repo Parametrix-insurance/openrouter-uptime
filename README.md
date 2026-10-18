@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T21:02:17+00:00 UTC)
+## Current status (2026-10-18T21:15:30+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 958, degraded 43, down 19, idle 454.
+up 956, degraded 52, down 14, idle 452.
 
-Currently down (19):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 37% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 6% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 60% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 87% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
 | `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 42% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 42% | 40% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 40% | 20% |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 78% | 100% |
 | `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
-| plus 4 more | | | | |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 4% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 8% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
