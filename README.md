@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T08:00:23+00:00 UTC)
+## Current status (2026-10-18T08:16:36+00:00 UTC)
 
-471 models polled, 1476 inference endpoints:
-up 941, degraded 45, down 13, idle 477.
+471 models polled, 1475 inference endpoints:
+up 942, degraded 49, down 17, idle 467.
 
-Currently down (13):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 59% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 58% | 80% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
+| `anthropic/claude-opus-4.7` | `google-vertex/global` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 17% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 100% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 55% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | 25% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 40% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 43% | 60% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 0% | n/a |
 | `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
 | `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 25% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 36% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
