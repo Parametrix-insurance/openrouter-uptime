@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T21:31:07+00:00 UTC)
+## Current status (2026-10-18T21:45:48+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 941, degraded 54, down 22, idle 457.
+up 931, degraded 54, down 23, idle 466.
 
-Currently down (22):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `anthropic/claude-sonnet-4.5` | `azure/global` | Azure | 50% | 50% |
 | `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 33% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 72% | 40% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 37% | 20% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 0% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 53% | 60% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 68% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 7% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 20% |
 | `openai/gpt-6.1-sol` | `azure/us` | Azure | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 80% | 60% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
+| `perceptron/perceptron-mk1` | `perceptron` | Perceptron | 50% | 0% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 77% | 100% |
+| `qwen/qwen3.5-9b` | `together` | Together | 0% | 0% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 26% | 0% |
+| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 62% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
