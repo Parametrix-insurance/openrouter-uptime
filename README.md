@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T21:45:48+00:00 UTC)
+## Current status (2026-10-18T22:00:45+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 931, degraded 54, down 23, idle 466.
+up 928, degraded 61, down 18, idle 467.
 
-Currently down (23):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.5` | `azure/global` | Azure | 50% | 50% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 68% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 7% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 20% |
-| `openai/gpt-6.1-sol` | `azure/us` | Azure | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 32% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 37% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
-| `perceptron/perceptron-mk1` | `perceptron` | Perceptron | 50% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 77% | 100% |
-| `qwen/qwen3.5-9b` | `together` | Together | 0% | 0% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 26% | 0% |
-| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 62% | n/a |
-| plus 8 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 40% | 100% |
+| `perceptron/perceptron-mk1` | `perceptron` | Perceptron | 0% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 73% | 0% |
+| `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 31% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 20% |
+| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 70% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 80% | 20% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 7% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 25% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
