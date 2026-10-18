@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T22:46:41+00:00 UTC)
+## Current status (2026-10-18T23:01:47+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 944, degraded 51, down 18, idle 461.
+up 956, degraded 53, down 16, idle 449.
 
-Currently down (18):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 86% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | n/a |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
-| `nex-agi/nex-n2.5-pro` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 13% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 38% | 33% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 50% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 0% |
 | `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 18% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 33% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 57% | 100% |
-| `xiaomi/mimo-v2.6-flash` | `xiaomi/fp8` | Xiaomi | 73% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 62% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 17% | n/a |
-| plus 3 more | | | | |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 50% | 33% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 22% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
