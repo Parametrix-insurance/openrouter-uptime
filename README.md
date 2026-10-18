@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T23:01:47+00:00 UTC)
+## Current status (2026-10-18T23:16:18+00:00 UTC)
 
-471 models polled, 1474 inference endpoints:
-up 956, degraded 53, down 16, idle 449.
+471 models polled, 1475 inference endpoints:
+up 932, degraded 66, down 14, idle 463.
 
-Currently down (16):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 86% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 38% | 33% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 50% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 41% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 96% | 100% |
+| `microsoft/phi-4` | `deepinfra/bf16/flex` | DeepInfra | 100% | n/a |
+| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 53% | 40% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 53% | 20% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 50% | 33% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 22% | 0% |
-| plus 1 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 100% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 57% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 22% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
