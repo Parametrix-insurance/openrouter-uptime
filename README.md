@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T14:16:51+00:00 UTC)
+## Current status (2026-10-18T14:32:21+00:00 UTC)
 
-471 models polled, 1476 inference endpoints:
-up 954, degraded 56, down 23, idle 443.
+471 models polled, 1475 inference endpoints:
+up 937, degraded 59, down 25, idle 454.
 
-Currently down (23):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 29% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 30% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 20% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | 100% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 76% | 40% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 23% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 26% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 80% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 56% | n/a |
 | `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | 0% |
-| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 67% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 8 more | | | | |
+| `minimax/minimax-m2.7` | `groq` | Groq | 0% | n/a |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 67% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 37% | 60% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
