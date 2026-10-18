@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T10:02:08+00:00 UTC)
+## Current status (2026-10-18T10:16:16+00:00 UTC)
 
 471 models polled, 1477 inference endpoints:
-up 954, degraded 45, down 17, idle 461.
+up 960, degraded 52, down 15, idle 450.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 80% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 79% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 100% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 80% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 47% | 100% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 57% | 0% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 43% | 80% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 58% | 100% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 31% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 30% | 100% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 71% | 100% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 27% | 40% |
 | `x-ai/grok-4.20-multi-agent` | `xai` | xAI | n/a | n/a |
-| plus 2 more | | | | |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
