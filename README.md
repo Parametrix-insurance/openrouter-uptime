@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T22:00:45+00:00 UTC)
+## Current status (2026-10-18T22:16:24+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 928, degraded 61, down 18, idle 467.
+up 914, degraded 61, down 19, idle 480.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 32% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 37% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 40% | 100% |
 | `perceptron/perceptron-mk1` | `perceptron` | Perceptron | 0% | n/a |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 73% | 0% |
-| `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 31% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 20% |
-| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 70% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 80% | 20% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 7% | 0% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 25% | 0% |
-| plus 3 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 80% | 20% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 73% | 100% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 53% | 80% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 70% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 43% | 40% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 65% | 50% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 8% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 43% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
