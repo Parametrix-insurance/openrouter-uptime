@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-18T15:17:30+00:00 UTC)
+## Current status (2026-10-18T15:31:10+00:00 UTC)
 
 471 models polled, 1476 inference endpoints:
-up 943, degraded 50, down 29, idle 454.
+up 942, degraded 52, down 28, idle 454.
 
-Currently down (29):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 20% |
-| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 23% | 40% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 23% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 57% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 40% |
+| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 40% | 100% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 40% | 100% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | n/a |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 22% | 0% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 87% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 40% |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 35% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 14% | 0% |
 | `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
-| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 0% | n/a |
-| plus 14 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 0% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
