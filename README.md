@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T21:02:40+00:00 UTC)
+## Current status (2026-10-19T21:16:28+00:00 UTC)
 
 470 models polled, 1477 inference endpoints:
-up 976, degraded 59, down 22, idle 420.
+up 973, degraded 55, down 22, idle 427.
 
 Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 57% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 67% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 80% | 80% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 70% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 40% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 63% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 63% | 80% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 25% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 73% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | 67% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 73% | 75% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 8% | 0% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 47% | 100% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | n/a | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 17% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 74% | 100% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 5% | 100% |
+| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 67% | 80% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 44% | 40% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 46% | n/a |
 | plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
