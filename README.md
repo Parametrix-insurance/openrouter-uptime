@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T11:32:13+00:00 UTC)
+## Current status (2026-10-19T11:46:55+00:00 UTC)
 
 468 models polled, 1474 inference endpoints:
-up 977, degraded 70, down 27, idle 400.
+up 947, degraded 86, down 28, idle 413.
 
-Currently down (27):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 18% | 50% |
-| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 18% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 43% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 53% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 25% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 50% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 65% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 30% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-4.1-mini` | `azure` | Azure | 87% | 100% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 0% | n/a |
-| plus 12 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 62% | 50% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
