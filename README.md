@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T18:02:16+00:00 UTC)
+## Current status (2026-10-19T18:17:28+00:00 UTC)
 
-470 models polled, 1477 inference endpoints:
-up 981, degraded 69, down 20, idle 407.
+470 models polled, 1476 inference endpoints:
+up 975, degraded 79, down 23, idle 399.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 10% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 33% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 17% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 59% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 46% | 100% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 33% | 50% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 69% | 60% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 23% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 18% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
-| `openai/gpt-oss-120b` | `mara` | Mara | 20% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 80% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 28% | 25% |
-| plus 5 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 20% | 0% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 43% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 70% | 100% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 22% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 26% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 60% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
