@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T22:15:28+00:00 UTC)
+## Current status (2026-10-19T22:32:19+00:00 UTC)
 
-470 models polled, 1477 inference endpoints:
-up 963, degraded 53, down 18, idle 443.
+470 models polled, 1478 inference endpoints:
+up 931, degraded 82, down 21, idle 444.
 
-Currently down (18):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 74% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 80% | 100% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 75% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `primeintellect` | PrimeIntellect | 12% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | 0% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 41% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 60% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `primeintellect` | PrimeIntellect | 18% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 53% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 74% | 80% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 45% | 0% |
 | `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 40% | 50% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 50% | n/a |
-| plus 3 more | | | | |
+| `minimax/minimax-m2.5` | `venice` | Venice | 60% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 37% | 100% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 29% | 25% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 14% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 48% | 33% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
