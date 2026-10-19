@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T01:17:00+00:00 UTC)
+## Current status (2026-10-19T01:31:38+00:00 UTC)
 
 471 models polled, 1474 inference endpoints:
-up 933, degraded 60, down 17, idle 464.
+up 931, degraded 62, down 18, idle 463.
 
-Currently down (17):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 50% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 31% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 67% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 12% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 100% |
 | `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 17% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 36% | 25% |
-| `sao10k/l3.3-euryale-70b` | `nextbit/bf16` | NextBit | 67% | 75% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
-| plus 2 more | | | | |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 43% | 33% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 39% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
