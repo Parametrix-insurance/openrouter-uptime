@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T05:00:37+00:00 UTC)
+## Current status (2026-10-19T05:18:20+00:00 UTC)
 
 471 models polled, 1476 inference endpoints:
-up 951, degraded 50, down 22, idle 453.
+up 965, degraded 60, down 25, idle 426.
 
-Currently down (22):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 54% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 42% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 60% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 50% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 30% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.1-sol` | `azure/us` | Azure | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 25% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 9% | 0% |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
-| plus 7 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 100% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
