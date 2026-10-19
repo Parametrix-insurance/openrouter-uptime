@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T08:30:30+00:00 UTC)
+## Current status (2026-10-19T08:47:09+00:00 UTC)
 
 471 models polled, 1478 inference endpoints:
-up 992, degraded 71, down 31, idle 384.
+up 987, degraded 62, down 26, idle 403.
 
-Currently down (31):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 61% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 38% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 40% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 76% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 65% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 67% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 47% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 54% | 33% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `meta/muse-spark-open` | `baseten/fp4` | BaseTen | 67% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 37% | 60% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure/us` | Azure | 100% | 100% |
-| plus 16 more | | | | |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 7% | 40% |
+| `openai/gpt-6.1-sol` | `azure/us` | Azure | 50% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
