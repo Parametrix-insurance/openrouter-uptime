@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T23:16:35+00:00 UTC)
+## Current status (2026-10-19T23:33:01+00:00 UTC)
 
 470 models polled, 1478 inference endpoints:
-up 927, degraded 53, down 58, idle 440.
+up 927, degraded 54, down 61, idle 436.
 
-Currently down (58):
+Currently down (61):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 50% | n/a |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 43% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 43% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 6% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 43% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 8% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 43% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 65% | 100% |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 33% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 33% | 100% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 26% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 30% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 18% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 36% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 0% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 60% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 69% | 40% |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 43% | 0% |
-| plus 43 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 61% | 100% |
+| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 33% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 15% | n/a |
+| plus 46 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
