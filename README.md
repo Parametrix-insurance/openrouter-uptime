@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T07:48:09+00:00 UTC)
+## Current status (2026-10-19T08:00:42+00:00 UTC)
 
 471 models polled, 1478 inference endpoints:
-up 957, degraded 59, down 31, idle 431.
+up 975, degraded 54, down 32, idle 417.
 
-Currently down (31):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 19% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 7% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 50% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 3% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 33% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 33% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 100% |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 30% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 10% | 60% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 22% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 20% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2.7` | `groq` | Groq | 33% | 100% |
-| plus 16 more | | | | |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 56% | n/a |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
