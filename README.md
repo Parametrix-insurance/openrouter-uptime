@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T21:16:28+00:00 UTC)
+## Current status (2026-10-19T21:32:18+00:00 UTC)
 
 470 models polled, 1477 inference endpoints:
-up 973, degraded 55, down 22, idle 427.
+up 980, degraded 55, down 22, idle 420.
 
 Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 40% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 63% | 80% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 63% | 80% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 25% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 73% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 35% | 67% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 74% | 100% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 5% | 100% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 67% | 80% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 44% | 40% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 46% | n/a |
+| `arcee-ai/trinity-large-thinking` | `arcee-ai` | Arcee AI | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 65% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 74% | 100% |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 54% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 33% | 100% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 68% | 33% |
+| `moonshotai/kimi-k2.7-code` | `nebius/fp4` | Nebius | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 25% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 40% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 12% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 50% | 0% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 45% | 0% |
 | plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
