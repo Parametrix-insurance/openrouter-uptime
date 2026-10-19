@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T20:15:51+00:00 UTC)
+## Current status (2026-10-19T20:30:23+00:00 UTC)
 
 470 models polled, 1477 inference endpoints:
-up 996, degraded 58, down 24, idle 399.
+up 1001, degraded 49, down 20, idle 407.
 
-Currently down (24):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-pro` | `reka` | Reka | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 38% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 43% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 62% | 75% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 77% | 80% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 80% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 50% | 40% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 25% | 0% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 48% | 50% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| plus 9 more | | | | |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 77% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 30% | 40% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 67% | 80% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 25% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 44% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 27% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
