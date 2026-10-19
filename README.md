@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T15:17:58+00:00 UTC)
+## Current status (2026-10-19T15:31:24+00:00 UTC)
 
 469 models polled, 1476 inference endpoints:
-up 973, degraded 87, down 28, idle 388.
+up 981, degraded 94, down 28, idle 373.
 
 Currently down (28):
 
@@ -96,17 +96,17 @@ Currently down (28):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 12% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 100% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 50% | 40% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 50% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 27% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 70% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 23% | 0% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 23% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 42% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 23% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 33% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 43% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 46% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 0% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 75% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
 | plus 13 more | | | | |
