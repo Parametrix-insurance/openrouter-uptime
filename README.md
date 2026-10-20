@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T00:16:58+00:00 UTC)
+## Current status (2026-10-20T00:31:08+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 967, degraded 51, down 31, idle 430.
+up 963, degraded 69, down 25, idle 422.
 
-Currently down (31):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 35% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 45% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 39% | n/a |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 40% | 100% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 63% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 23% | 100% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 40% | 67% |
-| `openai/gpt-oss-120b` | `phala` | Phala | 41% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 69% | 25% |
-| plus 16 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 39% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 13% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 17% | n/a |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 73% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
+| `qwen/qwen3.5-27b` | `atlas-cloud/fp8` | AtlasCloud | 90% | 100% |
+| `qwen/qwen3.5-27b` | `phala` | Phala | 76% | 100% |
+| `qwen/qwen3.5-9b` | `darkbloom/fp4` | Darkbloom | 43% | 60% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
