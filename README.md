@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T00:31:08+00:00 UTC)
+## Current status (2026-10-20T00:47:18+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 963, degraded 69, down 25, idle 422.
+up 961, degraded 51, down 16, idle 451.
 
-Currently down (25):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 39% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 13% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | n/a |
-| `openai/gpt-oss-120b` | `phala` | Phala | 17% | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 73% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| `qwen/qwen3.5-27b` | `atlas-cloud/fp8` | AtlasCloud | 90% | 100% |
-| `qwen/qwen3.5-27b` | `phala` | Phala | 76% | 100% |
-| `qwen/qwen3.5-9b` | `darkbloom/fp4` | Darkbloom | 43% | 60% |
-| plus 10 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 25% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 7% | 20% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 20% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 45% | 100% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 41% | 40% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
