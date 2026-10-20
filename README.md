@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T18:30:47+00:00 UTC)
+## Current status (2026-10-20T18:46:45+00:00 UTC)
 
-468 models polled, 1464 inference endpoints:
-up 963, degraded 67, down 24, idle 410.
+468 models polled, 1463 inference endpoints:
+up 992, degraded 53, down 23, idle 395.
 
-Currently down (24):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 75% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 38% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 58% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 41% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 20% | 33% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 79% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 47% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | n/a |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 60% | 60% |
-| plus 9 more | | | | |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
