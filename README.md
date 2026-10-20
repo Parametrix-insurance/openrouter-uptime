@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T03:31:31+00:00 UTC)
+## Current status (2026-10-20T03:47:03+00:00 UTC)
 
-470 models polled, 1479 inference endpoints:
-up 959, degraded 63, down 19, idle 438.
+470 models polled, 1481 inference endpoints:
+up 960, degraded 57, down 18, idle 446.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 42% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 53% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 50% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 17% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 35% | 100% |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 70% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 47% | 40% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 35% | 25% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 53% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 50% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 33% | n/a |
-| plus 4 more | | | | |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 48% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 35% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 12% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
