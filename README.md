@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T00:47:18+00:00 UTC)
+## Current status (2026-10-20T01:01:04+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 961, degraded 51, down 16, idle 451.
+up 964, degraded 45, down 12, idle 458.
 
-Currently down (16):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 25% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | n/a |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 7% | 20% |
-| `minimax/minimax-m2.7` | `groq` | Groq | 20% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 7% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 50% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 45% | 100% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 41% | 40% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
-| plus 1 more | | | | |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 55% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 75% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
