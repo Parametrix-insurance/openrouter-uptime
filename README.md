@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T02:32:36+00:00 UTC)
+## Current status (2026-10-20T02:46:40+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 944, degraded 68, down 26, idle 441.
+up 945, degraded 66, down 23, idle 445.
 
-Currently down (26):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 74% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 41% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 72% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 60% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 67% | 50% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 54% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 47% | 100% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 37% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 63% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 71% | n/a |
-| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
-| plus 11 more | | | | |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 56% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 62% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 47% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 92% | 100% |
+| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 91% | n/a |
+| `qwen/qwen3.8-27b` | `dekallm` | DekaLLM | 92% | 100% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 88% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
