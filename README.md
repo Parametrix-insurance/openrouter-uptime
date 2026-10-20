@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T02:46:40+00:00 UTC)
+## Current status (2026-10-20T03:01:51+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 945, degraded 66, down 23, idle 445.
+up 942, degraded 61, down 26, idle 450.
 
-Currently down (23):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 37% | 60% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 50% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 67% | 100% |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 56% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 62% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 47% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 92% | 100% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 91% | n/a |
-| `qwen/qwen3.8-27b` | `dekallm` | DekaLLM | 92% | 100% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 88% | n/a |
-| plus 8 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 5% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 83% | 40% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 35% | 0% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 33% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 20% |
+| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 19% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 100% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 57% | 100% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
