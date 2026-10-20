@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T11:17:38+00:00 UTC)
+## Current status (2026-10-20T11:32:57+00:00 UTC)
 
 470 models polled, 1482 inference endpoints:
-up 987, degraded 56, down 21, idle 418.
+up 993, degraded 53, down 18, idle 418.
 
-Currently down (21):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-4.6` | `azure/global` | Azure | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `primeintellect` | PrimeIntellect | 0% | 0% |
-| `elorian/glimpse` | `together` | Together | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 33% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 87% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `primeintellect` | PrimeIntellect | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 6% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 70% | 80% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 67% | 100% |
-| `qwen/qwen3.5-9b` | `together` | Together | 87% | 100% |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| plus 6 more | | | | |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 100% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 3% | 0% |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
