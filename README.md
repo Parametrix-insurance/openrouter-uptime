@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T03:47:03+00:00 UTC)
+## Current status (2026-10-20T04:00:28+00:00 UTC)
 
 470 models polled, 1481 inference endpoints:
-up 960, degraded 57, down 18, idle 446.
+up 962, degraded 58, down 19, idle 442.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 65% | 67% |
+| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 43% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 47% | 40% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 48% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 35% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `qwen/qwen3.8-27b` | `tenstorrent/fp4` | Tenstorrent | 12% | n/a |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| plus 3 more | | | | |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 82% | 0% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 43% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 14% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 56% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 50% | 60% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | n/a |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
