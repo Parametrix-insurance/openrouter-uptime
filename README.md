@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T11:03:10+00:00 UTC)
+## Current status (2026-10-20T11:17:38+00:00 UTC)
 
 470 models polled, 1482 inference endpoints:
-up 993, degraded 51, down 21, idle 417.
+up 987, degraded 56, down 21, idle 418.
 
 Currently down (21):
 
@@ -96,19 +96,19 @@ Currently down (21):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `anthropic/claude-opus-4.6` | `azure/global` | Azure | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `primeintellect` | PrimeIntellect | 0% | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 47% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `primeintellect` | PrimeIntellect | 0% | 0% |
+| `elorian/glimpse` | `together` | Together | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 33% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 45% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
 | `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 100% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 87% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 40% | 80% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 67% | 100% |
+| `qwen/qwen3.5-9b` | `together` | Together | 87% | 100% |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
