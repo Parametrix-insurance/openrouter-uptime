@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T01:46:45+00:00 UTC)
+## Current status (2026-10-20T02:03:18+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 936, degraded 58, down 25, idle 460.
+up 930, degraded 60, down 21, idle 468.
 
-Currently down (25):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 56% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 38% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 38% | 50% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 7% | 40% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 56% | 60% |
 | `minimax/minimax-m3` | `streamlake/fp8` | StreamLake | 0% | n/a |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 40% | 0% |
-| plus 10 more | | | | |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 50% | 100% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 27% | 40% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
