@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T21:48:06+00:00 UTC)
+## Current status (2026-10-20T22:00:59+00:00 UTC)
 
 468 models polled, 1472 inference endpoints:
-up 997, degraded 46, down 17, idle 412.
+up 997, degraded 48, down 14, idle 413.
 
-Currently down (17):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 37% | 33% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 73% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `cohere` | Cohere | 77% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | 25% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 43% | 20% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 17% | 100% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 77% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `streamlake/fp8` | StreamLake | 60% | 80% |
-| plus 2 more | | | | |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 47% | 80% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 20% |
+| `z-ai/glm-5.2` | `streamlake/fp8` | StreamLake | 73% | 100% |
+| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
+| `z-ai/glm-5.3` | `makora/fp4` | Makora | 0% | n/a |
+| `z-ai/glm-5.3` | `modal` | Modal | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
