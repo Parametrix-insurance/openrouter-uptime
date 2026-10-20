@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T21:18:12+00:00 UTC)
+## Current status (2026-10-20T21:31:26+00:00 UTC)
 
 468 models polled, 1472 inference endpoints:
-up 990, degraded 74, down 11, idle 397.
+up 979, degraded 64, down 19, idle 410.
 
-Currently down (11):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 52% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 62% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 78% | 40% |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 40% | 0% |
-| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
-| `z-ai/glm-5.3` | `modal` | Modal | 20% | n/a |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | n/a | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 67% | 60% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
