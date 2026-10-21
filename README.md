@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T11:32:52+00:00 UTC)
+## Current status (2026-10-21T11:46:12+00:00 UTC)
 
 468 models polled, 1472 inference endpoints:
-up 991, degraded 57, down 28, idle 396.
+up 990, degraded 52, down 29, idle 401.
 
-Currently down (28):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 58% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 50% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 50% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 0% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 50% | 0% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 43% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 70% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 31% | 0% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 27% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `deepinfra/fp4` | DeepInfra | 60% | n/a |
-| plus 13 more | | | | |
+| `meta/muse-glimmer-30b` | `together` | Together | 57% | 60% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
