@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T22:02:07+00:00 UTC)
+## Current status (2026-10-21T22:17:44+00:00 UTC)
 
 468 models polled, 1478 inference endpoints:
-up 979, degraded 55, down 27, idle 417.
+up 998, degraded 58, down 24, idle 398.
 
-Currently down (27):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 19% | 25% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 33% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 48% | 100% |
-| `google/gemini-3.1-flash-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 29% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 48% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 59% | 100% |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 40% | 20% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 60% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 20% | 40% |
 | `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| plus 12 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `google-vertex/us-south1#f5b417b1e2` | Google | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `google-vertex/us-south1#313dbfefac` | Google | 0% | 0% |
+| `qwen/qwen3-coder` | `google-vertex/us-south1` | Google | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
