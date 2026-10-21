@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T16:48:22+00:00 UTC)
+## Current status (2026-10-21T17:01:18+00:00 UTC)
 
-468 models polled, 1472 inference endpoints:
-up 973, degraded 64, down 24, idle 411.
+468 models polled, 1473 inference endpoints:
+up 981, degraded 61, down 23, idle 408.
 
-Currently down (24):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 50% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 43% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 74% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 100% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 44% | 0% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 47% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 36% | 80% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 27% | 40% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 38% | 50% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4/us` | BaseTen | 73% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `baseten/fp4` | BaseTen | 45% | n/a |
 | `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 9 more | | | | |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
