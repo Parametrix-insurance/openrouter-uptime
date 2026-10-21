@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T03:30:37+00:00 UTC)
+## Current status (2026-10-21T03:45:39+00:00 UTC)
 
-468 models polled, 1468 inference endpoints:
-up 950, degraded 59, down 25, idle 434.
+468 models polled, 1469 inference endpoints:
+up 920, degraded 61, down 28, idle 460.
 
-Currently down (25):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 39% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 43% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 60% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 48% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 58% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `together` | Together | 50% | 20% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 83% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 40% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 67% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 56% | 25% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 47% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 79% | 100% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 75% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 52% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl` | `together` | Together | 0% | 0% |
-| plus 10 more | | | | |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
