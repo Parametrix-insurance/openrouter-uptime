@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T20:31:17+00:00 UTC)
+## Current status (2026-10-21T20:47:47+00:00 UTC)
 
-469 models polled, 1477 inference endpoints:
-up 1005, degraded 46, down 21, idle 405.
+469 models polled, 1478 inference endpoints:
+up 1004, degraded 49, down 13, idle 412.
 
-Currently down (21):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 23% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 54% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 25% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 46% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `moonshotai/kimi-k3` | `alibaba` | Alibaba | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 60% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 37% | 20% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 83% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
-| `qwen/qwen3.6-27b` | `phala` | Phala | 64% | n/a |
-| `z-ai/glm-4.6` | `venice/fp4` | Venice | 20% | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 32% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 44% | 100% |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 47% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3` | `phala` | Phala | 60% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
