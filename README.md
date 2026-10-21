@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T17:45:40+00:00 UTC)
+## Current status (2026-10-21T18:00:33+00:00 UTC)
 
 468 models polled, 1473 inference endpoints:
-up 1002, degraded 48, down 20, idle 403.
+up 1002, degraded 49, down 21, idle 401.
 
-Currently down (20):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 48% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 70% | 80% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 36% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 63% | 40% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 73% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 23% | 100% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 5% | 33% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 53% | 100% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.8-27b` | `darkbloom/fp4` | Darkbloom | 29% | 0% |
-| `z-ai/glm-4.6` | `venice/fp4` | Venice | 40% | 0% |
-| plus 5 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `coreweave/nvfp4` | CoreWeave | 42% | n/a |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 55% | 100% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 80% | 67% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 58% | n/a |
+| `qwen/qwen3.8-27b` | `darkbloom/fp4` | Darkbloom | 28% | 0% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 57% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
