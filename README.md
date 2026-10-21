@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T01:00:28+00:00 UTC)
+## Current status (2026-10-21T01:16:58+00:00 UTC)
 
 468 models polled, 1470 inference endpoints:
-up 763, degraded 147, down 133, idle 427.
+up 779, degraded 132, down 143, idle 416.
 
-Currently down (133):
+Currently down (143):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 62% | 0% |
-| `cognitivecomputations/dolphin-mistral-24b-venice-edition` | `venice/fp16` | Venice | 58% | 0% |
-| `deepseek/deepseek-chat` | `streamlake` | StreamLake | 87% | 100% |
-| `deepseek/deepseek-v3.2` | `venice` | Venice | 60% | 0% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 40% | 20% |
-| `deepseek/deepseek-v4-flash` | `venice` | Venice | 30% | 0% |
-| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 50% | 60% |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 37% | 20% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 47% | 40% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 63% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 37% | 20% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 27% | 20% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 36% | 0% |
-| plus 118 more | | | | |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 25% | n/a |
+| `cognitivecomputations/dolphin-mistral-24b-venice-edition` | `venice/fp16` | Venice | 40% | 100% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 34% | 100% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 30% | 100% |
+| `deepseek/deepseek-v3.2` | `friendli` | Friendli | 60% | 100% |
+| `deepseek/deepseek-v4-flash` | `venice` | Venice | 20% | 100% |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 47% | 100% |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 57% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 31% | 50% |
+| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 37% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 35% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `inceptron/fp4` | Inceptron | 27% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 57% | 100% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 55% | 100% |
+| plus 128 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
