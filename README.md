@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T00:46:50+00:00 UTC)
+## Current status (2026-10-21T01:00:28+00:00 UTC)
 
-468 models polled, 1471 inference endpoints:
-up 789, degraded 181, down 60, idle 441.
+468 models polled, 1470 inference endpoints:
+up 763, degraded 147, down 133, idle 427.
 
-Currently down (60):
+Currently down (133):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `streamlake` | StreamLake | 90% | 80% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 53% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 54% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 4% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 14% | 0% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 55% | 0% |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 62% | 0% |
-| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 63% | 40% |
-| `google/gemma-4-26b-a4b-it` | `nextbit/bf16` | NextBit | 60% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 67% | 20% |
-| plus 45 more | | | | |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 62% | 0% |
+| `cognitivecomputations/dolphin-mistral-24b-venice-edition` | `venice/fp16` | Venice | 58% | 0% |
+| `deepseek/deepseek-chat` | `streamlake` | StreamLake | 87% | 100% |
+| `deepseek/deepseek-v3.2` | `venice` | Venice | 60% | 0% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 40% | 20% |
+| `deepseek/deepseek-v4-flash` | `venice` | Venice | 30% | 0% |
+| `deepseek/deepseek-v4-flash` | `digitalocean` | DigitalOcean | 50% | 60% |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 37% | 20% |
+| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 47% | 40% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 63% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 37% | 20% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 27% | 20% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 36% | 0% |
+| plus 118 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
