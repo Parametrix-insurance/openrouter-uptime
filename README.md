@@ -85,28 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T20:47:47+00:00 UTC)
+## Current status (2026-10-21T21:02:37+00:00 UTC)
 
 469 models polled, 1478 inference endpoints:
-up 1004, degraded 49, down 13, idle 412.
+up 993, degraded 51, down 26, idle 408.
 
-Currently down (13):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 25% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 46% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 37% | 20% |
+| `deepseek/deepseek-v3.2` | `google-vertex` | Google | 70% | 0% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 68% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 48% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | 67% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 63% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 53% | 80% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 32% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 44% | 100% |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 47% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.3` | `phala` | Phala | 60% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 29% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 40% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `google-vertex/us-south1#f5b417b1e2` | Google | 67% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `google-vertex/us-south1#313dbfefac` | Google | 67% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
