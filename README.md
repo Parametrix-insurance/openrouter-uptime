@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T05:01:35+00:00 UTC)
+## Current status (2026-10-21T05:17:48+00:00 UTC)
 
 468 models polled, 1470 inference endpoints:
-up 959, degraded 55, down 18, idle 438.
+up 964, degraded 50, down 23, idle 433.
 
-Currently down (18):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 44% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 39% | 33% |
-| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 67% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 69% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 45% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 71% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 71% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 100% |
 | `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 12% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 80% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 88% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `together` | Together | 0% | n/a |
 | `nvidia/nemotron-3.5-super-vl` | `coreweave/nvfp4` | CoreWeave | 100% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 5% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| plus 3 more | | | | |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
