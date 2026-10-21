@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T19:16:13+00:00 UTC)
+## Current status (2026-10-21T19:31:37+00:00 UTC)
 
 468 models polled, 1475 inference endpoints:
-up 966, degraded 60, down 24, idle 425.
+up 980, degraded 55, down 25, idle 415.
 
-Currently down (24):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 25% | 100% |
-| `google/gemini-4-argon` | `google-vertex/global` | Google | 17% | 60% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 63% | 60% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 17% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 67% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 63% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 6% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global` | Google | 33% | 100% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 67% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5-nano` | `azure` | Azure | 73% | 100% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 7% | 40% |
-| `qwen/qwen3-32b` | `deepinfra/fp8` | DeepInfra | 37% | 20% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 27% | n/a |
-| plus 9 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 57% | 100% |
+| `qwen/qwen3-32b` | `deepinfra/fp8` | DeepInfra | 30% | 60% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 44% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
