@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T20:02:48+00:00 UTC)
+## Current status (2026-10-21T20:16:41+00:00 UTC)
 
-468 models polled, 1477 inference endpoints:
-up 985, degraded 46, down 19, idle 427.
+468 models polled, 1476 inference endpoints:
+up 986, degraded 49, down 18, idle 423.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 62% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 90% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 48% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 80% | 100% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 20% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 20% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | n/a |
-| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 0% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 50% | 50% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 87% | 20% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 83% | 60% |
+| `qwen/qwen3.6-27b` | `phala` | Phala | 69% | 20% |
+| `z-ai/glm-4.6` | `venice/fp4` | Venice | 33% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
