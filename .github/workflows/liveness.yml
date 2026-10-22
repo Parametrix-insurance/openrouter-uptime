@@ -27,8 +27,13 @@ on:
         description: "Fail if the latest poll is older than this. Pass 0 to prove the check can fail."
         type: string
         default: "60"
+      railway_max_age_minutes:
+        description: "Fail if the Railway leg specifically has not written for this long."
+        type: string
+        default: "60"
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   check:
@@ -56,4 +61,71 @@ jobs:
               sys.exit(f"::error::collector is silent: latest poll is {age:.0f} min "
                        f"old, limit {limit:g}. Check the Railway service "
                        f"openrouter-uptime-collector and the poll workflow.")
+          PY
+
+      # The check above measures the two collectors added together, so it stays
+      # quiet while either one covers the wall-clock. That is how a single dead
+      # leg hides: on 2026-10-21 the Railway collector stopped pushing at 22:31Z
+      # (its GitHub token was revoked in the Railway credential breach) and this
+      # alarm did not fire until 04:56Z -- 6.4 hours later, and only because the
+      # Actions scheduler happened to drop runs in that window too. Until then
+      # the data thinned without a word.
+      #
+      # So ask the per-leg question as well. The two collectors commit under
+      # distinct author emails, which makes attribution exact and needs no new
+      # state: railway@openrouter-uptime for the Railway service,
+      # actions@github.com for the workflow.
+      #
+      # Only the Railway leg is alarmed on. It is the one with a real cadence
+      # (15 min, single-fault tolerant), so silence there is a fault. The
+      # Actions leg is best-effort by construction -- measured at roughly 9% of
+      # its nominal 3/hour over a 150-hour window -- so a staleness threshold on
+      # it would fire more or less continuously and teach everyone to ignore
+      # this workflow.
+      - name: Age of the Railway leg specifically
+        env:
+          RAILWAY_MAX_AGE_MINUTES: ${{ inputs.railway_max_age_minutes || '60' }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys, urllib.request
+          from datetime import datetime, timezone
+
+          LEG = "railway@openrouter-uptime"
+          limit = float(os.environ["RAILWAY_MAX_AGE_MINUTES"])
+
+          req = urllib.request.Request(
+              "https://api.github.com/repos/dthinkr/openrouter-uptime/commits"
+              "?per_page=100",
+              headers={"Accept": "application/vnd.github+json",
+                       "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                       "User-Agent": "openrouter-uptime-liveness"})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              commits = json.load(r)
+
+          # Only poll commits count. A human or a bot touching the repo says
+          # nothing about whether the collector is still taking observations.
+          newest = None
+          for c in commits:
+              a = c["commit"]["author"]
+              if a["email"] == LEG and c["commit"]["message"].startswith("poll "):
+                  newest = a["date"]
+                  break
+
+          if newest is None:
+              sys.exit(f"::error::no poll commit from {LEG} in the last "
+                       f"{len(commits)} commits. The Railway collector has been "
+                       f"silent for a long time, or its author identity changed.")
+
+          ts = datetime.strptime(newest, "%Y-%m-%dT%H:%M:%SZ").replace(
+              tzinfo=timezone.utc)
+          age = (datetime.now(timezone.utc) - ts).total_seconds() / 60
+          print(f"Railway leg last wrote {newest}, {age:.1f} min ago "
+                f"(limit {limit:g} min)")
+          if age > limit:
+              sys.exit(f"::error::the Railway leg is silent: last poll {age:.0f} "
+                       f"min old, limit {limit:g}. Total coverage may still look "
+                       f"healthy because the Actions leg is writing. Check the "
+                       f"Railway service openrouter-uptime-collector: its deploy "
+                       f"logs, and whether GITHUB_TOKEN is still valid.")
           PY
