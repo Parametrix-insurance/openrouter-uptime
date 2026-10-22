@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-22T21:17:00+00:00 UTC)
+## Current status (2026-10-22T21:32:10+00:00 UTC)
 
 468 models polled, 1483 inference endpoints:
-up 984, degraded 51, down 28, idle 420.
+up 998, degraded 52, down 28, idle 405.
 
 Currently down (28):
 
@@ -97,17 +97,17 @@ Currently down (28):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 48% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks` | Fireworks | 37% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 10% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 13% | 20% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 33% | 0% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 37% | 100% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | plus 13 more | | | | |
 
