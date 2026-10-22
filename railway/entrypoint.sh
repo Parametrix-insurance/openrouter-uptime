@@ -176,10 +176,25 @@ fi
 git commit --quiet -m "poll $(date -u +%Y-%m-%dT%H:%MZ)"
 
 for attempt in 1 2 3 4 5; do
-  if git push --quiet origin "HEAD:${BRANCH}"; then
+  if push_err="$(git push --quiet origin "HEAD:${BRANCH}" 2>&1)"; then
     log "pushed on attempt ${attempt}"
     exit 0
   fi
+
+  # A rejected push and a refused credential are the same `false` here, and
+  # treating both as contention is how a revoked token hides. On 2026-10-21 the
+  # Railway collector lost its GITHUB_TOKEN to a credential breach and every
+  # run after 22:31Z logged "push rejected, rebasing" five times before giving
+  # up -- ninety seconds of rebasing against a remote that was never going to
+  # accept us, and a log that reads like a busy branch rather than a dead key.
+  # Rebasing cannot fix authentication, so say so once and stop.
+  if printf '%s' "${push_err}" | grep -qiE 'authentication failed|invalid username or token|could not read username|support for password authentication|permission denied|[^0-9]403[^0-9]'; then
+    log "push failed: the remote refused our credential -- not retrying"
+    log "check GITHUB_TOKEN on the Railway service; git said:"
+    printf '%s\n' "${push_err}" | while IFS= read -r line; do log "    ${line}"; done
+    exit 1
+  fi
+
   log "push rejected, rebasing (attempt ${attempt})"
   if ! git pull --rebase --quiet origin "${BRANCH}"; then
     git rebase --abort || true
