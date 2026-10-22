@@ -82,7 +82,15 @@ jobs:
       # its nominal 3/hour over a 150-hour window -- so a staleness threshold on
       # it would fire more or less continuously and teach everyone to ignore
       # this workflow.
+      # Runs even when the check above failed. The two questions are
+      # independent -- "is there any data" and "is the Railway leg alive" --
+      # and the second is most useful precisely when the first has gone bad,
+      # because it says which collector to go look at. Gating it on the first
+      # would rebuild the failure this repo already fixed once in 2a1ca99f:
+      # an alarm placed behind another step inherits that step's failures and
+      # goes quiet exactly when it is needed.
       - name: Age of the Railway leg specifically
+        if: always()
         env:
           RAILWAY_MAX_AGE_MINUTES: ${{ inputs.railway_max_age_minutes || '60' }}
           GH_TOKEN: ${{ github.token }}
