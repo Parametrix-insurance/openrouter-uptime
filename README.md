@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T01:15:52+00:00 UTC)
+## Current status (2026-10-23T01:31:28+00:00 UTC)
 
-468 models polled, 1485 inference endpoints:
-up 967, degraded 58, down 33, idle 427.
+468 models polled, 1484 inference endpoints:
+up 963, degraded 62, down 33, idle 426.
 
 Currently down (33):
 
@@ -96,19 +96,19 @@ Currently down (33):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `alibaba` | Alibaba | 100% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 14% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 60% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
 | `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
 | `meta/muse-spark-1.1` | `meta` | Meta | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 65% | 100% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
 | plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
