@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T04:32:25+00:00 UTC)
+## Current status (2026-10-23T04:48:06+00:00 UTC)
 
 468 models polled, 1488 inference endpoints:
-up 989, degraded 42, down 23, idle 434.
+up 975, degraded 47, down 26, idle 440.
 
-Currently down (23):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 20% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 33% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 63% | 100% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 0% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | 0% |
-| plus 8 more | | | | |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 68% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 20% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
