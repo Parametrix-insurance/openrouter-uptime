@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T00:30:48+00:00 UTC)
+## Current status (2026-10-23T00:48:00+00:00 UTC)
 
 468 models polled, 1485 inference endpoints:
-up 976, degraded 48, down 30, idle 431.
+up 968, degraded 46, down 31, idle 440.
 
-Currently down (30):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (30):
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 26% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 45% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 12% | n/a |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 68% | 100% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 33% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 57% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 10% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 37% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 43% | 60% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 23% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 17% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 43% | 0% |
+| `meta/muse-spark-1.1` | `meta` | Meta | 33% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 67% | 0% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 0% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `alibaba/fp8` | Alibaba | 0% | n/a |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| plus 15 more | | | | |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
