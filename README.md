@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T13:45:48+00:00 UTC)
+## Current status (2026-10-23T14:00:57+00:00 UTC)
 
 468 models polled, 1494 inference endpoints:
-up 1013, degraded 57, down 35, idle 389.
+up 998, degraded 58, down 42, idle 396.
 
-Currently down (35):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 17% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 43% | 60% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 59% | 75% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 23% | 100% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `modelrun/fp4` | ModelRun | 38% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 60% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 33% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| plus 20 more | | | | |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 39% | 60% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 92% | n/a |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
