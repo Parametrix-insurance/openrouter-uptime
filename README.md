@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T23:17:01+00:00 UTC)
+## Current status (2026-10-23T23:32:50+00:00 UTC)
 
 469 models polled, 1499 inference endpoints:
-up 986, degraded 49, down 29, idle 435.
+up 987, degraded 50, down 35, idle 427.
 
-Currently down (29):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `cohere/command-r-08-2024` | `cohere` | Cohere | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 38% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 48% | n/a |
 | `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 39% | 100% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
-| plus 14 more | | | | |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
