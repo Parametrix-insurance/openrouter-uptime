@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T16:45:58+00:00 UTC)
+## Current status (2026-10-23T17:01:00+00:00 UTC)
 
 468 models polled, 1495 inference endpoints:
-up 987, degraded 74, down 41, idle 393.
+up 972, degraded 77, down 40, idle 406.
 
-Currently down (41):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (41):
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-argon` | `google-vertex/global` | Google | 40% | 60% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 3% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 33% | 80% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `sambanova-turbo` | SambaNova | 63% | 60% |
+| `meta/muse-glimmer-30b` | `together` | Together | 43% | 60% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `nebius/fp4` | Nebius | 43% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 26 more | | | | |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
