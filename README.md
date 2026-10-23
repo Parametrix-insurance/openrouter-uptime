@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T23:32:50+00:00 UTC)
+## Current status (2026-10-23T23:45:37+00:00 UTC)
 
 469 models polled, 1499 inference endpoints:
-up 987, degraded 50, down 35, idle 427.
+up 983, degraded 33, down 40, idle 443.
 
-Currently down (35):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `cohere/command-r-08-2024` | `cohere` | Cohere | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 48% | n/a |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 58% | 100% |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
 | `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 39% | 100% |
+| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 73% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 40% | 50% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-3.5-turbo` | `openai` | OpenAI | 0% | 0% |
-| plus 20 more | | | | |
+| `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
+| `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
