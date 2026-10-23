@@ -1,51 +1,51 @@
 {
- "generated": "2026-10-22T12:01:15+00:00",
- "staleness_hours": 4.44,
+ "generated": "2026-10-23T11:48:19+00:00",
+ "staleness_hours": 0.28,
  "span": {
   "first_poll": "2026-07-04T14:04:07+00:00",
-  "last_poll": "2026-10-22T07:34:35+00:00",
-  "hours": 2633.5
+  "last_poll": "2026-10-23T11:31:20+00:00",
+  "hours": 2661.5
  },
  "polls": {
-  "count": 7592,
-  "per_day": 69.2
+  "count": 7682,
+  "per_day": 69.3
  },
  "interval_minutes": {
   "median": 15.1,
   "mean": 20.8,
   "p90": 16.4,
   "max": 3037.7,
-  "over_30_min": 358
+  "over_30_min": 359
  },
  "duty_cycle_pct": {
-  "up30m": 75.5,
+  "up30m": 75.6,
   "up1d": 99.0
  },
  "polls_by_utc_hour": {
-  "00": 307,
-  "01": 304,
-  "02": 322,
-  "03": 308,
-  "04": 305,
-  "05": 312,
-  "06": 312,
-  "07": 308,
-  "08": 309,
-  "09": 306,
-  "10": 318,
-  "11": 322,
+  "00": 311,
+  "01": 308,
+  "02": 326,
+  "03": 312,
+  "04": 309,
+  "05": 316,
+  "06": 316,
+  "07": 312,
+  "08": 313,
+  "09": 310,
+  "10": 322,
+  "11": 325,
   "12": 310,
-  "13": 314,
-  "14": 317,
-  "15": 313,
-  "16": 324,
-  "17": 322,
-  "18": 315,
-  "19": 321,
-  "20": 331,
-  "21": 333,
-  "22": 329,
-  "23": 330
+  "13": 317,
+  "14": 321,
+  "15": 317,
+  "16": 328,
+  "17": 326,
+  "18": 319,
+  "19": 325,
+  "20": 335,
+  "21": 337,
+  "22": 333,
+  "23": 334
  },
  "unsampled_utc_hours": [],
  "gaps": [
@@ -66,6 +66,12 @@
    "to": "2026-07-13T16:30:42+00:00",
    "minutes": 367.0,
    "uncovered_minutes": 337.0
+  },
+  {
+   "from": "2026-10-22T07:34:35+00:00",
+   "to": "2026-10-22T13:09:25+00:00",
+   "minutes": 334.8,
+   "uncovered_minutes": 304.8
   },
   {
    "from": "2026-10-22T02:04:35+00:00",
@@ -342,15 +348,9 @@
    "to": "2026-08-02T05:54:57+00:00",
    "minutes": 199.7,
    "uncovered_minutes": 169.7
-  },
-  {
-   "from": "2026-07-23T02:32:00+00:00",
-   "to": "2026-07-23T05:51:16+00:00",
-   "minutes": 199.3,
-   "uncovered_minutes": 169.3
   }
  ],
- "gap_count": 358,
+ "gap_count": 359,
  "notes": [
   "A poll at time t observes the window [t-30m, t] for up30m and [t-24h, t] for up1d. Duty cycle is the union of those windows over the span.",
   "Intervals longer than 30 minutes leave wall-clock unobserved. Do not interpolate the up30m-derived state column across the listed gaps.",
