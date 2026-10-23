@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T21:17:44+00:00 UTC)
+## Current status (2026-10-23T21:33:10+00:00 UTC)
 
-469 models polled, 1496 inference endpoints:
-up 987, degraded 54, down 39, idle 416.
+469 models polled, 1497 inference endpoints:
+up 985, degraded 58, down 37, idle 417.
 
-Currently down (39):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 58% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 57% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | 40% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 13% | 20% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 27% | 40% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| plus 24 more | | | | |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | 20% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
