@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T18:02:32+00:00 UTC)
+## Current status (2026-10-23T18:16:43+00:00 UTC)
 
-468 models polled, 1495 inference endpoints:
-up 991, degraded 55, down 50, idle 399.
+469 models polled, 1497 inference endpoints:
+up 998, degraded 58, down 47, idle 394.
 
-Currently down (50):
+Currently down (47):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (50):
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `modelrun/fp4` | ModelRun | 75% | 25% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 3% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 43% | 60% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `modelrun/fp4` | ModelRun | 63% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 14% | n/a |
-| `google/gemini-4-argon` | `google-vertex/global` | Google | 40% | 0% |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 10% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global` | Google | 33% | 60% |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 7% | 40% |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | n/a | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| plus 35 more | | | | |
+| plus 32 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
