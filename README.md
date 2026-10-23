@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T02:01:16+00:00 UTC)
+## Current status (2026-10-23T02:16:32+00:00 UTC)
 
 468 models polled, 1485 inference endpoints:
-up 984, degraded 40, down 31, idle 430.
+up 969, degraded 51, down 36, idle 429.
 
-Currently down (31):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | n/a |
+| `anthracite-org/magnum-v4-72b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 50% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 57% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 7% | n/a |
+| `elorian/glimpse` | `together` | Together | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | 40% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 67% | 20% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
 | `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 38% | 33% |
-| `minimax/minimax-m2.5` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| plus 16 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 12% | n/a |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
