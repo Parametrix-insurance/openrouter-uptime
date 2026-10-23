@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T23:03:10+00:00 UTC)
+## Current status (2026-10-23T23:17:01+00:00 UTC)
 
-469 models polled, 1497 inference endpoints:
-up 998, degraded 35, down 34, idle 430.
+469 models polled, 1499 inference endpoints:
+up 986, degraded 49, down 29, idle 435.
 
-Currently down (34):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 55% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 67% | n/a |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 80% |
-| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 100% | 100% |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 43% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 38% | n/a |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 19 more | | | | |
+| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-3.5-turbo` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
