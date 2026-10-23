@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T05:48:19+00:00 UTC)
+## Current status (2026-10-23T06:01:45+00:00 UTC)
 
-468 models polled, 1489 inference endpoints:
-up 988, degraded 55, down 35, idle 411.
+468 models polled, 1488 inference endpoints:
+up 981, degraded 49, down 38, idle 420.
 
-Currently down (35):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 8% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 78% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 20% |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 10% | 20% |
-| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 20 more | | | | |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | 50% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 47% | 100% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
