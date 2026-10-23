@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T06:01:45+00:00 UTC)
+## Current status (2026-10-23T06:18:19+00:00 UTC)
 
 468 models polled, 1488 inference endpoints:
-up 981, degraded 49, down 38, idle 420.
+up 1003, degraded 47, down 33, idle 405.
 
-Currently down (38):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 47% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | 50% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 47% | 100% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 3% | 0% |
-| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| plus 23 more | | | | |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
