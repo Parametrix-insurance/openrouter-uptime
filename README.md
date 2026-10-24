@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T21:31:40+00:00 UTC)
+## Current status (2026-10-24T21:47:48+00:00 UTC)
 
 466 models polled, 1498 inference endpoints:
-up 953, degraded 47, down 49, idle 449.
+up 964, degraded 40, down 48, idle 446.
 
-Currently down (49):
+Currently down (48):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (49):
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 23% | 20% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 83% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 70% | 40% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 30% | 60% |
-| `minimax/minimax-m3` | `mara` | Mara | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 30% | 60% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `coreweave/nvfp4` | CoreWeave | 47% | 33% |
-| plus 34 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 63% | 80% |
+| `minimax/minimax-m2.7` | `groq` | Groq | 50% | n/a |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 80% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 23% | 40% |
+| `minimax/minimax-m3` | `mara` | Mara | 30% | 100% |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 57% | 100% |
+| plus 33 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
