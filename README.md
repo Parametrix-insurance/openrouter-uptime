@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T17:33:04+00:00 UTC)
+## Current status (2026-10-24T17:45:17+00:00 UTC)
 
-469 models polled, 1501 inference endpoints:
-up 976, degraded 66, down 43, idle 416.
+466 models polled, 1498 inference endpoints:
+up 978, degraded 58, down 43, idle 419.
 
 Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 12% | 75% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 37% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 20% | 0% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 43% | 100% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | 0% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 17% | 20% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 30% | 40% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m2.7` | `groq` | Groq | 43% | 67% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 53% | 60% |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
+| `minimax/minimax-m2.7` | `groq` | Groq | 43% | n/a |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 50% | 20% |
 | plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-22 18:15** — **3 models added to the catalog in one poll**: `openai/gpt-6-sol`, `openai/gpt-6-sol-pro`, `openai/gpt-6-sol:batch`.
 - **2026-09-22 18:31** — **5 models added to the catalog in one poll**: `openai/gpt-6-luna`, `openai/gpt-6-luna-pro`, `openai/gpt-6-luna-pro:batch`, `openai/gpt-6-luna:batch`, `openai/gpt-6-sol-pro:batch`.
 - **2026-09-29 17:48** — **4 models added to the catalog in one poll**: `openai/gpt-6.1-sol`, `openai/gpt-6.1-sol-pro`, `openai/gpt-6.1-sol-pro:batch`, `openai/gpt-6.1-sol:batch`.
 - **2026-10-03 04:32** — provider `tenstorrent` changed its terms of service url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-15 22:02** — provider `makora` changed its status page.
 - **2026-10-17 22:01** — provider `inferact-vllm` changed its terms of service url.
 - **2026-10-17 22:01** — provider `inferact-vllm` changed its privacy policy url.
+- **2026-10-24 17:45** — **3 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo`, `openai/gpt-3.5-turbo-instruct`, `openai/gpt-3.5-turbo:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
