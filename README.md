@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T11:02:27+00:00 UTC)
+## Current status (2026-10-24T11:16:42+00:00 UTC)
 
 469 models polled, 1502 inference endpoints:
-up 1043, degraded 43, down 40, idle 376.
+up 1045, degraded 46, down 40, idle 371.
 
 Currently down (40):
 
@@ -97,18 +97,18 @@ Currently down (40):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 33% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 53% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 79% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 42% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 33% | 60% |
-| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 57% | 50% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 17% | 40% |
-| `minimax/minimax-m3.1-flash` | `nebius/fp4` | Nebius | 40% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 89% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 30% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 60% | 20% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `meta/muse-glimmer-30b` | `together` | Together | 17% | 40% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
 | plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
