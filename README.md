@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T00:17:39+00:00 UTC)
+## Current status (2026-10-24T00:30:40+00:00 UTC)
 
 469 models polled, 1498 inference endpoints:
-up 962, degraded 51, down 41, idle 444.
+up 963, degraded 57, down 37, idle 441.
 
-Currently down (41):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 6% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 8% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 77% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | n/a |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 85% | 100% |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 81% | 60% |
+| `minimax/minimax-m2.5` | `gmicloud/fp8` | GMICloud | 33% | n/a |
 | `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 60% | 0% |
-| plus 26 more | | | | |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 33% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 67% | 0% |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
