@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T12:16:06+00:00 UTC)
+## Current status (2026-10-24T12:31:49+00:00 UTC)
 
 469 models polled, 1502 inference endpoints:
-up 1004, degraded 57, down 44, idle 397.
+up 1015, degraded 64, down 49, idle 374.
 
-Currently down (44):
+Currently down (49):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `relace/fp4` | Relace | 28% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 41% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 37% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 83% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 40% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `nebius/fp8` | Nebius | 75% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `cohere` | Cohere | 86% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 77% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 40% | 80% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `meta-llama/llama-3.1-70b-instruct` | `amazon-bedrock` | Amazon Bedrock | 50% | 100% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 3% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| plus 29 more | | | | |
+| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
+| plus 34 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
