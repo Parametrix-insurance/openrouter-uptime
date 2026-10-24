@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T16:17:17+00:00 UTC)
+## Current status (2026-10-24T16:31:42+00:00 UTC)
 
 469 models polled, 1501 inference endpoints:
-up 974, degraded 55, down 52, idle 420.
+up 984, degraded 59, down 48, idle 410.
 
-Currently down (52):
+Currently down (48):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 70% | 20% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 23% | 20% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 4% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 65% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 45% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 57% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 27% | 40% |
 | `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 0% | 0% |
 | `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| plus 37 more | | | | |
+| plus 33 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
