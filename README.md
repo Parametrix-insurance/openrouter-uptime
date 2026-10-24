@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T15:00:41+00:00 UTC)
+## Current status (2026-10-24T15:16:06+00:00 UTC)
 
 469 models polled, 1501 inference endpoints:
-up 974, degraded 44, down 42, idle 441.
+up 980, degraded 43, down 44, idle 434.
 
-Currently down (42):
+Currently down (44):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 53% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | n/a |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 27% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 17% | 40% |
 | `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 20% | 0% |
-| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/priority` | DeepInfra | 71% | 100% |
-| plus 27 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 17% | 20% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `parasail/fp4` | Parasail | 47% | n/a |
+| plus 29 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
