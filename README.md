@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T14:47:05+00:00 UTC)
+## Current status (2026-10-24T15:00:41+00:00 UTC)
 
 469 models polled, 1501 inference endpoints:
-up 962, degraded 43, down 49, idle 447.
+up 974, degraded 44, down 42, idle 441.
 
-Currently down (49):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 4% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 60% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 0% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 33% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 27% | 0% |
 | `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 70% | 0% |
-| plus 34 more | | | | |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 20% | 0% |
+| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/priority` | DeepInfra | 71% | 100% |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
