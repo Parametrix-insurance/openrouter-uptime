@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T20:17:35+00:00 UTC)
+## Current status (2026-10-24T20:31:18+00:00 UTC)
 
 466 models polled, 1498 inference endpoints:
-up 989, degraded 48, down 40, idle 421.
+up 982, degraded 52, down 44, idle 420.
 
-Currently down (40):
+Currently down (44):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 5% | 33% |
-| `deepseek/deepseek-v4.1-flash` | `crusoe/fp8` | Crusoe | 35% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 80% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 43% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 37% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 40% | 40% |
-| `minimax/minimax-m3` | `together` | Together | 75% | 100% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 40% | 60% |
-| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 23% | 60% |
-| plus 25 more | | | | |
+| `minimax/minimax-m3` | `together` | Together | 91% | 100% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 73% | 100% |
+| `minimax/minimax-m3` | `minimax/fp8` | Minimax | 73% | 100% |
+| plus 29 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
