@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T10:31:05+00:00 UTC)
+## Current status (2026-10-24T10:46:37+00:00 UTC)
 
-469 models polled, 1501 inference endpoints:
-up 1012, degraded 48, down 41, idle 400.
+469 models polled, 1502 inference endpoints:
+up 1025, degraded 43, down 43, idle 391.
 
-Currently down (41):
+Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 60% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 60% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 33% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 43% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 40% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 27% | 0% |
 | `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 27% | 100% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 83% | 67% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 77% | 100% |
 | `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 40% | 20% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 54% | 25% |
-| plus 26 more | | | | |
+| plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
