@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T12:47:09+00:00 UTC)
+## Current status (2026-10-24T13:03:06+00:00 UTC)
 
 469 models polled, 1500 inference endpoints:
-up 1003, degraded 58, down 52, idle 387.
+up 998, degraded 52, down 48, idle 402.
 
-Currently down (52):
+Currently down (48):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 77% | 80% |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 57% | 80% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 31% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `nebius/fp8` | Nebius | 50% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `nebius/fp8` | Nebius | 52% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `nebius/fp8` | Nebius | 38% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `nebius/fp8` | Nebius | 45% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 100% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 60% | 20% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 60% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-glimmer-30b` | `together` | Together | 13% | 0% |
-| plus 37 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 47% | 60% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 40% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 20% | 0% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 47% | 40% |
+| plus 33 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
