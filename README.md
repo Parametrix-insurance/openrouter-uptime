@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T08:01:26+00:00 UTC)
+## Current status (2026-10-24T08:17:12+00:00 UTC)
 
 469 models polled, 1500 inference endpoints:
-up 941, degraded 43, down 41, idle 475.
+up 954, degraded 47, down 43, idle 456.
 
-Currently down (41):
+Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 53% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 6% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 67% | 100% |
+| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/priority` | DeepInfra | 70% | n/a |
 | `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 37% | 20% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 31% | 20% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 27% | 40% |
-| plus 26 more | | | | |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 40% | 100% |
+| plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
