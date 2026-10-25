@@ -85,25 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T02:16:06+00:00 UTC)
+## Current status (2026-10-25T02:30:48+00:00 UTC)
 
 467 models polled, 1500 inference endpoints:
-up 950, degraded 38, down 30, idle 482.
+up 950, degraded 42, down 30, idle 478.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 40% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 47% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | 60% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 20% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 48% | 25% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 38% | 20% |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
