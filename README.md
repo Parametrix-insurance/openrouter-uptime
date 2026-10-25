@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T16:03:00+00:00 UTC)
+## Current status (2026-10-25T16:15:44+00:00 UTC)
 
 467 models polled, 1500 inference endpoints:
-up 979, degraded 47, down 37, idle 437.
+up 988, degraded 49, down 43, idle 420.
 
-Currently down (37):
+Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 62% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 63% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `dekallm` | DekaLLM | 69% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 43% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 37% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 15% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 12% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `microsoft/phi-4` | `deepinfra/bf16/flex` | DeepInfra | 50% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 57% | 100% |
-| `minimax/minimax-m3.1-flash` | `inference-net/fp4/us` | InferenceNet | 46% | 0% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 50% | 100% |
-| plus 22 more | | | | |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `inference-net/fp4/us` | InferenceNet | 11% | n/a |
+| plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
