@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T06:16:06+00:00 UTC)
+## Current status (2026-10-25T06:31:15+00:00 UTC)
 
 467 models polled, 1501 inference endpoints:
-up 961, degraded 38, down 41, idle 461.
+up 963, degraded 41, down 45, idle 452.
 
-Currently down (41):
+Currently down (45):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 36% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 4% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 60% | 60% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 22% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 100% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 60% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 40% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
-| `minimax/minimax-m2` | `minimax/fp8` | Minimax | 0% | n/a |
 | `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | n/a | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 26 more | | | | |
+| plus 30 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
