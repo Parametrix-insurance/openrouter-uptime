@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T20:46:04+00:00 UTC)
+## Current status (2026-10-25T21:01:58+00:00 UTC)
 
 467 models polled, 1501 inference endpoints:
-up 980, degraded 40, down 33, idle 448.
+up 973, degraded 48, down 28, idle 452.
 
-Currently down (33):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 90% | 40% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 12% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 43% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 30% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 60% | 40% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 8% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 50% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/priority` | DeepInfra | 60% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 3% | 0% |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 20% | 100% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-4-turbo` | `openai` | OpenAI | 0% | n/a |
-| plus 18 more | | | | |
+| `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-120b` | `sambanova` | SambaNova | 33% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
