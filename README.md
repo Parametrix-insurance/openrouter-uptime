@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T02:45:59+00:00 UTC)
+## Current status (2026-10-25T03:01:44+00:00 UTC)
 
 467 models polled, 1501 inference endpoints:
-up 952, degraded 35, down 31, idle 483.
+up 956, degraded 33, down 27, idle 485.
 
-Currently down (31):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 43% | 40% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 86% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 37% | 60% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 30% | 80% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 47% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 79% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 32% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 40% | 40% |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
-| plus 16 more | | | | |
+| `openai/gpt-4o-2024-05-13` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
