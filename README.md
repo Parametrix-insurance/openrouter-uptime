@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T06:01:30+00:00 UTC)
+## Current status (2026-10-25T06:16:06+00:00 UTC)
 
 467 models polled, 1501 inference endpoints:
-up 963, degraded 32, down 30, idle 476.
+up 961, degraded 38, down 41, idle 461.
 
-Currently down (30):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (30):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8/us-east-1` | Alibaba | 40% | 25% |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 27% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 30% | 0% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 36% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 4% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 60% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 11% | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 22% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
+| `minimax/minimax-m2` | `minimax/fp8` | Minimax | 0% | n/a |
+| `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | n/a | n/a |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 20% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 15 more | | | | |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
