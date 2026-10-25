@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T04:16:23+00:00 UTC)
+## Current status (2026-10-25T04:33:10+00:00 UTC)
 
 467 models polled, 1501 inference endpoints:
-up 957, degraded 41, down 30, idle 473.
+up 971, degraded 37, down 30, idle 463.
 
 Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 81% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 53% | 40% |
 | `meta-llama/llama-3.1-8b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 69% | 80% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 66% | 60% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 78% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
 | plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
