@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T18:47:43+00:00 UTC)
+## Current status (2026-10-25T19:02:48+00:00 UTC)
 
 467 models polled, 1500 inference endpoints:
-up 1009, degraded 31, down 42, idle 418.
+up 1004, degraded 30, down 39, idle 427.
 
-Currently down (42):
+Currently down (39):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 43% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 29% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 14% | 20% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 47% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 43% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 40% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 60% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 17% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 33% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 4% | 0% |
 | `mancer/weaver` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 27 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 40% |
+| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 24 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
