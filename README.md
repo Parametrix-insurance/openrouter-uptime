@@ -85,7 +85,7 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T08:47:38+00:00 UTC)
+## Current status (2026-10-26T09:00:46+00:00 UTC)
 
 467 models polled, 1504 inference endpoints:
 up 1008, degraded 64, down 40, idle 392.
