@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T07:31:02+00:00 UTC)
+## Current status (2026-10-26T07:45:58+00:00 UTC)
 
-467 models polled, 1505 inference endpoints:
-up 990, degraded 68, down 46, idle 401.
+467 models polled, 1504 inference endpoints:
+up 1006, degraded 50, down 42, idle 406.
 
-Currently down (46):
+Currently down (42):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | 20% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 75% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 50% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 66% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 69% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 31% | 100% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 56% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 52% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 55% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 59% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 46% | 40% |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| plus 31 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 50% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| plus 27 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
