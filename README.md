@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T10:01:23+00:00 UTC)
+## Current status (2026-10-27T10:31:25+00:00 UTC)
 
 463 models polled, 1509 inference endpoints:
-up 1033, degraded 60, down 39, idle 377.
+up 1000, degraded 72, down 38, idle 399.
 
-Currently down (39):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 17% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 76% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 47% | 60% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 54% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 41% | 100% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 100% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 55% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 71% | 100% |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
 | `openai/gpt-3.5-turbo-16k` | `openai` | OpenAI | 0% | n/a |
-| plus 24 more | | | | |
+| `openai/gpt-4-turbo` | `openai` | OpenAI | 0% | n/a |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
