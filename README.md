@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T10:31:25+00:00 UTC)
+## Current status (2026-10-27T10:48:39+00:00 UTC)
 
 463 models polled, 1509 inference endpoints:
-up 1000, degraded 72, down 38, idle 399.
+up 1007, degraded 65, down 44, idle 393.
 
-Currently down (38):
+Currently down (44):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 21% | 100% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 100% | 100% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 55% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 30% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 100% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 42% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | 80% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 57% | 0% |
 | `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 71% | 100% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| `openai/gpt-3.5-turbo-16k` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-4-turbo` | `openai` | OpenAI | 0% | n/a |
-| plus 23 more | | | | |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 62% | n/a |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 0% | n/a |
+| plus 29 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
