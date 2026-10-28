@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T02:28:45+00:00 UTC)
+## Current status (2026-10-28T02:41:09+00:00 UTC)
 
 464 models polled, 1515 inference endpoints:
-up 981, degraded 66, down 36, idle 432.
+up 992, degraded 55, down 38, idle 430.
 
-Currently down (36):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 90% | 40% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 22% | 60% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 70% | 60% |
+| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 77% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 11% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 65% | 50% |
+| `deepseek/deepseek-v4.1-flash-1017` | `cloudflare` | Cloudflare | 70% | 80% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 4% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 75% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | 0% | 0% |
-| `mistralai/mistral-medium-3` | `mistral` | Mistral | 0% | 0% |
+| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
+| `mistralai/mistral-medium-3` | `mistral/zdr` | Mistral | 0% | n/a |
+| `mistralai/mistral-medium-3` | `mistral` | Mistral | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
-| plus 21 more | | | | |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
