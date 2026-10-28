@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T18:01:29+00:00 UTC)
+## Current status (2026-10-28T18:30:34+00:00 UTC)
 
-456 models polled, 1494 inference endpoints:
-up 1012, degraded 59, down 25, idle 398.
+456 models polled, 1495 inference endpoints:
+up 1012, degraded 71, down 25, idle 387.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 23% | 40% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 40% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 34% | 20% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 7% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 87% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 72% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 33% | 40% |
-| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 53% | 100% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 3% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 36% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 47% | 60% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 30% | 40% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 60% |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -118,9 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-06 23:48** — provider `openai` changed its status page.
-- **2026-10-09 16:17** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
-- **2026-10-13 18:45** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-10-15 22:02** — provider `makora` changed its status page.
 - **2026-10-17 22:01** — provider `inferact-vllm` changed its terms of service url.
 - **2026-10-17 22:01** — provider `inferact-vllm` changed its privacy policy url.
@@ -130,6 +127,9 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-26 21:58** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-10-28 15:00** — **4 models removed from the catalog in one poll**: `openai/gpt-4-turbo`, `openai/o3-mini`, `openai/o4-mini`, `qwen/qwen3-next-80b-a3b-thinking`.
 - **2026-10-28 15:27** — **4 models removed from the catalog in one poll**: `openai/o1`, `openai/o1-pro`, `openai/o3-mini-high`, `openai/o4-mini-high`.
+- **2026-10-28 18:30** — provider `primalabs` changed its terms of service url.
+- **2026-10-28 18:30** — provider `primalabs` changed its privacy policy url.
+- **2026-10-28 18:30** — provider `primalabs` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
