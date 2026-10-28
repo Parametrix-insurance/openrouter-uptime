@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T07:38:54+00:00 UTC)
+## Current status (2026-10-28T07:57:59+00:00 UTC)
 
 464 models polled, 1513 inference endpoints:
-up 1000, degraded 61, down 32, idle 420.
+up 1016, degraded 56, down 30, idle 411.
 
-Currently down (32):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | 0% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 22% | 40% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 83% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 74% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 25% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 90% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 93% | 60% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/o3-mini` | `openai` | OpenAI | n/a | n/a |
-| `openai/o4-mini` | `openai` | OpenAI | 0% | 0% |
-| plus 17 more | | | | |
+| `openai/gpt-3.5-turbo-16k` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-4` | `openai` | OpenAI | n/a | n/a |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
