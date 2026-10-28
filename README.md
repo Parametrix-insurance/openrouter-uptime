@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T14:38:37+00:00 UTC)
+## Current status (2026-10-28T15:00:04+00:00 UTC)
 
-464 models polled, 1514 inference endpoints:
-up 1029, degraded 64, down 41, idle 380.
+460 models polled, 1504 inference endpoints:
+up 1023, degraded 61, down 30, idle 390.
 
-Currently down (41):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 45% | 100% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 67% | 100% |
+| `deepseek/deepseek-v4-pro` | `crusoe/fp8` | Crusoe | 80% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 58% | 25% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 45% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 74% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 57% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 88% | 40% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 53% | 100% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 74% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8` | DeepInfra | 33% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
-| plus 26 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-03 04:32** — provider `tenstorrent` changed its status page.
 - **2026-10-06 23:31** — provider `openai` changed its status page.
 - **2026-10-06 23:48** — provider `openai` changed its status page.
 - **2026-10-09 16:17** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-26 12:42** — provider `azure` changed its terms of service url.
 - **2026-10-26 12:42** — provider `azure` changed its privacy policy url.
 - **2026-10-26 21:58** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
+- **2026-10-28 15:00** — **4 models removed from the catalog in one poll**: `openai/gpt-4-turbo`, `openai/o3-mini`, `openai/o4-mini`, `qwen/qwen3-next-80b-a3b-thinking`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
