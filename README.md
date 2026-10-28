@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T20:03:38+00:00 UTC)
+## Current status (2026-10-28T20:25:27+00:00 UTC)
 
 457 models polled, 1497 inference endpoints:
-up 1025, degraded 48, down 26, idle 398.
+up 1032, degraded 54, down 25, idle 386.
 
-Currently down (26):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | 33% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 26% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 30% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 50% | n/a |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 40% | 0% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 29% | 25% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 71% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 48% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 33% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 40% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 37% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 0% |
-| `particle-ai/particle-1` | `particle-ai` | Particle AI | 62% | 100% |
-| plus 11 more | | | | |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 27% | 0% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 38% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 27% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
