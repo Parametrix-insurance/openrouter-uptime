@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T17:10:59+00:00 UTC)
+## Current status (2026-10-28T17:30:21+00:00 UTC)
 
 456 models polled, 1494 inference endpoints:
-up 1013, degraded 75, down 27, idle 379.
+up 1008, degraded 73, down 31, idle 382.
 
-Currently down (27):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 37% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 33% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 42% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 60% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 63% | 80% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 73% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 4% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 37% | 40% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 47% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 17% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 31% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 44% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 27% | 0% |
 | `mistralai/mistral-large-2407` | `mistral` | Mistral | 0% | n/a |
-| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 38% | 0% |
-| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 30% | 0% |
-| plus 12 more | | | | |
+| `mistralai/mistral-large-2512` | `mistral/eu` | Mistral | 0% | 0% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
