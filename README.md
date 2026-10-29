@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T22:24:34+00:00 UTC)
+## Current status (2026-10-29T22:37:43+00:00 UTC)
 
 456 models polled, 1509 inference endpoints:
-up 1061, degraded 43, down 21, idle 384.
+up 1039, degraded 43, down 20, idle 407.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 50% | 0% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 63% | 80% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 7% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 74% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 65% | 0% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
 | `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 20% | 20% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 30% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 60% | 100% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 53% | 60% |
-| plus 6 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 7% | 20% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 68% | 50% |
+| `xiaomi/mimo-v2.5` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 0% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
