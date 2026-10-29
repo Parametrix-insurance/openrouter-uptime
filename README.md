@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T16:26:56+00:00 UTC)
+## Current status (2026-10-29T16:39:31+00:00 UTC)
 
 457 models polled, 1503 inference endpoints:
-up 1042, degraded 55, down 31, idle 375.
+up 1048, degraded 51, down 25, idle 379.
 
-Currently down (31):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 67% |
-| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 90% | 67% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 75% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 100% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 50% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 15% | 20% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 20% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
 | `meta/muse-spark-open` | `nebius/fp4` | Nebius | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 25% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 36% | 100% |
-| plus 16 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
