@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T17:40:15+00:00 UTC)
+## Current status (2026-10-30T17:58:24+00:00 UTC)
 
-456 models polled, 1508 inference endpoints:
-up 1021, degraded 59, down 28, idle 400.
+456 models polled, 1509 inference endpoints:
+up 1019, degraded 51, down 30, idle 409.
 
-Currently down (28):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 10% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 41% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 62% | 60% |
-| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 85% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 7% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 0% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 53% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 83% | 100% |
+| `mistralai/voxtral-small-24b-2507` | `mistral` | Mistral | 93% | 100% |
 | `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
-| plus 13 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
