@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T03:26:41+00:00 UTC)
+## Current status (2026-10-30T03:38:50+00:00 UTC)
 
 456 models polled, 1509 inference endpoints:
-up 996, degraded 42, down 27, idle 444.
+up 1000, degraded 43, down 30, idle 436.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 69% | 80% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 37% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 67% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 40% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 97% | 80% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 50% | 100% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 76% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 85% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 75% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 18% | 75% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 43% | 80% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 20% | 33% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 10% | 0% |
-| plus 12 more | | | | |
+| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
+| `mistralai/ministral-14b-2512` | `mistral/zdr` | Mistral | 64% | 67% |
+| `moondream/moondream3.1-9b-a2b` | `primeintellect/fp8` | PrimeIntellect | 33% | 0% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
