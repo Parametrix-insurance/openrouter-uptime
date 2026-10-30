@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T19:20:58+00:00 UTC)
+## Current status (2026-10-30T19:39:53+00:00 UTC)
 
 456 models polled, 1510 inference endpoints:
-up 1026, degraded 48, down 36, idle 400.
+up 1034, degraded 55, down 23, idle 398.
 
-Currently down (36):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 10% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 23% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 20% | 20% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | 20% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 33% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `coreweave/nvfp4` | CoreWeave | 100% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `venice/fp4` | Venice | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 21 more | | | | |
+| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 3% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 64% | 20% |
+| `recursive/flint-v1.0:free` | `recursive/bf16` | Recursive | 0% | 0% |
+| `stepfun/step-5-preview` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
