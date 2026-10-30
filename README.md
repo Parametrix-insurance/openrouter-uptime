@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T13:58:07+00:00 UTC)
+## Current status (2026-10-30T14:25:43+00:00 UTC)
 
-456 models polled, 1507 inference endpoints:
-up 1018, degraded 58, down 34, idle 397.
+456 models polled, 1508 inference endpoints:
+up 1027, degraded 62, down 29, idle 390.
 
-Currently down (34):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `claude-on-aws` | Claude Platform on AWS | 90% | 100% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 90% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 3% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 7% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | `google-ai-studio/global` | Google AI Studio | 7% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 53% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 79% | 100% |
-| plus 19 more | | | | |
+| `google/gemini-3-pro-image-preview` | `google-ai-studio/global` | Google AI Studio | 23% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 41% | 40% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 64% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 27% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
