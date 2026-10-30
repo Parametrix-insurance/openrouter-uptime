@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-30T04:37:53+00:00 UTC)
+## Current status (2026-10-30T04:57:16+00:00 UTC)
 
 456 models polled, 1508 inference endpoints:
-up 1014, degraded 33, down 28, idle 433.
+up 995, degraded 35, down 22, idle 456.
 
-Currently down (28):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 65% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 83% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 50% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 93% | 60% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 22% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 83% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 86% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 50% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| plus 13 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 53% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 50% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
