@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T13:18:24+00:00 UTC)
+## Current status (2026-10-31T13:37:12+00:00 UTC)
 
-452 models polled, 1506 inference endpoints:
-up 1008, degraded 52, down 28, idle 418.
+452 models polled, 1505 inference endpoints:
+up 995, degraded 44, down 40, idle 426.
 
-Currently down (28):
+Currently down (40):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 69% | 100% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 40% | 33% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 46% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 25% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 0% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 25% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
-| plus 13 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `meta/muse-spark-open` | `modal` | Modal | 43% | 100% |
+| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 40% | 0% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 52% | 40% |
+| `minimax/minimax-m3.1-flash` | `streamlake/fp8` | StreamLake | 8% | 20% |
+| plus 25 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
