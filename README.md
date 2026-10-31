@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T06:38:59+00:00 UTC)
+## Current status (2026-10-31T06:57:53+00:00 UTC)
 
 456 models polled, 1511 inference endpoints:
-up 975, degraded 35, down 26, idle 475.
+up 972, degraded 48, down 27, idle 464.
 
-Currently down (26):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 50% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 60% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 81% | 75% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
 | `google/gemma-4-31b-it` | `io-net` | Io Net | 33% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 71% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | 0% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| plus 11 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 71% | 50% |
+| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 43% | 0% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
