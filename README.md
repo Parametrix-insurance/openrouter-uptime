@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-01T01:03:48+00:00 UTC)
+## Current status (2026-11-01T01:22:13+00:00 UTC)
 
 452 models polled, 1506 inference endpoints:
-up 971, degraded 36, down 22, idle 477.
+up 962, degraded 45, down 28, idle 471.
 
-Currently down (22):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 89% | 50% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 22% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 27% | n/a |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 20% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 90% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 0% | 0% |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 0% | 0% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `io-net` | Io Net | 67% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 0% | 0% |
-| plus 7 more | | | | |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 0% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
