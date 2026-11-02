@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T02:26:51+00:00 UTC)
+## Current status (2026-11-02T02:57:43+00:00 UTC)
 
 452 models polled, 1505 inference endpoints:
-up 1010, degraded 42, down 22, idle 431.
+up 981, degraded 41, down 20, idle 463.
 
-Currently down (22):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (22):
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | 20% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 21% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 53% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 83% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 20% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 33% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `parasail/fp8` | Parasail | 0% | n/a |
-| plus 7 more | | | | |
+| `recursive/flint-v1.0:free` | `recursive/bf16` | Recursive | 0% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
