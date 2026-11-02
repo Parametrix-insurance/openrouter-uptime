@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T15:00:40+00:00 UTC)
+## Current status (2026-11-02T15:24:00+00:00 UTC)
 
 451 models polled, 1512 inference endpoints:
-up 1040, degraded 49, down 35, idle 388.
+up 1023, degraded 72, down 37, idle 380.
 
-Currently down (35):
+Currently down (37):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `bytedance-seed/seed-2-1-turbo` | `seed/fp8` | Seed | 33% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 27% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 93% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 65% | 100% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3-pro-image-preview` | `google-ai-studio/global` | Google AI Studio | 57% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 44% | 80% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 6% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 48% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 48% | 0% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| plus 20 more | | | | |
+| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 67% | 100% |
+| plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
