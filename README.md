@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T15:21:35+00:00 UTC)
+## Current status (2026-11-03T15:43:20+00:00 UTC)
 
 451 models polled, 1512 inference endpoints:
-up 1034, degraded 71, down 34, idle 373.
+up 1056, degraded 55, down 34, idle 367.
 
 Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 78% | 50% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 44% | 50% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 27% | n/a |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `meta/muse-spark-open` | `makora/fp4` | Makora | 72% | n/a |
+| `meta/muse-spark-open` | `together` | Together | 42% | 50% |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-astra` | `azure` | Azure | 27% | 60% |
-| `openai/gpt-6-astra` | `azure/us` | Azure | 50% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-6-astra` | `azure` | Azure | 23% | 0% |
+| `openai/gpt-6-astra` | `azure/us` | Azure | 50% | 100% |
 | plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
