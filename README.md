@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T05:37:56+00:00 UTC)
+## Current status (2026-11-03T05:57:15+00:00 UTC)
 
 451 models polled, 1517 inference endpoints:
-up 1017, degraded 45, down 30, idle 425.
+up 1034, degraded 34, down 34, idle 415.
 
-Currently down (30):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 61% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-pro` | `google-ai-studio` | Google AI Studio | 97% | 80% |
+| `google/gemini-2.5-pro-preview` | `google-ai-studio` | Google AI Studio | 97% | 80% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-image-preview` | `google-ai-studio` | Google AI Studio | 93% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 12% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
 | `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 26% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 15% | 25% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta/muse-spark-open` | `makora/fp4` | Makora | 55% | 0% |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 15 more | | | | |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
