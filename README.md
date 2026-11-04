@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T16:23:27+00:00 UTC)
+## Current status (2026-11-04T16:40:10+00:00 UTC)
 
 453 models polled, 1509 inference endpoints:
-up 1049, degraded 54, down 30, idle 376.
+up 1038, degraded 55, down 31, idle 385.
 
-Currently down (30):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 59% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 40% | 80% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 47% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 68% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 50% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 63% | 40% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 46% | 67% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 60% | 100% |
-| `moondream/moondream3.1-9b-a2b` | `primeintellect/fp8` | PrimeIntellect | 64% | 40% |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| plus 15 more | | | | |
+| `moondream/moondream3.1-9b-a2b` | `primeintellect/fp8` | PrimeIntellect | 76% | 75% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
