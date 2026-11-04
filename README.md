@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T03:37:51+00:00 UTC)
+## Current status (2026-11-04T03:57:18+00:00 UTC)
 
 454 models polled, 1513 inference endpoints:
-up 986, degraded 60, down 30, idle 437.
+up 1003, degraded 39, down 26, idle 445.
 
-Currently down (30):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 92% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 90% | 60% |
-| `deepseek/deepseek-v4-pro` | `nebius/fp8` | Nebius | 71% | 67% |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 33% | n/a |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 88% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 96% | 100% |
+| `deepseek/deepseek-v4-pro` | `nebius/fp8` | Nebius | 53% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 100% | 100% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| plus 15 more | | | | |
+| `mistralai/mistral-large` | `mistral/eu` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
