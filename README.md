@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-04T02:39:02+00:00 UTC)
+## Current status (2026-11-04T02:58:25+00:00 UTC)
 
 454 models polled, 1512 inference endpoints:
-up 1009, degraded 49, down 30, idle 424.
+up 981, degraded 54, down 29, idle 448.
 
-Currently down (30):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -98,18 +98,18 @@ Currently down (30):
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 93% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 53% | 20% |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 40% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 5% | 50% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `amazon-bedrock/global` | Amazon Bedrock | 50% | 60% |
-| plus 15 more | | | | |
+| `deepseek/deepseek-v4-pro` | `nebius/fp8` | Nebius | 75% | 50% |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 87% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | n/a |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 43% | 100% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 38% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
