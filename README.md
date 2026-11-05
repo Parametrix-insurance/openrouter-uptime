@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-05T18:38:47+00:00 UTC)
+## Current status (2026-11-05T19:00:20+00:00 UTC)
 
 454 models polled, 1515 inference endpoints:
-up 1048, degraded 53, down 30, idle 384.
+up 1043, degraded 53, down 36, idle 383.
 
-Currently down (30):
+Currently down (36):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 3% | 0% |
-| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 59% | 75% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 80% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 10% | 20% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 21% | 0% |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 77% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 74% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 60% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 5% | 33% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| plus 15 more | | | | |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 13% | 0% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 50% | 50% |
+| plus 21 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
