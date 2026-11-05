@@ -1,51 +1,51 @@
 {
- "generated": "2026-11-04T06:38:51+00:00",
+ "generated": "2026-11-05T06:38:43+00:00",
  "staleness_hours": 0.13,
  "span": {
   "first_poll": "2026-07-04T14:04:07+00:00",
-  "last_poll": "2026-11-04T06:30:48+00:00",
-  "hours": 2944.4
+  "last_poll": "2026-11-05T06:30:51+00:00",
+  "hours": 2968.4
  },
  "polls": {
-  "count": 8538,
+  "count": 8606,
   "per_day": 69.6
  },
  "interval_minutes": {
   "median": 15.1,
   "mean": 20.7,
-  "p90": 17.5,
+  "p90": 17.8,
   "max": 3037.7,
-  "over_30_min": 422
+  "over_30_min": 426
  },
  "duty_cycle_pct": {
-  "up30m": 77.6,
+  "up30m": 77.8,
   "up1d": 99.1
  },
  "polls_by_utc_hour": {
-  "00": 335,
-  "01": 350,
-  "02": 362,
-  "03": 350,
-  "04": 348,
-  "05": 354,
-  "06": 348,
-  "07": 347,
-  "08": 344,
-  "09": 342,
-  "10": 358,
-  "11": 358,
-  "12": 341,
-  "13": 352,
-  "14": 354,
-  "15": 358,
-  "16": 363,
-  "17": 360,
-  "18": 357,
-  "19": 362,
-  "20": 375,
-  "21": 374,
-  "22": 373,
-  "23": 373
+  "00": 336,
+  "01": 354,
+  "02": 364,
+  "03": 353,
+  "04": 351,
+  "05": 357,
+  "06": 350,
+  "07": 350,
+  "08": 347,
+  "09": 345,
+  "10": 361,
+  "11": 360,
+  "12": 344,
+  "13": 355,
+  "14": 357,
+  "15": 360,
+  "16": 366,
+  "17": 363,
+  "18": 360,
+  "19": 366,
+  "20": 378,
+  "21": 376,
+  "22": 376,
+  "23": 377
  },
  "unsampled_utc_hours": [],
  "gaps": [
@@ -350,7 +350,7 @@
    "uncovered_minutes": 169.7
   }
  ],
- "gap_count": 422,
+ "gap_count": 426,
  "notes": [
   "A poll at time t observes the window [t-30m, t] for up30m and [t-24h, t] for up1d. Duty cycle is the union of those windows over the span.",
   "Intervals longer than 30 minutes leave wall-clock unobserved. Do not interpolate the up30m-derived state column across the listed gaps.",
