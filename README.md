@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T19:00:09+00:00 UTC)
+## Current status (2026-11-06T19:20:29+00:00 UTC)
 
-457 models polled, 1516 inference endpoints:
-up 1039, degraded 44, down 28, idle 405.
+458 models polled, 1517 inference endpoints:
+up 1036, degraded 48, down 30, idle 403.
 
-Currently down (28):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 42% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 64% | 67% |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 88% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 42% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 47% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 4% | 25% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 7% | 50% |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| plus 13 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 73% | 20% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 5% | 0% |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
