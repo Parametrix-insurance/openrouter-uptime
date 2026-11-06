@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-06T11:57:37+00:00 UTC)
+## Current status (2026-11-06T12:29:51+00:00 UTC)
 
 453 models polled, 1512 inference endpoints:
-up 1057, degraded 47, down 28, idle 380.
+up 1042, degraded 55, down 32, idle 383.
 
-Currently down (28):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 62% | 50% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `deepinfra/bf16` | DeepInfra | n/a | n/a |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 4% | 25% |
+| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 39% | 50% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-6-astra` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 13 more | | | | |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
