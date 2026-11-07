@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T13:57:43+00:00 UTC)
+## Current status (2026-11-07T14:19:44+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1048, degraded 45, down 21, idle 405.
+up 1036, degraded 68, down 20, idle 395.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 85% | 80% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 33% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 100% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 11% | 67% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 4% | 0% |
-| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 62% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 18% | 50% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 19% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 17% | 33% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 5% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 50% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 4% | 0% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 80% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| `tencent/hy4-preview` | `cohere/mxfp4` | Cohere | 67% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
