@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T10:20:01+00:00 UTC)
+## Current status (2026-11-07T10:37:55+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1056, degraded 43, down 27, idle 394.
+up 1045, degraded 48, down 27, idle 400.
 
 Currently down (27):
 
@@ -96,19 +96,19 @@ Currently down (27):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 60% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 54% | 67% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 83% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 59% | 50% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 87% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 21% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 52% | 33% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 21% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 4% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 20% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 15% | 67% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 21% | 33% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | n/a | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 23% | 50% |
 | plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
