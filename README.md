@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T06:56:51+00:00 UTC)
+## Current status (2026-11-07T07:20:23+00:00 UTC)
 
 460 models polled, 1519 inference endpoints:
-up 1021, degraded 38, down 29, idle 431.
+up 992, degraded 57, down 29, idle 441.
 
 Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 57% | 80% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `gmicloud/fp8` | GMICloud | 29% | 50% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 57% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 30% | 20% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 12% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `wafer/us` | Wafer | 40% | n/a |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 24% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 22% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 13% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 21% | 0% |
 | `openai/gpt-6-astra` | `azure/us` | Azure | 0% | 0% |
-| `openai/gpt-6-astra-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
 | plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
