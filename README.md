@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T21:38:12+00:00 UTC)
+## Current status (2026-11-07T21:57:33+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1040, degraded 38, down 25, idle 417.
+up 1036, degraded 44, down 26, idle 414.
 
-Currently down (25):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `relace/fp4` | Relace | 59% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `relace/fp4` | Relace | 43% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 3% | 20% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 60% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 55% | 0% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 33% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 17% | 25% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | 50% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 10 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
