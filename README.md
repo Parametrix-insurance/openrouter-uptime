@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T01:57:57+00:00 UTC)
+## Current status (2026-11-07T02:24:42+00:00 UTC)
 
 460 models polled, 1514 inference endpoints:
-up 988, degraded 60, down 24, idle 442.
+up 1010, degraded 51, down 24, idle 429.
 
 Currently down (24):
 
@@ -96,19 +96,19 @@ Currently down (24):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 73% | 100% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 33% | n/a |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 20% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 76% | n/a |
-| `nvidia/nemotron-3.5-lightning` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 10% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 83% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 60% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 25% | 80% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 27% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 47% | 40% |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
