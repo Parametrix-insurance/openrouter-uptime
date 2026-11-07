@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T20:20:05+00:00 UTC)
+## Current status (2026-11-07T20:38:14+00:00 UTC)
 
 460 models polled, 1520 inference endpoints:
-up 1050, degraded 38, down 27, idle 405.
+up 1050, degraded 40, down 22, idle 408.
 
-Currently down (27):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (27):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 33% | 100% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 3% | 25% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 0% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 20% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 3% | 20% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 11% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `qwen/qwen3.6-27b` | `reka` | Reka | 0% | n/a |
-| plus 12 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `thinkingmachines/inkling` | `together` | Together | 0% | 0% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
