@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-07T02:24:42+00:00 UTC)
+## Current status (2026-11-07T02:38:12+00:00 UTC)
 
-460 models polled, 1514 inference endpoints:
-up 1010, degraded 51, down 24, idle 429.
+460 models polled, 1515 inference endpoints:
+up 1025, degraded 36, down 21, idle 433.
 
-Currently down (24):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 73% | 100% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 27% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 83% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 60% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 25% | 80% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 56% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 20% | 20% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | 100% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 24% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 10% | 100% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 20% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 47% | 40% |
-| plus 9 more | | | | |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 22% | 20% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 52% | 75% |
+| `scaledown/extract` | `scaledown` | ScaleDown | 57% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
