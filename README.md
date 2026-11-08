@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T05:38:00+00:00 UTC)
+## Current status (2026-11-08T05:58:36+00:00 UTC)
 
 461 models polled, 1526 inference endpoints:
-up 1027, degraded 34, down 20, idle 445.
+up 1023, degraded 36, down 20, idle 447.
 
 Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 88% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 12% | 75% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 33% | 50% |
+| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 87% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 22% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 20% | 50% |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 44% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 21% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 45% | 0% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 62% | 0% |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 77% | 40% |
 | plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
