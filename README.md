@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T03:23:41+00:00 UTC)
+## Current status (2026-11-08T03:37:36+00:00 UTC)
 
 464 models polled, 1529 inference endpoints:
-up 1015, degraded 34, down 21, idle 459.
+up 1015, degraded 33, down 23, idle 458.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -100,16 +100,16 @@ Currently down (21):
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
 | `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | n/a |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 32% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
 | `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 64% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 0% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 25% | 80% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 33% | n/a |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 4% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 15% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 33% | 33% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 14% | 50% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| plus 6 more | | | | |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
