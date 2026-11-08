@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T04:57:31+00:00 UTC)
+## Current status (2026-11-08T05:19:50+00:00 UTC)
 
-464 models polled, 1529 inference endpoints:
-up 1043, degraded 25, down 19, idle 442.
+461 models polled, 1526 inference endpoints:
+up 1041, degraded 31, down 20, idle 434.
 
-Currently down (19):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 71% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 32% | 80% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 10% | 0% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 41% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 33% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 20% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 70% | n/a |
-| `scaledown/extract` | `scaledown` | ScaleDown | 57% | 0% |
-| `stealth/crouton-alpha` | `stealth` | Stealth | 67% | 100% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 52% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 0% |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 26% | 0% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 35% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-28 15:27** — **4 models removed from the catalog in one poll**: `openai/o1`, `openai/o1-pro`, `openai/o3-mini-high`, `openai/o4-mini-high`.
 - **2026-10-28 18:30** — provider `primalabs` changed its terms of service url.
 - **2026-10-28 18:30** — provider `primalabs` changed its privacy policy url.
 - **2026-10-28 18:30** — provider `primalabs` changed its status page.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-05 13:23** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
 - **2026-11-06 19:00** — **4 models added to the catalog in one poll**: `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 - **2026-11-08 02:57** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
+- **2026-11-08 05:19** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
