@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T04:37:40+00:00 UTC)
+## Current status (2026-11-08T04:57:31+00:00 UTC)
 
 464 models polled, 1529 inference endpoints:
-up 1017, degraded 36, down 18, idle 458.
+up 1043, degraded 25, down 19, idle 442.
 
-Currently down (18):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 43% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 44% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 28% | 67% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 17% | 0% |
-| `openai/gpt-5-image-mini` | `openai` | OpenAI | 22% | 67% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 7% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `scaledown/extract` | `scaledown` | ScaleDown | 60% | n/a |
-| `stealth/crouton-alpha` | `stealth` | Stealth | 60% | 0% |
-| plus 3 more | | | | |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 32% | 80% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 10% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 41% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 33% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 20% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 70% | n/a |
+| `scaledown/extract` | `scaledown` | ScaleDown | 57% | 0% |
+| `stealth/crouton-alpha` | `stealth` | Stealth | 67% | 100% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
