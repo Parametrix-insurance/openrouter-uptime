@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T13:40:14+00:00 UTC)
+## Current status (2026-11-08T13:58:10+00:00 UTC)
 
 461 models polled, 1526 inference endpoints:
-up 1020, degraded 35, down 22, idle 449.
+up 1022, degraded 39, down 25, idle 440.
 
-Currently down (22):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 40% | 20% |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 50% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 23% | 40% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 20% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 45% | 75% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 57% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
 | `meta/muse-spark-open` | `fireworks/us` | Fireworks | 0% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 12% | 40% |
-| `moonshotai/kimi-k3` | `inference-net/fast` | InferenceNet | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 95% | 80% |
-| plus 7 more | | | | |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `phala` | Phala | 0% | 0% |
+| `moonshotai/kimi-k3` | `inference-net/us/fast` | InferenceNet | 17% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
