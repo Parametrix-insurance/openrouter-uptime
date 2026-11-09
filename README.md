@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T18:00:56+00:00 UTC)
+## Current status (2026-11-09T18:40:20+00:00 UTC)
 
-461 models polled, 1513 inference endpoints:
-up 1030, degraded 51, down 32, idle 400.
+462 models polled, 1508 inference endpoints:
+up 1042, degraded 45, down 27, idle 394.
 
-Currently down (32):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 73% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 10% | 40% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 53% | 0% |
+| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 27% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 27% | 0% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 10% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 29% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 89% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 64% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 31% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 3% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 33% | 0% |
-| plus 17 more | | | | |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 33% | 80% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 20% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
