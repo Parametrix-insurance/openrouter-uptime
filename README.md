@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T01:56:55+00:00 UTC)
+## Current status (2026-11-09T02:28:01+00:00 UTC)
 
 461 models polled, 1522 inference endpoints:
-up 1004, degraded 38, down 20, idle 460.
+up 1010, degraded 44, down 27, idle 441.
 
-Currently down (20):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 32% | 20% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 40% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 17% | 40% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 81% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 40% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 50% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 46% | n/a |
-| `openai/gpt-oss-120b` | `groq` | Groq | 30% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 68% | 20% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 40% | 60% |
-| plus 5 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `elorian/glimpse` | `together` | Together | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 30% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 50% | 60% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 83% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 10% | 40% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
