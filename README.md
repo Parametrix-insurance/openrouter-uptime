@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T07:24:56+00:00 UTC)
+## Current status (2026-11-09T07:38:23+00:00 UTC)
 
-461 models polled, 1519 inference endpoints:
-up 1014, degraded 54, down 28, idle 423.
+461 models polled, 1518 inference endpoints:
+up 1034, degraded 49, down 24, idle 411.
 
-Currently down (28):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `aion-labs/aion-2.0` | `aion-labs` | AionLabs | 80% | 100% |
-| `aion-labs/aion-3.0` | `aion-labs` | AionLabs | 54% | 100% |
-| `aion-labs/aion-3.0-mini` | `aion-labs` | AionLabs | 0% | n/a |
-| `aion-labs/aion-3.5` | `aion-labs` | AionLabs | 74% | 100% |
-| `aion-labs/aion-3.5-mini` | `aion-labs` | AionLabs | 73% | 100% |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 74% | 67% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 58% | 25% |
 | `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 13% | 0% |
-| plus 13 more | | | | |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 7% | 0% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 78% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 40% |
+| `moonshotai/kimi-k2.5` | `venice` | Venice | 79% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 14% | 33% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
