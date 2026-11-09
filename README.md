@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T22:40:02+00:00 UTC)
+## Current status (2026-11-09T22:58:18+00:00 UTC)
 
-464 models polled, 1518 inference endpoints:
-up 1040, degraded 39, down 24, idle 415.
+464 models polled, 1519 inference endpoints:
+up 995, degraded 74, down 23, idle 427.
 
-Currently down (24):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (24):
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `near-ai` | Near AI | 0% | 0% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 50% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 83% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 50% |
+| `deepseek/deepseek-v4.1-flash-1017` | `near-ai` | Near AI | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
+| `meta-llama/llama-guard-4-12b` | `deepinfra/bf16/priority` | DeepInfra | 81% | 100% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 21% | 25% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `near-ai/fp4` | Near AI | 43% | 0% |
-| plus 9 more | | | | |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 33% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 40% | 60% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
