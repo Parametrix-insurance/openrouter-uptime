@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T21:59:53+00:00 UTC)
+## Current status (2026-11-10T22:21:38+00:00 UTC)
 
 469 models polled, 1522 inference endpoints:
-up 1074, degraded 41, down 18, idle 389.
+up 1053, degraded 47, down 17, idle 405.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 10% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 78% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 37% | 60% |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 10% | 0% |
+| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 40% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 75% | 40% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 17% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 37% | 40% |
+| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 78% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 23% | 100% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 0% |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 67% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 100% |
+| `sao10k/l3-lunaris-8b` | `parasail/bf16` | Parasail | 60% | n/a |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 73% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
