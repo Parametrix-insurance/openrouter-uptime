@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T20:38:29+00:00 UTC)
+## Current status (2026-11-10T20:58:04+00:00 UTC)
 
 469 models polled, 1521 inference endpoints:
-up 1061, degraded 50, down 26, idle 384.
+up 1042, degraded 62, down 22, idle 395.
 
-Currently down (26):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 40% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 63% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 82% | 67% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 3% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 41% | 0% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 97% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 0% | 0% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 38% | 33% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 96% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.1-flash` | `novita` | Novita | 13% | 0% |
-| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 60% | 100% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
+| `inclusionai/ling-3.1-flash` | `novita` | Novita | 24% | 100% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 20% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| plus 11 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 100% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
