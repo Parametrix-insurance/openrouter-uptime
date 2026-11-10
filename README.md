@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T06:58:15+00:00 UTC)
+## Current status (2026-11-10T07:23:02+00:00 UTC)
 
-465 models polled, 1519 inference endpoints:
-up 1067, degraded 40, down 20, idle 392.
+465 models polled, 1520 inference endpoints:
+up 1058, degraded 36, down 26, idle 400.
 
-Currently down (20):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 86% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-ai-studio/flex` | Google AI Studio | 67% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 50% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 81% | 0% |
-| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 36% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 43% | 80% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
+| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 30% | n/a |
 | `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 40% | 0% |
-| plus 5 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
