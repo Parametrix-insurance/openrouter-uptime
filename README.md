@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T09:23:37+00:00 UTC)
+## Current status (2026-11-10T09:39:28+00:00 UTC)
 
-465 models polled, 1520 inference endpoints:
-up 1042, degraded 61, down 20, idle 397.
+465 models polled, 1519 inference endpoints:
+up 1043, degraded 53, down 23, idle 400.
 
-Currently down (20):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 26% | 40% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `makora/fp8` | Makora | 34% | 100% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `primeintellect/fp4` | PrimeIntellect | 55% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `makora/fp8` | Makora | 70% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 77% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 60% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 20% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 27% | 0% |
-| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 0% | n/a |
-| plus 5 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 21% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 7% | 20% |
+| `google/gemma-3-27b-it` | `nextbit/fp8` | NextBit | 0% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
