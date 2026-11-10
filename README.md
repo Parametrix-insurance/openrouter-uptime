@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-10T16:25:39+00:00 UTC)
+## Current status (2026-11-10T16:40:29+00:00 UTC)
 
 467 models polled, 1510 inference endpoints:
-up 1084, degraded 49, down 19, idle 358.
+up 1066, degraded 52, down 23, idle 369.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 37% | 0% |
+| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 27% | 0% |
 | `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 65% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 71% | 50% |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 11% | 75% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 0% | n/a |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 71% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 50% | n/a |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 25% | 25% |
+| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 50% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 69% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
