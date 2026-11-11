@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T05:38:55+00:00 UTC)
+## Current status (2026-11-11T05:58:09+00:00 UTC)
 
-469 models polled, 1502 inference endpoints:
-up 1032, degraded 35, down 19, idle 416.
+469 models polled, 1501 inference endpoints:
+up 1028, degraded 38, down 24, idle 411.
 
-Currently down (19):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 69% | 0% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 50% | 0% |
-| `google/gemma-4-31b-it` | `modal` | Modal | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 58% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `nebius/bf16` | Nebius | 43% | 40% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 31% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 4% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 40% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 29% | 100% |
+| `google/gemma-4-31b-it` | `kt` | KT | 90% | 100% |
+| `google/gemma-4-31b-it` | `modal` | Modal | 67% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 38% | 0% |
+| `inclusionai/ling-3.1-flash` | `novita` | Novita | 27% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `nebius/bf16` | Nebius | 67% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 50% | 67% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 77% | 60% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 20% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
