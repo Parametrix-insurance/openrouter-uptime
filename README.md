@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T17:21:35+00:00 UTC)
+## Current status (2026-11-11T17:38:48+00:00 UTC)
 
 466 models polled, 1499 inference endpoints:
-up 1031, degraded 62, down 22, idle 384.
+up 1040, degraded 53, down 21, idle 385.
 
-Currently down (22):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 10% | 60% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 57% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 33% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 37% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 3% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 50% | 60% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 19% | 0% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 8% | 0% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 7% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 43% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 57% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 67% | 80% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| plus 7 more | | | | |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 40% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 28% | 40% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
