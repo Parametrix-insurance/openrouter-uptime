@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T21:24:22+00:00 UTC)
+## Current status (2026-11-11T21:39:07+00:00 UTC)
 
 466 models polled, 1501 inference endpoints:
-up 1037, degraded 54, down 27, idle 383.
+up 1016, degraded 64, down 30, idle 391.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 77% | 80% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 67% | 80% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 47% | 0% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 77% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 9% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 75% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 44% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 100% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 10% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 85% | 33% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 8% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `fireworks` | Fireworks | 100% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 90% | 67% |
 | `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| plus 12 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
