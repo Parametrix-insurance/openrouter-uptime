@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T15:21:38+00:00 UTC)
+## Current status (2026-11-11T15:40:49+00:00 UTC)
 
 466 models polled, 1498 inference endpoints:
-up 1053, degraded 53, down 23, idle 369.
+up 1042, degraded 53, down 27, idle 376.
 
-Currently down (23):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 33% | 0% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 41% | 100% |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 41% | 75% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 85% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 17% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 50% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 13% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/us` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 63% | 40% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 12% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 100% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 55% | n/a |
-| plus 8 more | | | | |
+| `nvidia/nemotron-3.5-lightning` | `fireworks` | Fireworks | 12% | n/a |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | n/a |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
