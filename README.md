@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T18:38:23+00:00 UTC)
+## Current status (2026-11-11T18:58:55+00:00 UTC)
 
 466 models polled, 1499 inference endpoints:
-up 1039, degraded 59, down 21, idle 380.
+up 1041, degraded 58, down 25, idle 375.
 
-Currently down (21):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 47% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 30% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 50% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 7% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 73% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 39% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 44% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 33% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 61% | 100% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 19% | 25% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 24% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 57% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
-| `perceptron/perceptron-mk1.5` | `perceptron` | Perceptron | 33% | n/a |
-| plus 6 more | | | | |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 33% | 50% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
