@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T08:57:28+00:00 UTC)
+## Current status (2026-11-11T09:24:14+00:00 UTC)
 
-469 models polled, 1502 inference endpoints:
-up 1059, degraded 42, down 26, idle 375.
+469 models polled, 1499 inference endpoints:
+up 1023, degraded 57, down 33, idle 386.
 
-Currently down (26):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `dekallm` | DekaLLM | 47% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 63% | 20% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 43% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 50% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 31% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | n/a |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 8% | 0% |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| plus 11 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 32% | 100% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 69% | 60% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `modal` | Modal | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | n/a |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 57% | 0% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
