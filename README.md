@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T04:24:33+00:00 UTC)
+## Current status (2026-11-11T04:38:40+00:00 UTC)
 
 469 models polled, 1503 inference endpoints:
-up 1043, degraded 37, down 22, idle 401.
+up 1040, degraded 39, down 14, idle 410.
 
-Currently down (22):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 46% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 38% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemma-4-31b-it` | `kt` | KT | 80% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-ember` | `google-vertex/global` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `meta/muse-wonder` | `google-vertex/global` | Google | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 33% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 43% | n/a |
+| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 0% | n/a |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 6% | 25% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 76% | 75% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 85% | 100% |
-| plus 7 more | | | | |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 79% | 80% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 80% |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
+| `thinkingmachines/inkling` | `together` | Together | 53% | 20% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
