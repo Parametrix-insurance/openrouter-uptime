@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T04:38:40+00:00 UTC)
+## Current status (2026-11-11T04:57:15+00:00 UTC)
 
-469 models polled, 1503 inference endpoints:
-up 1040, degraded 39, down 14, idle 410.
+469 models polled, 1504 inference endpoints:
+up 1024, degraded 52, down 17, idle 411.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 38% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 67% | 60% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 40% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 67% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `modal` | Modal | 14% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `meta/muse-wonder` | `google-vertex/global` | Google | 0% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 43% | n/a |
-| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 6% | 25% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 12% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 79% | 80% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 80% |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 81% | 67% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 69% | 0% |
 | `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
-| `thinkingmachines/inkling` | `together` | Together | 53% | 20% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 20% |
+| `tencent/hy3-preview` | `gmicloud/bf16` | GMICloud | 73% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
