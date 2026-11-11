@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T23:19:52+00:00 UTC)
+## Current status (2026-11-11T23:38:30+00:00 UTC)
 
 467 models polled, 1504 inference endpoints:
-up 1028, degraded 45, down 20, idle 411.
+up 1030, degraded 48, down 26, idle 400.
 
-Currently down (20):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 43% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 3% | 20% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 25% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 25% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 33% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 40% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 33% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 83% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 50% | 0% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 62% | n/a |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
