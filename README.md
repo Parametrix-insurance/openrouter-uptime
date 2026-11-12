@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T19:59:01+00:00 UTC)
+## Current status (2026-11-12T20:21:44+00:00 UTC)
 
 473 models polled, 1519 inference endpoints:
-up 1032, degraded 56, down 24, idle 407.
+up 1040, degraded 51, down 24, idle 404.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 89% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 43% | 40% |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 59% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 88% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `baseten/fast` | BaseTen | 69% | 75% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 82% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 73% | 40% |
 | `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 81% | 100% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 77% | 80% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 26% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
+| `openai/gpt-5.6-sol` | `azure` | Azure | 33% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 77% | 40% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 97% | 80% |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
@@ -118,8 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-02 23:41** — provider `kt` changed its terms of service url.
-- **2026-11-02 23:41** — provider `kt` changed its privacy policy url.
 - **2026-11-04 17:04** — provider `antdigital` changed its terms of service url.
 - **2026-11-04 17:04** — provider `antdigital` changed its privacy policy url.
 - **2026-11-05 13:23** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
@@ -130,6 +128,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-10 05:57** — provider `primeintellect` changed its privacy policy url.
 - **2026-11-11 13:22** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 18:59** — **3 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
+- **2026-11-12 20:21** — provider `recraft` changed its terms of service url.
+- **2026-11-12 20:21** — provider `recraft` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
