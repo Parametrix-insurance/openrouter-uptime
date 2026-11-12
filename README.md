@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T17:39:27+00:00 UTC)
+## Current status (2026-11-12T17:59:24+00:00 UTC)
 
 468 models polled, 1506 inference endpoints:
-up 1038, degraded 52, down 26, idle 390.
+up 1029, degraded 53, down 29, idle 395.
 
-Currently down (26):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 25% | n/a |
-| `elorian/glimpse` | `together` | Together | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 48% | 20% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 10% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 57% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 13% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 70% | 100% |
+| `google/gemma-4-26b-a4b-it` | `primeintellect/bf16` | PrimeIntellect | 70% | 40% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 83% | 100% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-5.6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 47% | 40% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 23% | 25% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
-| plus 11 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 32% | 40% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
