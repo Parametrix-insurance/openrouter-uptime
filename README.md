@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T11:29:31+00:00 UTC)
+## Current status (2026-11-12T11:58:01+00:00 UTC)
 
 468 models polled, 1507 inference endpoints:
-up 1054, degraded 47, down 25, idle 381.
+up 1059, degraded 48, down 17, idle 383.
 
-Currently down (25):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 71% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 56% | 67% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 62% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 44% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 60% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 41% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 84% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 37% | 100% |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 17% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 68% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
-| plus 10 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 20% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 38% | 100% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 78% | n/a |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
