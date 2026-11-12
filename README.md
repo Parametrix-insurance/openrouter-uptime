@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T07:37:43+00:00 UTC)
+## Current status (2026-11-12T07:58:50+00:00 UTC)
 
 468 models polled, 1506 inference endpoints:
-up 1045, degraded 34, down 20, idle 407.
+up 1048, degraded 40, down 26, idle 392.
 
-Currently down (20):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 23% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 22% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 47% | 0% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 79% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 73% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 53% | 20% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 37% | 80% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 37% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 10% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 50% | 100% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
-| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 3% | 0% |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 14% | 20% |
-| `qwen/qwen3.5-35b-a3b` | `parasail/fp8` | Parasail | 0% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 10% | 0% |
-| plus 5 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
