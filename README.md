@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T11:57:38+00:00 UTC)
+## Current status (2026-11-13T12:27:19+00:00 UTC)
 
 472 models polled, 1519 inference endpoints:
-up 1052, degraded 40, down 19, idle 408.
+up 1060, degraded 56, down 13, idle 390.
 
-Currently down (19):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 9% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 25% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 57% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 84% | 100% |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 38% | 25% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 45% | 50% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 67% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 66% | 20% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 60% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 10% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 36% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 38% | 60% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | 0% |
 | `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 7% | 20% |
-| plus 4 more | | | | |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
