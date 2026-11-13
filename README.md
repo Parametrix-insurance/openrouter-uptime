@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T16:39:18+00:00 UTC)
+## Current status (2026-11-13T16:59:47+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 1063, degraded 52, down 21, idle 381.
+up 1077, degraded 40, down 23, idle 377.
 
-Currently down (21):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | 43% | 33% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 44% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 7% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | 17% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 3% | 0% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 40% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 43% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
 | `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 14% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 60% | 100% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 39% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 7% | 0% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 54% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 3% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 80% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
