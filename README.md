@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T11:00:07+00:00 UTC)
+## Current status (2026-11-13T11:20:54+00:00 UTC)
 
 472 models polled, 1519 inference endpoints:
-up 1041, degraded 58, down 23, idle 397.
+up 1051, degraded 53, down 21, idle 394.
 
-Currently down (23):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 61% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8/us-east-1` | Alibaba | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 13% | 0% |
-| `google/gemini-4-hydrogen` | `google-ai-studio` | Google AI Studio | 50% | 80% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 75% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 3% | 0% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 75% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 67% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 55% | n/a |
-| plus 8 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 43% | 50% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 10% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
