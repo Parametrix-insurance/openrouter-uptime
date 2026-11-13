@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T15:39:42+00:00 UTC)
+## Current status (2026-11-13T15:58:37+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 1048, degraded 56, down 22, idle 391.
+up 1051, degraded 55, down 24, idle 387.
 
-Currently down (22):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 60% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 46% | 67% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 42% | 33% |
+| `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | 25% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 55% | 25% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemini-4-carbon` | `google-ai-studio/flex` | Google AI Studio | 27% | 0% |
-| `google/gemini-4-carbon` | `google-ai-studio` | Google AI Studio | 67% | 0% |
+| `google/gemini-4-carbon` | `google-ai-studio/flex` | Google AI Studio | 30% | 100% |
+| `google/gemini-4-carbon` | `google-ai-studio` | Google AI Studio | 17% | 0% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 38% | 80% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 3% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 8% | 0% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 66% | 100% |
-| plus 7 more | | | | |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 34% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 57% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
