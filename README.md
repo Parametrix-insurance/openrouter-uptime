@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T03:57:56+00:00 UTC)
+## Current status (2026-11-13T04:24:10+00:00 UTC)
 
-475 models polled, 1520 inference endpoints:
-up 1033, degraded 47, down 24, idle 416.
+475 models polled, 1521 inference endpoints:
+up 1018, degraded 60, down 24, idle 419.
 
 Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 90% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 43% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 79% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 60% | 80% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 64% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `dekallm` | DekaLLM | 50% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 58% | 50% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 43% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 33% | n/a |
-| `openai/gpt-oss-120b` | `venice/int4` | Venice | 43% | n/a |
+| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 23% | 20% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 83% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 30% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 43% | 20% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 27% | 0% |
 | plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
