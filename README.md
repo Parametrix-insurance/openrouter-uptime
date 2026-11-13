@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T13:21:51+00:00 UTC)
+## Current status (2026-11-13T13:40:26+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 999, degraded 81, down 36, idle 401.
+up 1025, degraded 68, down 32, idle 392.
 
-Currently down (36):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-fable-5.1` | `azure` | Azure | 71% | n/a |
-| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 59% | 100% |
-| `anthropic/claude-fable-5.2` | `azure` | Azure | 63% | 100% |
-| `anthropic/claude-fable-5.2` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 57% | 100% |
-| `anthropic/claude-haiku-5.5` | `anthropic` | Anthropic | 60% | 100% |
-| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 70% | 100% |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 57% | 100% |
-| `anthropic/claude-opus-4.7` | `anthropic` | Anthropic | 70% | n/a |
-| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 57% | 100% |
-| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 28% | 100% |
+| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 0% | n/a |
+| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 52% | 100% |
+| `anthropic/claude-fable-5.2` | `anthropic/fast` | Anthropic | 100% | n/a |
+| `anthropic/claude-haiku-4.5` | `azure/global` | Azure | 64% | n/a |
+| `anthropic/claude-haiku-4.5` | `anthropic` | Anthropic | 53% | 100% |
+| `anthropic/claude-haiku-5.5` | `anthropic` | Anthropic | 57% | 100% |
+| `anthropic/claude-opus-4.5` | `anthropic` | Anthropic | 48% | n/a |
+| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 53% | 100% |
+| `anthropic/claude-opus-4.8` | `anthropic` | Anthropic | 53% | 100% |
+| `anthropic/claude-opus-5` | `anthropic` | Anthropic | 35% | 100% |
 | `anthropic/claude-opus-5.5` | `anthropic` | Anthropic | 57% | 100% |
-| `anthropic/claude-opus-5.5` | `anthropic/fast` | Anthropic | 62% | 100% |
-| `anthropic/claude-sonnet-4.5` | `anthropic` | Anthropic | 0% | n/a |
+| `anthropic/claude-opus-5.5` | `anthropic/fast` | Anthropic | 55% | 100% |
+| `anthropic/claude-sonnet-4.5` | `google-vertex/global` | Google | 0% | n/a |
 | `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
-| plus 21 more | | | | |
+| `anthropic/claude-sonnet-4.6` | `anthropic` | Anthropic | 57% | 100% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
