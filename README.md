@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T02:57:00+00:00 UTC)
+## Current status (2026-11-13T03:24:12+00:00 UTC)
 
 475 models polled, 1521 inference endpoints:
-up 1020, degraded 47, down 17, idle 437.
+up 1058, degraded 42, down 17, idle 404.
 
 Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 20% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 23% | 100% |
-| `google/gemini-4-hydrogen` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 62% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
-| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 57% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 23% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 7% | 20% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 55% | 100% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 55% | 75% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 50% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 57% | 50% |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 71% | n/a |
+| `openai/gpt-oss-120b` | `venice/int4` | Venice | 38% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 30% | 80% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 92% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `cohere/fp8` | Cohere | 73% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 70% | 100% |
 | plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
