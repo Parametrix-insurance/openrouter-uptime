@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T01:22:12+00:00 UTC)
+## Current status (2026-11-13T01:39:28+00:00 UTC)
 
 475 models polled, 1523 inference endpoints:
-up 1038, degraded 56, down 15, idle 414.
+up 1059, degraded 43, down 20, idle 401.
 
-Currently down (15):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 42% | 60% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 62% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 0% | n/a |
-| `openai/gpt-oss-120b` | `venice/int4` | Venice | 50% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 20% |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 86% | 100% |
+| `openai/gpt-oss-120b` | `venice/int4` | Venice | 54% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 83% | 100% |
 | `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | 0% |
 | `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 88% | 50% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 50% | n/a |
 | `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 93% | 100% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 79% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 29% | 100% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
