@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T05:37:18+00:00 UTC)
+## Current status (2026-11-14T05:57:59+00:00 UTC)
 
-471 models polled, 1525 inference endpoints:
-up 1014, degraded 41, down 13, idle 457.
+471 models polled, 1526 inference endpoints:
+up 1023, degraded 34, down 12, idle 457.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 35% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 57% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/us` | BaseTen | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten` | BaseTen | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `venice/fp8` | Venice | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 5% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 27% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 13% | 20% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
-| `z-ai/glm-5.3` | `baseten/fp4/us` | BaseTen | 80% | n/a |
-| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 50% | 100% |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 54% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 13% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
