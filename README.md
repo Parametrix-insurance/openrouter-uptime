@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T12:24:16+00:00 UTC)
+## Current status (2026-11-14T12:37:34+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1062, degraded 40, down 17, idle 410.
+up 1072, degraded 36, down 16, idle 405.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | 33% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 67% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
-| `qwen/qwen3.5-122b-a10b` | `novita/bf16` | Novita | 80% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `openai/gpt-oss-120b` | `groq` | Groq | 60% | 100% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 50% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 42% | 0% |
 | `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 50% | 60% |
 | `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 3% | 0% |
 | `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
-| plus 2 more | | | | |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
