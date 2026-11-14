@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T16:19:56+00:00 UTC)
+## Current status (2026-11-14T16:37:21+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1094, degraded 29, down 14, idle 392.
+up 1073, degraded 29, down 12, idle 415.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `anthropic/claude-haiku-4.5` | `amazon-bedrock/us` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 33% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 57% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 10% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
 | `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
-| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 20% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 75% | 75% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 89% | 67% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 60% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
