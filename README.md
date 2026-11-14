@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T09:57:34+00:00 UTC)
+## Current status (2026-11-14T10:21:06+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1063, degraded 41, down 15, idle 410.
+up 1068, degraded 36, down 16, idle 409.
 
-Currently down (15):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 58% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 87% | 20% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 8% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 50% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 20% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 57% | 100% |
-| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | n/a | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 47% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 10% | 20% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 78% | 100% |
+| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 0% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
