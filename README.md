@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T04:22:52+00:00 UTC)
+## Current status (2026-11-14T04:37:57+00:00 UTC)
 
-471 models polled, 1524 inference endpoints:
-up 1019, degraded 45, down 15, idle 445.
+471 models polled, 1525 inference endpoints:
+up 1020, degraded 48, down 17, idle 440.
 
-Currently down (15):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 14% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 20% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 86% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 77% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 72% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 77% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 56% | 50% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 28% | 25% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 16% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 20% | 40% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 14% | 50% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 28% | 100% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | 25% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 18% | 20% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 80% | n/a |
+| `ricursiveai/ripple-65b-preview` | `primeintellect/bf16` | PrimeIntellect | 44% | 0% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 90% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `darkbloom/fp4` | Darkbloom | 93% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 67% | 60% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
