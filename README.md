@@ -85,25 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T03:37:40+00:00 UTC)
+## Current status (2026-11-14T03:57:11+00:00 UTC)
 
 471 models polled, 1524 inference endpoints:
-up 1032, degraded 42, down 10, idle 440.
+up 1020, degraded 44, down 10, idle 450.
 
 Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 11% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 55% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | n/a |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 18% | 0% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 23% | 60% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 56% | 50% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 10% | 20% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 20% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | n/a |
+| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
