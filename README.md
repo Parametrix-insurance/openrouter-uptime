@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T23:38:05+00:00 UTC)
+## Current status (2026-11-14T23:57:17+00:00 UTC)
 
-471 models polled, 1530 inference endpoints:
-up 1060, degraded 38, down 16, idle 416.
+471 models polled, 1533 inference endpoints:
+up 1036, degraded 30, down 17, idle 450.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 40% | n/a |
-| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 88% | 40% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 65% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 87% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 100% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 69% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 8% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 27% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | 50% |
 | `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 0% | n/a |
 | `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | n/a |
-| `xiaomi/mimo-v2.6-pro` | `streamlake` | StreamLake | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 20% |
-| plus 1 more | | | | |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
