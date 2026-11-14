@@ -85,27 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T02:57:57+00:00 UTC)
+## Current status (2026-11-14T03:22:46+00:00 UTC)
 
 471 models polled, 1524 inference endpoints:
-up 1019, degraded 29, down 12, idle 464.
+up 1024, degraded 34, down 15, idle 451.
 
-Currently down (12):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 78% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 47% | 40% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemma-4-31b-it:free` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 91% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 55% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 44% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 57% | 33% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 40% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 40% |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 50% | n/a |
+| `qwen/qwen-plus` | `alibaba` | Alibaba | 0% | n/a |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 80% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 50% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 80% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 23% | 0% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 63% | 40% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
