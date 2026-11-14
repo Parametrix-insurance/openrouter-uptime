@@ -85,27 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T16:37:21+00:00 UTC)
+## Current status (2026-11-14T16:58:17+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1073, degraded 29, down 12, idle 415.
+up 1066, degraded 32, down 11, idle 420.
 
-Currently down (12):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-haiku-4.5` | `amazon-bedrock/us` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 50% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 75% | 75% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 89% | 67% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 60% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 20% | 80% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 30% | 20% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 3% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 50% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 13% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 53% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
