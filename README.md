@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T12:57:27+00:00 UTC)
+## Current status (2026-11-14T13:18:55+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1053, degraded 37, down 16, idle 423.
+up 1059, degraded 38, down 17, idle 415.
 
-Currently down (16):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 44% | n/a |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 40% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 87% | 20% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 17% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 3% | 0% |
-| plus 1 more | | | | |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 54% | 100% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 23% | 40% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 17% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 4% | 0% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 40% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 89% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
