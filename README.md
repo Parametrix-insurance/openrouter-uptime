@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T22:19:41+00:00 UTC)
+## Current status (2026-11-14T22:37:42+00:00 UTC)
 
-471 models polled, 1530 inference endpoints:
-up 1050, degraded 37, down 17, idle 426.
+471 models polled, 1528 inference endpoints:
+up 1061, degraded 28, down 16, idle 423.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 36% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 73% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 48% | 60% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 36% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 14% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 43% | 40% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 11% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 43% | n/a |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
 | `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-14b` | `deepinfra/fp8` | DeepInfra | 50% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 40% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 38% | 100% |
-| plus 2 more | | | | |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 42% | 60% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 29% | 0% |
+| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 64% | 100% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 75% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 60% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
