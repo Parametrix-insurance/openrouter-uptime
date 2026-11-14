@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T07:56:43+00:00 UTC)
+## Current status (2026-11-14T08:22:48+00:00 UTC)
 
 471 models polled, 1529 inference endpoints:
-up 1014, degraded 39, down 16, idle 460.
+up 1065, degraded 33, down 15, idle 416.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 50% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 38% | n/a |
-| `nvidia/nemotron-3.5-lightning` | `darkbloom/int4` | Darkbloom | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 53% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/zdr` | Mistral | 52% | 25% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 79% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 40% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
-| `qwen/qwen3.8-27b` | `streamlake` | StreamLake | 67% | 50% |
-| plus 1 more | | | | |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 29% | 33% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 87% | n/a |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 67% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 37% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
