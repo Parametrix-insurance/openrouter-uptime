@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T16:37:23+00:00 UTC)
+## Current status (2026-11-15T16:58:15+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1046, degraded 42, down 16, idle 464.
+up 1015, degraded 52, down 18, idle 483.
 
-Currently down (16):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 10% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 86% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 13% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 27% | 20% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 11% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 60% | 50% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 11% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 88% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 13% | 20% |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 23% | 20% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| plus 1 more | | | | |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 27% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 50% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 40% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `mistralai/mixtral-8x22b-instruct` | `mistral/zdr` | Mistral | 0% | n/a |
+| `mistralai/mixtral-8x22b-instruct` | `mistral/eu` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | 33% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 27% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 65% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 33% | n/a |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
