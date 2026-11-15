@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T20:19:49+00:00 UTC)
+## Current status (2026-11-15T20:38:01+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1033, degraded 38, down 41, idle 457.
+up 1017, degraded 40, down 46, idle 466.
 
-Currently down (41):
+Currently down (46):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 73% | 80% |
 | `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 0% | 0% |
 | `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 77% | 100% |
 | `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 0% | n/a |
 | `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 0% | 0% |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| plus 26 more | | | | |
+| plus 31 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
