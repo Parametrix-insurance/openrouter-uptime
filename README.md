@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T08:57:34+00:00 UTC)
+## Current status (2026-11-15T09:21:15+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1031, degraded 42, down 17, idle 483.
+up 1057, degraded 42, down 24, idle 450.
 
-Currently down (17):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 8% | 50% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 83% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 72% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 81% | 100% |
-| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
-| `openai/gpt-6-astra` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 48% | 100% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | 100% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 23% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 10% | 0% |
-| `x-ai/grok-4.7` | `xai/zdr` | xAI | 67% | 100% |
-| plus 2 more | | | | |
+| `moonshotai/kimi-k2.6` | `baidu/fp4` | Baidu | 82% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 71% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 33% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 31% | 0% |
+| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
