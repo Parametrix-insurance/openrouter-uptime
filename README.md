@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T15:57:34+00:00 UTC)
+## Current status (2026-11-15T16:21:05+00:00 UTC)
 
-467 models polled, 1569 inference endpoints:
-up 1055, degraded 39, down 15, idle 460.
+467 models polled, 1568 inference endpoints:
+up 1049, degraded 44, down 15, idle 460.
 
 Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 60% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 59% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `parasail/fp8` | Parasail | 33% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 9% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 71% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 17% | 0% |
-| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 27% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 79% | 100% |
-| `thinkingmachines/inkling-2-small` | `together` | Together | 43% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 100% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 25% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 13% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 50% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 4% | 33% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 13% | 0% |
+| `qwen/qwen3.8-27b` | `chutes/fp8` | Chutes | 3% | 20% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 29% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 60% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
