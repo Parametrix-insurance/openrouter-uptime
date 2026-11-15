@@ -85,26 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T12:38:05+00:00 UTC)
+## Current status (2026-11-15T12:57:24+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1054, degraded 43, down 11, idle 465.
+up 1049, degraded 37, down 12, idle 475.
 
-Currently down (11):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 80% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 13% | 25% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 53% | 40% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 40% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 8% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 87% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 79% | 20% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
-| `morph/morph-v3-fast` | `morph/fp8` | Morph | 50% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 20% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 77% | 20% |
+| `morph/morph-v3-fast` | `morph/fp8` | Morph | 0% | n/a |
+| `openai/gpt-oss-120b` | `baseten/fp4/us` | BaseTen | 24% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 20% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
