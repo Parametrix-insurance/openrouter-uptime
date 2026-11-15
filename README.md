@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T00:45:45+00:00 UTC)
+## Current status (2026-11-15T01:03:12+00:00 UTC)
 
-471 models polled, 1551 inference endpoints:
-up 1023, degraded 34, down 19, idle 475.
+471 models polled, 1564 inference endpoints:
+up 1056, degraded 28, down 17, idle 463.
 
-Currently down (19):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 24% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 70% | 20% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 67% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 33% | 75% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 11% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 8% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 47% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `digitalocean` | DigitalOcean | 59% | 100% |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 20% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 40% | 0% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 50% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 40% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 26% | 0% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 43% | 40% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 56% | 25% |
+| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 60% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 14% | 0% |
+| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 37% | 40% |
+| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 0% | 0% |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
