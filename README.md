@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T01:03:12+00:00 UTC)
+## Current status (2026-11-15T01:22:48+00:00 UTC)
 
-471 models polled, 1564 inference endpoints:
-up 1056, degraded 28, down 17, idle 463.
+471 models polled, 1571 inference endpoints:
+up 1010, degraded 53, down 23, idle 485.
 
-Currently down (17):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 33% | 75% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 11% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 8% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | 0% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 100% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 20% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 40% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | n/a |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 56% | 25% |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | 0% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 60% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 14% | 0% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 37% | 40% |
-| `ricursiveai/ripple-65b-preview` | `gmicloud/bf16` | GMICloud | 0% | 0% |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | n/a |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 57% | 100% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 71% | 100% |
+| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 43% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 48% | 100% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
