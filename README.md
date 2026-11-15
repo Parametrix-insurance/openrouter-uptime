@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T17:18:14+00:00 UTC)
+## Current status (2026-11-15T17:37:49+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1030, degraded 49, down 19, idle 470.
+up 1045, degraded 46, down 23, idle 454.
 
-Currently down (19):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 64% | 67% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 38% | 25% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 93% | 100% |
-| `mistralai/mistral-small-2603` | `mistral/eu` | Mistral | 92% | 100% |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 43% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 46% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 36% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 24% | 60% |
+| `mistralai/mistral-nemo` | `dekallm/fp8` | DekaLLM | 83% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `mistral/eu` | Mistral | 87% | 100% |
-| `mistralai/mixtral-8x22b-instruct` | `mistral/eu` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 46% | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 65% | 100% |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 43% | 80% |
-| plus 4 more | | | | |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 64% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 83% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 25% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
