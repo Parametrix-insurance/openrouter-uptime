@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T14:20:02+00:00 UTC)
+## Current status (2026-11-15T14:38:17+00:00 UTC)
 
 467 models polled, 1569 inference endpoints:
-up 1049, degraded 42, down 26, idle 452.
+up 1058, degraded 43, down 25, idle 443.
 
-Currently down (26):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 50% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 27% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 86% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 53% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 43% | 33% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-3-1.7b` | `liquid/fp8` | Liquid | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 31% | 40% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 63% | 0% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 50% | n/a |
-| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | 100% | n/a |
-| plus 11 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 25% | n/a |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 27% | 100% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | n/a | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `parasail/fp8` | Parasail | 60% | 60% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
