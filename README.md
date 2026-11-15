@@ -85,27 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T22:38:24+00:00 UTC)
+## Current status (2026-11-15T22:57:44+00:00 UTC)
 
-467 models polled, 1567 inference endpoints:
-up 1038, degraded 38, down 12, idle 479.
+467 models polled, 1568 inference endpoints:
+up 1024, degraded 38, down 10, idle 496.
 
-Currently down (12):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 13% | 60% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 14% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 36% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 80% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 92% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 43% | 100% |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 62% | 50% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 25% | 50% |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 6% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 54% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
