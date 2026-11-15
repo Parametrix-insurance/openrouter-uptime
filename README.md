@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T18:58:09+00:00 UTC)
+## Current status (2026-11-15T19:17:46+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1046, degraded 37, down 10, idle 475.
+up 1043, degraded 37, down 38, idle 450.
 
-Currently down (10):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 85% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 50% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 8% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 50% | 0% |
-| `recursive/flint-v1.0:free` | `recursive/bf16` | Recursive | 20% | 100% |
-| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | n/a |
-| `xiaomi/mimo-v2.6-pro` | `primalabs/fp8` | PrimaLabs | 39% | 60% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 47% | 0% |
+| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 57% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 50% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 58% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 50% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 50% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 43% | 0% |
+| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 50% | 0% |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 50% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 57% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 50% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 47% | 80% |
+| `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 48% | 0% |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
