@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T06:29:57+00:00 UTC)
+## Current status (2026-11-15T06:57:28+00:00 UTC)
 
 470 models polled, 1573 inference endpoints:
-up 1061, degraded 34, down 17, idle 461.
+up 1044, degraded 32, down 15, idle 482.
 
-Currently down (17):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `primalabs` | PrimaLabs | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 62% | 50% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 68% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 31% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 18% | 0% |
-| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 13% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 20% |
-| `qwen/qwen3.8-27b` | `ionstream/fp8` | Ionstream | 33% | 50% |
-| plus 2 more | | | | |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 38% | 100% |
+| `nex-agi/nex-n2.6` | `nex-agi/fp8` | Nex AGI | 0% | 0% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 33% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 20% | 40% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 60% | 0% |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 73% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
