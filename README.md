@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T18:59:40+00:00 UTC)
+## Current status (2026-11-16T19:22:19+00:00 UTC)
 
-469 models polled, 1567 inference endpoints:
-up 1071, degraded 52, down 26, idle 418.
+469 models polled, 1568 inference endpoints:
+up 1070, degraded 46, down 23, idle 429.
 
-Currently down (26):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 69% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 40% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 16% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 71% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 20% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-saba` | `mistral/zdr` | Mistral | 0% | n/a |
-| `mistralai/mistral-small-2603` | `mistral/zdr` | Mistral | 87% | 100% |
-| plus 11 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 19% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 73% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 47% | 25% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
