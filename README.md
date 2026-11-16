@@ -85,26 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T03:57:39+00:00 UTC)
+## Current status (2026-11-16T04:24:27+00:00 UTC)
 
-468 models polled, 1570 inference endpoints:
-up 1045, degraded 48, down 11, idle 466.
+468 models polled, 1569 inference endpoints:
+up 1064, degraded 39, down 17, idle 449.
 
-Currently down (11):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 75% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 33% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 12% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | n/a |
 | `google/gemma-4-31b-it` | `modal` | Modal | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 38% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 93% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 16% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 0% | n/a |
+| `openai/gpt-oss-20b` | `amazon-bedrock` | Amazon Bedrock | 53% | 0% |
 | `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 14% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 20% |
+| `qwen/qwen3.5-35b-a3b` | `venice` | Venice | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 55% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
