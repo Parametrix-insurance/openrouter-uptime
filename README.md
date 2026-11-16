@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T21:42:07+00:00 UTC)
+## Current status (2026-11-16T21:57:49+00:00 UTC)
 
 469 models polled, 1569 inference endpoints:
-up 1073, degraded 56, down 18, idle 422.
+up 1079, degraded 51, down 14, idle 425.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 64% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 54% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 44% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 71% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 33% | 100% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 54% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 50% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 54% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 20% | n/a |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 52% | 60% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 58% | 100% |
-| plus 3 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 85% | n/a |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 57% | 67% |
+| `unbiased/pareto-26.10` | `unbiased` | Unbiased | 44% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 42% | 25% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
