@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T23:39:00+00:00 UTC)
+## Current status (2026-11-17T00:00:28+00:00 UTC)
 
-470 models polled, 1573 inference endpoints:
-up 1037, degraded 58, down 19, idle 459.
+470 models polled, 1577 inference endpoints:
+up 1062, degraded 41, down 16, idle 458.
 
-Currently down (19):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 67% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-4-carbon` | `google-vertex/eu` | Google | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | n/a | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-5.5` | `azure` | Azure | 79% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 33% | 50% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 68% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 100% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 30% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
-| plus 4 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 57% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 53% | 40% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 50% | 25% |
+| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 0% | 0% |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 38% | 20% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `cohere/nvfp4` | Cohere | 63% | 100% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
