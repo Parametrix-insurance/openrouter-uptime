@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T14:41:21+00:00 UTC)
+## Current status (2026-11-17T14:58:06+00:00 UTC)
 
-470 models polled, 1581 inference endpoints:
-up 1118, degraded 55, down 29, idle 379.
+470 models polled, 1580 inference endpoints:
+up 1116, degraded 61, down 23, idle 380.
 
-Currently down (29):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | 100% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 53% | 40% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 8% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 65% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 58% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 13% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 58% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 37% | 40% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 50% | 80% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 10% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 36% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 35% | 0% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 63% | 100% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-spark-1.3` | `google-vertex/global` | Google | 90% | 100% |
-| `minimax/minimax-m3.1-flash` | `makora/fp4` | Makora | 0% | 0% |
-| plus 14 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 11% | 67% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 77% | 80% |
+| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 33% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `minimax/minimax-m3.1-flash` | `makora/fp4` | Makora | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 72% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 8% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 14% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
