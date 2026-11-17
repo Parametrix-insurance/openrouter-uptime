@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T19:21:45+00:00 UTC)
+## Current status (2026-11-17T19:38:28+00:00 UTC)
 
-474 models polled, 1599 inference endpoints:
-up 1100, degraded 54, down 11, idle 434.
+474 models polled, 1601 inference endpoints:
+up 1091, degraded 48, down 11, idle 451.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 60% | 20% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 64% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 29% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 11% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 50% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 6% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 5% | 25% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 27% | 100% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 9% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 37% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
