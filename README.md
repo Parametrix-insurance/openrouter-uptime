@@ -85,31 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T02:27:37+00:00 UTC)
+## Current status (2026-11-17T02:58:31+00:00 UTC)
 
 470 models polled, 1581 inference endpoints:
-up 1070, degraded 43, down 21, idle 447.
+up 1056, degraded 52, down 12, idle 461.
 
-Currently down (21):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 71% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 10% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 31% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 46% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 86% | 100% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 40% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 33% | 50% |
-| `qwen/qwen3.5-27b` | `novita/bf16` | Novita | 0% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `parasail/fp8` | Parasail | 75% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 7% | 20% |
-| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 7% | 0% |
-| plus 6 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 31% | 20% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 28% | 50% |
+| `qwen/qwen3.6-flash` | `alibaba` | Alibaba | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 75% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
