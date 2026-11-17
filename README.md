@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T21:38:48+00:00 UTC)
+## Current status (2026-11-17T21:59:35+00:00 UTC)
 
 474 models polled, 1607 inference endpoints:
-up 1074, degraded 65, down 21, idle 447.
+up 1047, degraded 72, down 21, idle 467.
 
 Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 20% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 63% | 60% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 90% | 100% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 43% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 67% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 13% | 0% |
 | `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 54% | 75% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 50% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 90% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 72% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 0% | 0% |
 | `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 47% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 30% | 20% |
 | plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
