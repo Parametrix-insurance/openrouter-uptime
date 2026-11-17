@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T01:23:03+00:00 UTC)
+## Current status (2026-11-17T01:38:18+00:00 UTC)
 
 470 models polled, 1578 inference endpoints:
-up 1053, degraded 70, down 29, idle 426.
+up 1068, degraded 57, down 26, idle 427.
 
-Currently down (29):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 36% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 36% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 67% | 100% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 22% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 80% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 77% | 100% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 48% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 14% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 64% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 15% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 30% | 80% |
+| `google/gemma-4-31b-it` | `kt` | KT | 87% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 33% | 100% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 100% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 63% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `venice/fp4` | Venice | 72% | 100% |
-| plus 14 more | | | | |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
