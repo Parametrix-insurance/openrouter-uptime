@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T13:00:28+00:00 UTC)
+## Current status (2026-11-17T13:24:40+00:00 UTC)
 
 470 models polled, 1581 inference endpoints:
-up 1134, degraded 41, down 18, idle 388.
+up 1106, degraded 61, down 15, idle 399.
 
-Currently down (18):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 43% | 0% |
+| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 14% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 10% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 18% | 33% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 41% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 43% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 71% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 73% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 3% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 75% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 26% | 0% |
-| `openai/gpt-5.6-luna` | `azure` | Azure | 57% | 100% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 33% | 20% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 25% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| plus 3 more | | | | |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 31% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
