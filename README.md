@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-18T02:28:28+00:00 UTC)
+## Current status (2026-11-18T02:58:42+00:00 UTC)
 
 478 models polled, 1610 inference endpoints:
-up 1085, degraded 53, down 21, idle 451.
+up 1096, degraded 44, down 15, idle 455.
 
-Currently down (21):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 33% | 100% |
-| `elorian/glimpse` | `together` | Together | 50% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 12% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 4% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 31% | n/a |
-| `google/gemma-4-31b-it` | `kt` | KT | 90% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 30% | 0% |
+| `elorian/glimpse` | `together` | Together | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 27% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 21% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 30% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 33% | 20% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 33% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 30% | n/a |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 30% | 60% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 67% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 39% | 67% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 60% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 20% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
