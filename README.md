@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-18T01:23:29+00:00 UTC)
+## Current status (2026-11-18T01:38:20+00:00 UTC)
 
 478 models polled, 1610 inference endpoints:
-up 1082, degraded 57, down 23, idle 448.
+up 1097, degraded 47, down 23, idle 443.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 91% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 90% | 40% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 10% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 47% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 87% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `elorian/glimpse` | `together` | Together | 100% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 41% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `elorian/glimpse` | `together` | Together | 100% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 26% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
 | `google/gemini-4-carbon` | `google-ai-studio/priority` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 83% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `mistralai/mistral-nemo` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 8% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 86% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 30% | 40% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 57% | 100% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
