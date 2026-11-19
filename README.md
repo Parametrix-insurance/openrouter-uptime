@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T01:22:55+00:00 UTC)
+## Current status (2026-11-19T01:38:41+00:00 UTC)
 
 480 models polled, 1477 inference endpoints:
-up 1008, degraded 65, down 22, idle 382.
+up 1021, degraded 52, down 20, idle 384.
 
-Currently down (22):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 72% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 79% | 60% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 38% | 100% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 50% | 100% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 25% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 70% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 67% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 57% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 70% | 100% |
+| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 43% | 100% |
+| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | 0% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `fireworks` | Fireworks | 60% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `fireworks` | Fireworks | 10% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| `particle-ai/particle-1:free` | `particle-ai/us` | Particle AI | 33% | 100% |
-| `qwen/qwen-2.5-72b-instruct` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
-| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 70% | 100% |
-| plus 7 more | | | | |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 57% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
