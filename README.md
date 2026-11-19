@@ -85,27 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-19T12:57:26+00:00 UTC)
+## Current status (2026-11-19T13:22:53+00:00 UTC)
 
-480 models polled, 1479 inference endpoints:
-up 1038, degraded 60, down 22, idle 359.
+479 models polled, 1478 inference endpoints:
+up 1051, degraded 66, down 22, idle 339.
 
 Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 53% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 55% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `crusoe/fp8` | Crusoe | 70% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `ionstream` | Ionstream | 83% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 48% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 33% |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 90% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 57% | 80% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 37% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `makora/fp8` | Makora | 0% | 0% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 70% | 100% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `mistralai/mistral-medium-3.1` | `mistral/eu` | Mistral | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-medium-3.1` | `mistral/eu` | Mistral | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
