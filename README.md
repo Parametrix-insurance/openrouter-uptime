@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T06:46:45+00:00 UTC)
+## Current status (2026-11-20T07:23:33+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1025, degraded 44, down 31, idle 370.
+up 1029, degraded 50, down 21, idle 370.
 
-Currently down (31):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.6` | `amazon-bedrock` | Amazon Bedrock | 43% | n/a |
+| `anthropic/claude-opus-4.6` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `digitalocean` | DigitalOcean | 33% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `digitalocean` | DigitalOcean | 33% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `digitalocean` | DigitalOcean | 30% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 81% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `digitalocean` | DigitalOcean | 30% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 94% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 38% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `digitalocean` | DigitalOcean | 33% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 45% | 25% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 60% | n/a |
-| plus 16 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 73% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 68% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 53% | 40% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 47% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
