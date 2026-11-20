@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T14:24:11+00:00 UTC)
+## Current status (2026-11-20T14:38:13+00:00 UTC)
 
 477 models polled, 1472 inference endpoints:
-up 1067, degraded 51, down 19, idle 335.
+up 1040, degraded 52, down 22, idle 358.
 
-Currently down (19):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 63% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 67% | 67% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 71% | 33% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 40% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `tenstorrent/fp8` | Tenstorrent | 62% | 100% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 23% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 23% | 60% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 62% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 13% | 20% |
-| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 80% | n/a |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 41% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 50% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 20% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 77% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 23% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 71% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 37% | 40% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 5% | 0% |
-| `x-ai/grok-4.7` | `xai/zdr` | xAI | 20% | 0% |
-| plus 4 more | | | | |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 40% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
