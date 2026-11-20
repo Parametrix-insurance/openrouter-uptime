@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T00:41:35+00:00 UTC)
+## Current status (2026-11-20T01:01:18+00:00 UTC)
 
 478 models polled, 1479 inference endpoints:
-up 997, degraded 68, down 30, idle 384.
+up 988, degraded 77, down 29, idle 385.
 
-Currently down (30):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 33% | 40% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 18% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 27% | 0% |
-| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 70% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 67% | 40% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 58% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 50% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
 | `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 23% | 20% |
+| `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | n/a | n/a |
 | `meta-llama/llama-3.2-1b-instruct` | `cloudflare` | Cloudflare | 0% | 0% |
-| plus 15 more | | | | |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 73% | 100% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
