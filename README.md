@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T09:38:15+00:00 UTC)
+## Current status (2026-11-20T09:59:58+00:00 UTC)
 
 477 models polled, 1471 inference endpoints:
-up 1061, degraded 44, down 20, idle 346.
+up 1032, degraded 63, down 25, idle 351.
 
-Currently down (20):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 57% | 60% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 43% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 33% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 29% | n/a |
-| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 77% | 60% |
-| `moonshotai/kimi-k3` | `kt` | KT | 75% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| plus 5 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `siliconflow/fp8` | SiliconFlow | 87% | 20% |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 20% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 75% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
+| `liquid/lfm-2.5-24b-a2b` | `liquid/fp8` | Liquid | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 0% | 0% |
+| `moonshotai/kimi-k3` | `kt` | KT | 0% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 33% | 100% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 10% | 40% |
+| `qwen/qwen3-coder-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 70% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
