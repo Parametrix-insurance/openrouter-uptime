@@ -85,12 +85,12 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T01:41:34+00:00 UTC)
+## Current status (2026-11-20T01:57:46+00:00 UTC)
 
 477 models polled, 1478 inference endpoints:
-up 1037, degraded 41, down 27, idle 373.
+up 1036, degraded 39, down 24, idle 379.
 
-Currently down (27):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
@@ -99,17 +99,17 @@ Currently down (27):
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 33% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 40% | 100% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 69% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 25% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 0% |
 | `meta-llama/llama-3.1-8b-instruct` | `cloudflare/fp8` | Cloudflare | n/a | n/a |
 | `meta-llama/llama-3.2-1b-instruct` | `cloudflare` | Cloudflare | 0% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 60% | 100% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 83% | 0% |
 | `moonshotai/kimi-k2.6` | `cloudflare` | Cloudflare | n/a | n/a |
-| plus 12 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `cloudflare` | Cloudflare | 0% | 0% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
