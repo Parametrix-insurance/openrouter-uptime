@@ -85,28 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T21:58:38+00:00 UTC)
+## Current status (2026-11-20T22:20:33+00:00 UTC)
 
 476 models polled, 1443 inference endpoints:
-up 1045, degraded 33, down 13, idle 352.
+up 1017, degraded 31, down 15, idle 380.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 36% | 60% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 0% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 50% | 40% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 50% | 20% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 50% | 80% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 50% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 53% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 43% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 57% | 20% |
+| `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 13% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 83% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 86% | 100% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 38% | 25% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 80% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 100% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 42% | 50% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
