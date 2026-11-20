@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T23:38:06+00:00 UTC)
+## Current status (2026-11-20T23:57:36+00:00 UTC)
 
 476 models polled, 1441 inference endpoints:
-up 995, degraded 41, down 11, idle 394.
+up 993, degraded 32, down 11, idle 405.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 36% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 43% | 40% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 27% | 20% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | n/a | n/a |
+| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 0% | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 38% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 23% | 20% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 50% | 100% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 13% | 60% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 69% | n/a |
+| `z-ai/glm-5.3` | `fireworks/spot` | Fireworks | 70% | n/a |
+| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 30% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
