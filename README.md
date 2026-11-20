@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T05:38:01+00:00 UTC)
+## Current status (2026-11-20T05:58:33+00:00 UTC)
 
 477 models polled, 1470 inference endpoints:
-up 1035, degraded 38, down 21, idle 376.
+up 1026, degraded 44, down 20, idle 380.
 
-Currently down (21):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 91% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 93% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `makora/fp8` | Makora | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 38% | 100% |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 3% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 62% | 80% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 20% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 27% | 40% |
 | `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 45% | n/a |
-| `openai/gpt-6-luna` | `azure` | Azure | 40% | 80% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 37% | 80% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 53% | 80% |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 40% |
-| plus 6 more | | | | |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 11% | 50% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 10% | 0% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
