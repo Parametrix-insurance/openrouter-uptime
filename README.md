@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T22:20:33+00:00 UTC)
+## Current status (2026-11-20T22:38:36+00:00 UTC)
 
 476 models polled, 1443 inference endpoints:
-up 1017, degraded 31, down 15, idle 380.
+up 1000, degraded 43, down 16, idle 384.
 
-Currently down (15):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 50% | 20% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 50% | 80% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 50% | 0% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 53% | 0% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 43% | 20% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 17% | 20% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 50% | 100% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 43% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 13% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 83% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 86% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 27% | 100% |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 42% | 50% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 3% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 71% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
