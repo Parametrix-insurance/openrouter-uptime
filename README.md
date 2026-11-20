@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T16:57:47+00:00 UTC)
+## Current status (2026-11-20T17:19:46+00:00 UTC)
 
-477 models polled, 1472 inference endpoints:
-up 1065, degraded 48, down 19, idle 340.
+477 models polled, 1471 inference endpoints:
+up 1042, degraded 47, down 21, idle 361.
 
-Currently down (19):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 95% | 75% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 43% | 100% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 35% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 7% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 88% | 60% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 40% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 50% | 50% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 29% | 0% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 89% | n/a |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 17% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 77% | 80% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 58% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 36% | 25% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | n/a | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 32% | 20% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
