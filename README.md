@@ -85,28 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-20T23:19:43+00:00 UTC)
+## Current status (2026-11-20T23:38:06+00:00 UTC)
 
 476 models polled, 1441 inference endpoints:
-up 1001, degraded 34, down 13, idle 393.
+up 995, degraded 41, down 11, idle 394.
 
-Currently down (13):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 67% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 48% | 100% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 52% | 25% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 60% | 100% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 44% | 100% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 36% | 40% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | n/a | n/a |
 | `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 25% | 25% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 33% | 0% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 39% | 50% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 43% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 38% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 23% | 20% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 50% | 100% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
