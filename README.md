@@ -85,23 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T03:37:21+00:00 UTC)
+## Current status (2026-11-21T03:58:38+00:00 UTC)
 
-478 models polled, 1445 inference endpoints:
-up 997, degraded 40, down 8, idle 400.
+476 models polled, 1425 inference endpoints:
+up 991, degraded 46, down 13, idle 375.
 
-Currently down (8):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 47% | 60% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 40% | 0% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 57% | 80% |
 | `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | 0% |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 27% | 40% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 21% | 25% |
-| `upstage/solar-pro4` | `kt` | KT | 9% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 13% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | 40% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 77% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 77% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
+| `openai/gpt-oss-120b` | `coreweave/fp4` | CoreWeave | 40% | 40% |
+| `upstage/solar-pro4` | `kt` | KT | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
