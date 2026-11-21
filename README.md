@@ -85,23 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T07:37:51+00:00 UTC)
+## Current status (2026-11-21T07:57:34+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 990, degraded 27, down 9, idle 399.
+up 965, degraded 39, down 11, idle 410.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 70% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 7% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 33% | 33% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
