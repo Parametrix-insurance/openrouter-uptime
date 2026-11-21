@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T18:57:10+00:00 UTC)
+## Current status (2026-11-21T19:17:50+00:00 UTC)
 
-476 models polled, 1430 inference endpoints:
-up 1001, degraded 19, down 14, idle 396.
+476 models polled, 1431 inference endpoints:
+up 1001, degraded 31, down 13, idle 386.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 38% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 80% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 47% | 100% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 47% | 40% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 100% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 80% | 100% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | 0% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 13% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 33% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 30% | 80% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
