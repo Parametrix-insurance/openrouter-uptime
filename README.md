@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T04:37:45+00:00 UTC)
+## Current status (2026-11-21T04:57:35+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 964, degraded 45, down 14, idle 402.
+up 973, degraded 45, down 18, idle 389.
 
-Currently down (14):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 81% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 97% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 68% | 100% |
 | `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 87% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 27% | 60% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 0% | 0% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 27% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 7% | 20% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 88% | 100% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 17% | 0% |
-| `openai/gpt-5.6-terra` | `openai/flex` | OpenAI | 33% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 57% | 100% |
+| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 14% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 33% | 0% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 79% | n/a |
 | `upstage/solar-pro4` | `kt` | KT | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.3-flash` | `river` | River | 37% | 0% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
