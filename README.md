@@ -85,25 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T21:37:29+00:00 UTC)
+## Current status (2026-11-21T21:57:45+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 993, degraded 34, down 10, idle 394.
+up 992, degraded 34, down 8, idle 397.
 
-Currently down (10):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 43% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 83% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `moonshotai/kimi-k3.1-pro` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 57% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 80% | 0% |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 62% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 30% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
