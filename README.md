@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T12:57:53+00:00 UTC)
+## Current status (2026-11-21T13:19:21+00:00 UTC)
 
 476 models polled, 1426 inference endpoints:
-up 981, degraded 30, down 13, idle 402.
+up 984, degraded 35, down 12, idle 395.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | n/a | n/a |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 55% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 77% | 100% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 28% | 25% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 42% | 40% |
 | `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | n/a | n/a |
 | `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 0% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.3` | `featherless` | Featherless | 0% | n/a |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
