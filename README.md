@@ -85,30 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T05:38:30+00:00 UTC)
+## Current status (2026-11-21T05:56:52+00:00 UTC)
 
 476 models polled, 1425 inference endpoints:
-up 968, degraded 30, down 15, idle 412.
+up 968, degraded 30, down 10, idle 417.
 
-Currently down (15):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 8% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | n/a |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 50% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 10% | 20% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 27% | 40% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
-| `z-ai/glm-4.6v` | `z-ai/fp8` | Z.AI | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 44% | n/a |
-| `z-ai/glm-5.3-flash` | `river` | River | 30% | 100% |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 13% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 37% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `river` | River | 73% | 100% |
+| `z-ai/glm-5.3-flash` | `nebius/fp4` | Nebius | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
