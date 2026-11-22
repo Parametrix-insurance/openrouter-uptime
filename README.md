@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T09:37:23+00:00 UTC)
+## Current status (2026-11-22T09:57:55+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 979, degraded 38, down 19, idle 393.
+up 985, degraded 34, down 18, idle 392.
 
-Currently down (19):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 78% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 75% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
-| `google/gemma-4-26b-a4b-it` | `dekallm/bf16` | DekaLLM | 73% | 100% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 70% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 50% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | n/a | n/a |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 63% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 28% | 33% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 36% | 20% |
 | `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 29% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 0% | 0% |
-| plus 4 more | | | | |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 0% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 19% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 63% | 80% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
