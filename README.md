@@ -85,27 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T21:38:04+00:00 UTC)
+## Current status (2026-11-22T21:56:58+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 989, degraded 40, down 13, idle 389.
+up 987, degraded 36, down 15, idle 393.
 
-Currently down (13):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 13% | 0% |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | 0% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 32% | 50% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 20% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 32% | 67% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 50% | n/a |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 50% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 40% | 50% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 42% | 25% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 40% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 17% | 0% |
+| `upstage/solar-pro4` | `kt` | KT | 33% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
