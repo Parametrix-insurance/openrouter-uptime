@@ -85,23 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T06:28:09+00:00 UTC)
+## Current status (2026-11-22T06:43:13+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 980, degraded 38, down 9, idle 403.
+up 985, degraded 32, down 7, idle 406.
 
-Currently down (9):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 53% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 25% | n/a |
-| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 63% | 100% |
+| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 46% | 0% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 38% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
