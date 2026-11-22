@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T16:20:56+00:00 UTC)
+## Current status (2026-11-22T16:38:38+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1021, degraded 38, down 16, idle 354.
+up 996, degraded 42, down 13, idle 378.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 80% | 100% |
-| `fireworks/ember-1` | `fireworks` | Fireworks | 67% | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 96% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `fireworks` | Fireworks | 29% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 19% | 25% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 44% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 12% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 33% | 0% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 62% | 0% |
-| plus 1 more | | | | |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 94% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 53% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 14% | 25% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 38% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 5% | 0% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 67% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
