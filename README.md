@@ -85,27 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T23:38:02+00:00 UTC)
+## Current status (2026-11-22T23:57:13+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 936, degraded 82, down 12, idle 401.
+up 900, degraded 55, down 59, idle 417.
 
-Currently down (12):
+Currently down (59):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 17% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 17% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 27% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `parasail/fp8` | Parasail | 53% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 7% | 20% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 30% | 20% |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 43% | 20% |
+| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 43% | 20% |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 40% | 20% |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fast` | Parasail | 61% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 47% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fast` | Parasail | 42% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 47% | 20% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 43% | 20% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 75% | n/a |
+| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 47% | 40% |
+| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 67% | 80% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 40% | 20% |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
+| plus 44 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
