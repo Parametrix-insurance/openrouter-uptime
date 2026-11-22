@@ -85,30 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T03:23:31+00:00 UTC)
+## Current status (2026-11-22T03:38:09+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 968, degraded 36, down 15, idle 410.
+up 949, degraded 57, down 8, idle 415.
 
-Currently down (15):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `cloudflare` | Cloudflare | 40% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 94% | 100% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 84% | 100% |
-| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 73% | n/a |
-| `tencent/hy4` | `tencent/fp4` | Tencent | 29% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 11% | 33% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 30% | 0% |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 74% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 23% | 0% |
-| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 67% | 0% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 38% | 100% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 44% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 0% |
+| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 60% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
