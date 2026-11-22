@@ -85,22 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T23:20:01+00:00 UTC)
+## Current status (2026-11-22T23:38:02+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 972, degraded 59, down 8, idle 392.
+up 936, degraded 82, down 12, idle 401.
 
-Currently down (8):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 17% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 24% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 17% | 0% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 63% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 27% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `parasail/fp8` | Parasail | 53% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 7% | 20% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
