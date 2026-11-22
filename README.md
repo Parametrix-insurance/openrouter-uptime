@@ -85,31 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T11:38:09+00:00 UTC)
+## Current status (2026-11-22T11:57:23+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 985, degraded 33, down 16, idle 395.
+up 960, degraded 39, down 15, idle 415.
 
-Currently down (16):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 33% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 5% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 10% | 0% |
-| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | 33% | 50% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 3% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 23% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 27% | 33% |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 43% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 19% | 20% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | 0% |
-| plus 1 more | | | | |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | 67% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 19% | 67% |
+| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | 50% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 7% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 33% | 80% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 27% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 48% | 33% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 14% | 33% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 12% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
