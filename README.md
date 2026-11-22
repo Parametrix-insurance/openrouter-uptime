@@ -85,21 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T01:38:21+00:00 UTC)
+## Current status (2026-11-22T01:58:36+00:00 UTC)
 
-476 models polled, 1431 inference endpoints:
-up 980, degraded 34, down 7, idle 410.
+476 models polled, 1430 inference endpoints:
+up 972, degraded 24, down 9, idle 425.
 
-Currently down (7):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 75% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 62% | 80% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
 | `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 10% | 0% |
+| `openai/gpt-oss-120b` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 33% | 20% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
