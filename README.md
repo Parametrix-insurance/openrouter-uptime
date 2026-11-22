@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T18:23:21+00:00 UTC)
+## Current status (2026-11-22T18:38:07+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 1003, degraded 24, down 17, idle 386.
+up 996, degraded 26, down 21, idle 387.
 
-Currently down (17):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `baseten/fp4` | BaseTen | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 46% | 33% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 22% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 48% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 6% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 33% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 62% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 86% | 100% |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | n/a | n/a |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 50% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b` | `coreweave/bf16` | CoreWeave | n/a | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 38% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `fireworks` | Fireworks | 73% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 23% | 0% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 26% | 50% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 27% | 100% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 62% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 45% | 75% |
-| `qwen/qwen3.5-122b-a10b` | `novita/bf16` | Novita | 50% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 28% | 0% |
-| plus 2 more | | | | |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
