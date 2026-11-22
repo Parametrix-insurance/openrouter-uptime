@@ -85,29 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T13:57:18+00:00 UTC)
+## Current status (2026-11-22T14:20:02+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1013, degraded 41, down 15, idle 360.
+up 1013, degraded 44, down 13, idle 359.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 14% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 25% | 0% |
-| `openai/o3-pro` | `openai` | OpenAI | 33% | 33% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 23% | 80% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 23% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 18% | 60% |
-| `qwen/qwen3.5-122b-a10b` | `novita/bf16` | Novita | 53% | 0% |
-| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 27% | 100% |
-| `xiaomi/mimo-v2.6-pro` | `xiaomi/fp8` | Xiaomi | 63% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 50% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 19% | 40% |
+| `openai/o3-pro` | `openai` | OpenAI | 33% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 41% | 20% |
+| `qwen/qwen3.5-122b-a10b` | `novita/bf16` | Novita | 67% | n/a |
+| `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 67% | 0% |
 | `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
