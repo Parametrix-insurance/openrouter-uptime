@@ -85,25 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T01:39:17+00:00 UTC)
+## Current status (2026-11-23T01:57:06+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 983, degraded 25, down 10, idle 412.
+up 982, degraded 30, down 11, idle 407.
 
-Currently down (10):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 80% | 33% |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 41% | 40% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `venice/fp8` | Venice | 77% | 100% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 55% | 50% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 82% | 100% |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 33% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 80% |
+| `qwen/qwen3-32b` | `siliconflow/fp8` | SiliconFlow | 57% | 25% |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 33% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
