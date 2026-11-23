@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T20:22:25+00:00 UTC)
+## Current status (2026-11-23T20:38:24+00:00 UTC)
 
 476 models polled, 1438 inference endpoints:
-up 1026, degraded 42, down 17, idle 353.
+up 1031, degraded 36, down 16, idle 355.
 
-Currently down (17):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | 100% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 60% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 41% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 60% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 27% | 80% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 29% | 100% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 33% | n/a |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 37% | 100% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 52% | 0% |
-| plus 2 more | | | | |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 39% | 100% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 33% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,9 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-08 05:19** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
-- **2026-11-10 05:57** — provider `primeintellect` changed its terms of service url.
-- **2026-11-10 05:57** — provider `primeintellect` changed its privacy policy url.
 - **2026-11-11 13:22** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 18:59** — **3 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-12 20:21** — provider `recraft` changed its terms of service url.
@@ -130,6 +127,9 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-17 18:26** — **3 models added to the catalog in one poll**: `openai/gpt-6.2-astra-pro`, `openai/gpt-6.2-sol`, `openai/gpt-6.2-sol-pro`.
 - **2026-11-17 21:22** — provider `pearl-research` changed its status page.
 - **2026-11-17 23:00** — **4 models added to the catalog in one poll**: `openai/gpt-6.2-astra-pro:batch`, `openai/gpt-6.2-astra:batch`, `openai/gpt-6.2-sol-pro:batch`, `openai/gpt-6.2-sol:batch`.
+- **2026-11-23 20:38** — provider `relace` changed its terms of service url.
+- **2026-11-23 20:38** — provider `relace` changed its privacy policy url.
+- **2026-11-23 20:38** — provider `relace` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
