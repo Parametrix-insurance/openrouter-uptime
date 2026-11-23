@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T08:59:55+00:00 UTC)
+## Current status (2026-11-23T09:29:20+00:00 UTC)
 
-477 models polled, 1426 inference endpoints:
-up 965, degraded 51, down 28, idle 382.
+477 models polled, 1427 inference endpoints:
+up 999, degraded 55, down 20, idle 353.
 
-Currently down (28):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 87% | 20% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 30% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 87% | 20% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 50% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 60% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 37% | 100% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 26% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 62% | 25% |
-| plus 13 more | | | | |
+| `minimax/minimax-m3.1-flash` | `streamlake/fp8` | StreamLake | 52% | 25% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 72% | 100% |
+| `mistralai/devstral-2512` | `mistral/eu` | Mistral | 59% | 40% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 75% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 50% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 80% | n/a |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
