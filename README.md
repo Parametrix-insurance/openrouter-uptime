@@ -85,27 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T21:01:03+00:00 UTC)
+## Current status (2026-11-23T21:20:14+00:00 UTC)
 
-476 models polled, 1436 inference endpoints:
-up 1019, degraded 33, down 12, idle 372.
+476 models polled, 1439 inference endpoints:
+up 1025, degraded 37, down 15, idle 362.
 
-Currently down (12):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 53% | 20% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 83% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 44% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 53% | 60% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 50% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 20% | 0% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 39% | 0% |
-| `qwen/qwen3.5-9b` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 84% | 60% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 40% | 60% |
+| `qwen/qwen3.5-9b` | `deepinfra/bf16/priority` | DeepInfra | 55% | 50% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 64% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 20% |
+| `z-ai/glm-5.3-flash` | `cohere/nvfp4` | Cohere | 87% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
