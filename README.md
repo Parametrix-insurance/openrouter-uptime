@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T09:57:32+00:00 UTC)
+## Current status (2026-11-23T10:22:52+00:00 UTC)
 
 477 models polled, 1427 inference endpoints:
-up 1005, degraded 43, down 20, idle 359.
+up 1004, degraded 40, down 17, idle 366.
 
-Currently down (20):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 75% | 100% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 20% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 94% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 8% | 100% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 52% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 7% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 33% | 40% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 38% | 40% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 13% | 40% |
-| plus 5 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 45% | 20% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 50% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 50% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 65% | 75% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 41% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 61% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 40% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 0% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `upstage/solar-pro4` | `kt` | KT | 0% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
