@@ -85,31 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T23:57:13+00:00 UTC)
+## Current status (2026-11-23T00:56:44+00:00 UTC)
 
-476 models polled, 1431 inference endpoints:
-up 900, degraded 55, down 59, idle 417.
+476 models polled, 1430 inference endpoints:
+up 997, degraded 27, down 8, idle 398.
 
-Currently down (59):
+Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 30% | 20% |
-| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 43% | 20% |
-| `deepseek/deepseek-v4-flash-0731` | `parasail/fp8` | Parasail | 43% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 40% | 20% |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fast` | Parasail | 61% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 47% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fast` | Parasail | 42% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 47% | 20% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 43% | 20% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 75% | n/a |
-| `google/gemma-4-26b-a4b-it` | `parasail/bf16` | Parasail | 47% | 40% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 67% | 80% |
-| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 40% | 20% |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
-| plus 44 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 20% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
