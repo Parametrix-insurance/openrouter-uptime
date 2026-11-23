@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T02:29:26+00:00 UTC)
+## Current status (2026-11-23T02:57:13+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 947, degraded 51, down 37, idle 395.
+up 973, degraded 45, down 14, idle 398.
 
-Currently down (37):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 62% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 68% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 60% | 80% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `coreweave/fp4` | CoreWeave | 50% | 80% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 50% |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 60% | 100% |
-| `meta-llama/llama-3.1-8b-instruct` | `coreweave/bf16` | CoreWeave | 56% | 50% |
-| `meta-llama/llama-3.3-70b-instruct` | `akashml/fp8` | AkashML | 34% | 20% |
-| `meta-llama/llama-3.3-70b-instruct` | `coreweave/fp16` | CoreWeave | 67% | 100% |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | n/a |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `coreweave/bf16` | CoreWeave | 70% | 0% |
-| plus 22 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 4% | 0% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
+| `nvidia/nemotron-3.5-lightning` | `coreweave/bf16` | CoreWeave | 0% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 53% | 20% |
+| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 57% | 100% |
+| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 60% | 100% |
+| `qwen/qwen3.8-27b` | `akashml/fp8` | AkashML | 77% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `siliconflow/fp8` | SiliconFlow | 17% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
