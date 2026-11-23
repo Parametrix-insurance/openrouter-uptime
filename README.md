@@ -85,23 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T00:56:44+00:00 UTC)
+## Current status (2026-11-23T01:23:37+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 997, degraded 27, down 8, idle 398.
+up 973, degraded 42, down 12, idle 403.
 
-Currently down (8):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 20% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `fireworks/ember-1` | `fireworks` | Fireworks | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 39% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 75% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 30% | 40% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 0% |
+| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 57% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 20% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
