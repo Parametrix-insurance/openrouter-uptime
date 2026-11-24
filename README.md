@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T16:26:46+00:00 UTC)
+## Current status (2026-11-24T16:40:21+00:00 UTC)
 
 470 models polled, 1422 inference endpoints:
-up 1007, degraded 53, down 25, idle 337.
+up 1006, degraded 39, down 25, idle 352.
 
 Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 25% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 8% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `pearl-research/fp8` | Pearl Research | 67% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 20% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-ai-studio/priority` | Google AI Studio | 17% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio/priority` | Google AI Studio | 17% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 42% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemini-4-argon` | `google-ai-studio/priority` | Google AI Studio | 11% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 3% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 7% | 50% |
 | plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
