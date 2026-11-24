@@ -85,26 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T23:39:44+00:00 UTC)
+## Current status (2026-11-24T23:58:04+00:00 UTC)
 
-470 models polled, 1423 inference endpoints:
-up 1007, degraded 38, down 11, idle 367.
+470 models polled, 1422 inference endpoints:
+up 988, degraded 45, down 11, idle 378.
 
 Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 7% | 40% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 62% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 57% | 0% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 50% |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `tencent/hy4-flash` | `deepinfra/fp4` | DeepInfra | 21% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
-| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 86% | 75% |
+| `tencent/hy4-flash` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `particle-ai/nvfp4/flex` | Particle AI | 69% | 33% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
