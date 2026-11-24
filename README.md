@@ -85,10 +85,10 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T03:37:56+00:00 UTC)
+## Current status (2026-11-24T03:57:51+00:00 UTC)
 
 474 models polled, 1439 inference endpoints:
-up 991, degraded 51, down 15, idle 382.
+up 1009, degraded 41, down 15, idle 374.
 
 Currently down (15):
 
@@ -96,19 +96,19 @@ Currently down (15):
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 50% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 37% | 60% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8` | DeepInfra | 20% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 13% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 29% | 100% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 86% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 15% | 75% |
-| `moonshotai/kimi-k3.1-pro` | `morph/fp8` | Morph | 50% | 80% |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 73% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 50% | n/a |
+| `moonshotai/kimi-k3` | `makora/fp4` | Makora | 55% | 33% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 89% | 67% |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 53% | 20% |
+| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 33% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `stepfun/step-5-preview` | `stepfun/fp8` | StepFun | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
