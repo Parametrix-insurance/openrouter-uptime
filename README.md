@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T16:40:21+00:00 UTC)
+## Current status (2026-11-24T16:59:48+00:00 UTC)
 
 470 models polled, 1422 inference endpoints:
-up 1006, degraded 39, down 25, idle 352.
+up 1029, degraded 43, down 22, idle 328.
 
-Currently down (25):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `pearl-research/fp8` | Pearl Research | 67% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 20% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 100% |
-| `google/gemini-4-argon` | `google-ai-studio/priority` | Google AI Studio | 11% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 3% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 7% | 50% |
-| plus 10 more | | | | |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 25% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio/priority` | Google AI Studio | 25% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 12% | 50% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 50% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 28% | 20% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
