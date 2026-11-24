@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T12:59:22+00:00 UTC)
+## Current status (2026-11-24T13:22:39+00:00 UTC)
 
 473 models polled, 1429 inference endpoints:
-up 1020, degraded 53, down 15, idle 341.
+up 1009, degraded 47, down 23, idle 350.
 
-Currently down (15):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 52% | 100% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `google/gemma-4-31b-it` | `modal` | Modal | 38% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 38% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 4% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 61% | 100% |
-| `z-ai/glm-4.5v` | `novita/fp8` | Novita | 0% | 0% |
-| `z-ai/glm-4.5v` | `z-ai/fp8` | Z.AI | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 33% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 60% |
+| `google/gemma-4-31b-it` | `modal` | Modal | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 8% | 33% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 17% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 17% | 50% |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 12% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
