@@ -85,30 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T22:59:01+00:00 UTC)
+## Current status (2026-11-24T23:19:40+00:00 UTC)
 
 470 models polled, 1422 inference endpoints:
-up 1003, degraded 39, down 15, idle 365.
+up 1020, degraded 42, down 13, idle 347.
 
-Currently down (15):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 90% | 50% |
+| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 92% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 20% |
-| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 73% | 60% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 61% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 80% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.5-27b` | `deepinfra/fp8` | DeepInfra | 33% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 20% | n/a |
-| `thinkingmachines/inkling-2-mini` | `primeintellect/fast` | PrimeIntellect | 62% | n/a |
-| `thinkingmachines/inkling-2-small` | `primeintellect/fast` | PrimeIntellect | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 0% |
+| `thinkingmachines/inkling-2-small` | `primeintellect/fast` | PrimeIntellect | 0% | n/a |
+| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
