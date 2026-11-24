@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T20:39:51+00:00 UTC)
+## Current status (2026-11-24T20:57:39+00:00 UTC)
 
 469 models polled, 1419 inference endpoints:
-up 972, degraded 42, down 49, idle 356.
+up 973, degraded 38, down 41, idle 367.
 
-Currently down (49):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 44% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 87% | 60% |
+| `elorian/glimpse` | `together` | Together | 62% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 0% | 0% |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 29% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 17% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 63% | 60% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `fireworks` | Fireworks | 74% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `io-net/nvfp4` | Io Net | 62% | 80% |
-| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 47% | 100% |
-| `openai/gpt-4.1` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-4.1-mini` | `azure` | Azure | 0% | 0% |
-| plus 34 more | | | | |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 41% | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-4.1` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-4.1-mini` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-4.1-nano` | `azure` | Azure | 0% | 0% |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
