@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T15:59:04+00:00 UTC)
+## Current status (2026-11-24T16:26:46+00:00 UTC)
 
-473 models polled, 1426 inference endpoints:
-up 1010, degraded 48, down 24, idle 344.
+470 models polled, 1422 inference endpoints:
+up 1007, degraded 53, down 25, idle 337.
 
-Currently down (24):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 25% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 25% | 20% |
-| `deepseek/deepseek-v4.1-flash` | `crusoe/fp8` | Crusoe | 83% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 8% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | 100% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 71% | n/a |
+| `google/gemini-3.6-flash` | `google-ai-studio/priority` | Google AI Studio | 17% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio/priority` | Google AI Studio | 17% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
 | `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 71% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 42% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 12% | 0% |
 | `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 10% | 40% |
-| plus 9 more | | | | |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-11 13:22** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 18:59** — **3 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-12 20:21** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:21** — provider `recraft` changed its privacy policy url.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-23 20:38** — provider `relace` changed its terms of service url.
 - **2026-11-23 20:38** — provider `relace` changed its privacy policy url.
 - **2026-11-23 20:38** — provider `relace` changed its status page.
+- **2026-11-24 16:26** — **3 models removed from the catalog in one poll**: `dots-studio/dots-3-note-preview:free`, `mistralai/mistral-medium-3`, `mistralai/mistral-medium-3.1`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
