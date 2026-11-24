@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T19:40:46+00:00 UTC)
+## Current status (2026-11-24T19:58:23+00:00 UTC)
 
-469 models polled, 1417 inference endpoints:
-up 975, degraded 49, down 31, idle 362.
+469 models polled, 1418 inference endpoints:
+up 971, degraded 42, down 45, idle 360.
 
-Currently down (31):
+Currently down (45):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4-flash` | `wafer/mxfp4` | Wafer | 43% | 20% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 62% | n/a |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 73% | 33% |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 79% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 14% | 100% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | 100% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 38% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 43% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `relace/fp4` | Relace | 27% | 100% |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 0% | n/a |
-| plus 16 more | | | | |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 17% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 60% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 25% | n/a |
+| plus 30 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
