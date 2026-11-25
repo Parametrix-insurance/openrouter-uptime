@@ -85,28 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T19:21:28+00:00 UTC)
+## Current status (2026-11-25T19:39:27+00:00 UTC)
 
 470 models polled, 1425 inference endpoints:
-up 1006, degraded 44, down 13, idle 362.
+up 1017, degraded 44, down 14, idle 350.
 
-Currently down (13):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 80% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 36% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 44% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 48% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 33% | 20% |
 | `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 7% | 0% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 73% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 58% | 0% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 8% | 0% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 62% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 57% | 100% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 62% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
