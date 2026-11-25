@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T18:58:05+00:00 UTC)
+## Current status (2026-11-25T19:21:28+00:00 UTC)
 
 470 models polled, 1425 inference endpoints:
-up 1027, degraded 31, down 11, idle 356.
+up 1006, degraded 44, down 13, idle 362.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 83% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 54% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 36% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 24% | 0% |
-| `z-ai/glm-5.3-flash` | `friendli` | Friendli | 79% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 7% | 0% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 73% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 58% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
