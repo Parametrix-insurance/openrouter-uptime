@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T21:22:00+00:00 UTC)
+## Current status (2026-11-25T21:39:26+00:00 UTC)
 
 474 models polled, 1430 inference endpoints:
-up 1009, degraded 59, down 13, idle 349.
+up 1026, degraded 29, down 12, idle 363.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 55% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 48% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 100% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/gemma-4-26b-a4b-it` | `ambient/nvfp4` | Ambient | 70% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 53% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 22% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 40% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 73% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
-| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 0% | 0% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 57% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 20% |
+| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
