@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T09:39:13+00:00 UTC)
+## Current status (2026-11-25T10:00:17+00:00 UTC)
 
 472 models polled, 1427 inference endpoints:
-up 1006, degraded 70, down 24, idle 327.
+up 1008, degraded 52, down 18, idle 349.
 
-Currently down (24):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 60% | 20% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `pearl-research/fp8` | Pearl Research | 93% | 80% |
 | `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 62% | 100% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 61% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 27% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 45% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 50% | 25% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 37% | 20% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 33% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
+| `google/gemma-4-31b-it` | `kt` | KT | 20% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 0% | n/a |
+| `kt/midm-k-3.0-pro` | `kt` | KT | 67% | n/a |
 | `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
-| `motif-technologies/motif-3` | `kt` | KT | 0% | n/a |
-| plus 9 more | | | | |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
