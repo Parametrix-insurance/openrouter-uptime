@@ -85,31 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T20:22:02+00:00 UTC)
+## Current status (2026-11-25T20:38:43+00:00 UTC)
 
-470 models polled, 1426 inference endpoints:
-up 1018, degraded 51, down 19, idle 338.
+473 models polled, 1429 inference endpoints:
+up 1040, degraded 43, down 14, idle 332.
 
-Currently down (19):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 12% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 67% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 50% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 17% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 4% | 33% |
-| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 17% | 100% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 86% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 73% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `liquid/lfm-3-1.7b` | `liquid` | Liquid | 24% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 33% | n/a |
-| `openai/gpt-4.1` | `azure` | Azure | 77% | 100% |
-| plus 4 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 10% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 88% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 75% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +116,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-12 20:21** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:21** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 08:59** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-15 13:19** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
@@ -130,6 +127,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-23 20:38** — provider `relace` changed its status page.
 - **2026-11-24 16:26** — **3 models removed from the catalog in one poll**: `dots-studio/dots-3-note-preview:free`, `mistralai/mistral-medium-3`, `mistralai/mistral-medium-3.1`.
 - **2026-11-25 17:22** — **3 models removed from the catalog in one poll**: `unbiased/pareto-26.10`, `unbiased/pareto-26.10-preview`, `unbiased/pareto-26.9`.
+- **2026-11-25 20:38** — **3 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-small-2603:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
