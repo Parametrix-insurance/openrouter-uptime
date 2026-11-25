@@ -85,28 +85,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T12:58:33+00:00 UTC)
+## Current status (2026-11-25T13:23:23+00:00 UTC)
 
-472 models polled, 1427 inference endpoints:
-up 1030, degraded 46, down 13, idle 338.
+472 models polled, 1426 inference endpoints:
+up 1011, degraded 52, down 12, idle 351.
 
-Currently down (13):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 47% | 60% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
-| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 37% | 20% |
+| `deepseek/deepseek-v4-flash` | `siliconflow/fp8` | SiliconFlow | 60% | 80% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 43% | 20% |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 10% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 60% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 67% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 50% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
 | `liquid/lfm-2.5-24b-a2b` | `liquid` | Liquid | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `primeintellect/fp8` | PrimeIntellect | 67% | 100% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 32% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
