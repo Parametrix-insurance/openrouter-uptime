@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T00:46:15+00:00 UTC)
+## Current status (2026-11-25T01:02:57+00:00 UTC)
 
 472 models polled, 1424 inference endpoints:
-up 1001, degraded 28, down 23, idle 372.
+up 983, degraded 45, down 24, idle 372.
 
-Currently down (23):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | 60% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 21% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta/muse-ember` | `meta` | Meta | 30% | 100% |
-| `meta/muse-spark-1.1` | `meta` | Meta | 0% | n/a |
-| `meta/muse-spark-1.2` | `meta` | Meta | 25% | 100% |
-| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 17% | 100% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 30% | 100% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 17% | 100% |
-| `meta/muse-wonder` | `meta` | Meta | 0% | n/a |
-| plus 8 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta/muse-spark-1.2` | `meta` | Meta | 82% | 100% |
+| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 83% | 100% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 73% | 100% |
+| `meta/muse-wonder` | `meta` | Meta | 29% | 100% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 47% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 83% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
