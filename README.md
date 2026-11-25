@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T10:25:53+00:00 UTC)
+## Current status (2026-11-25T10:41:57+00:00 UTC)
 
 472 models polled, 1427 inference endpoints:
-up 998, degraded 53, down 21, idle 355.
+up 1007, degraded 56, down 17, idle 347.
 
-Currently down (21):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 67% | 100% |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 60% | 40% |
+| `deepseek/deepseek-v3.2` | `deepinfra/fp4` | DeepInfra | 53% | 0% |
+| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 43% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 62% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 37% | 80% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 37% | 100% |
 | `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
 | `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 0% | 0% |
-| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 37% | 40% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 25% | n/a |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4/priority` | DeepInfra | 33% | 80% |
-| plus 6 more | | | | |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 33% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
