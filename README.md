@@ -85,30 +85,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T02:57:41+00:00 UTC)
+## Current status (2026-11-26T03:25:27+00:00 UTC)
 
-474 models polled, 1432 inference endpoints:
-up 974, degraded 53, down 15, idle 390.
+474 models polled, 1433 inference endpoints:
+up 1009, degraded 43, down 14, idle 367.
 
-Currently down (15):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 40% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 63% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 56% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 7% | 20% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 37% | 80% |
-| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 40% | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 12% | 0% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 27% | n/a |
+| `moonshotai/kimi-k2.6` | `chutes/int4` | Chutes | 23% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `coreweave/nvfp4` | CoreWeave | 0% | n/a |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 7% | 0% |
+| `qwen/qwen3.6-35b-a3b` | `ambient/fp8` | Ambient | 0% | n/a |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
