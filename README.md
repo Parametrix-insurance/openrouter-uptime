@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T17:59:06+00:00 UTC)
+## Current status (2026-11-26T18:25:38+00:00 UTC)
 
 477 models polled, 1428 inference endpoints:
-up 1027, degraded 45, down 14, idle 342.
+up 1034, degraded 43, down 17, idle 334.
 
-Currently down (14):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 10% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 37% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 23% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `novita/fp8` | Novita | 40% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 10% | 60% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 14% | 33% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | n/a |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 23% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 20% |
-| `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 20% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 10% | 60% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
