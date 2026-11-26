@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T07:24:14+00:00 UTC)
+## Current status (2026-11-26T07:38:10+00:00 UTC)
 
-474 models polled, 1432 inference endpoints:
-up 1012, degraded 48, down 16, idle 356.
+474 models polled, 1433 inference endpoints:
+up 1009, degraded 50, down 19, idle 355.
 
-Currently down (16):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 83% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 44% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 33% | 50% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 29% | 33% |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 54% | 0% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 0% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 27% | 0% |
-| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 45% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 43% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 80% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 25% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 25% | 33% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 78% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 50% | n/a |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 40% | 20% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 17% | 20% |
+| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 0% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
