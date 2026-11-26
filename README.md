@@ -85,30 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T23:20:08+00:00 UTC)
+## Current status (2026-11-26T23:38:14+00:00 UTC)
 
-477 models polled, 1425 inference endpoints:
-up 1001, degraded 25, down 15, idle 384.
+477 models polled, 1429 inference endpoints:
+up 999, degraded 30, down 11, idle 389.
 
-Currently down (15):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 88% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 43% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `makora` | Makora | 0% | n/a |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 37% | 100% |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 20% | 100% |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 40% | 20% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 79% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
