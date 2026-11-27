@@ -85,21 +85,20 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T23:38:08+00:00 UTC)
+## Current status (2026-11-27T23:58:03+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 992, degraded 39, down 6, idle 392.
+up 994, degraded 36, down 5, idle 394.
 
-Currently down (6):
+Currently down (5):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 31% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 73% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 33% | 25% |
-| `thedrummer/cydonia-24b-v4.1` | `parasail/bf16` | Parasail | 79% | 100% |
-| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | n/a |
+| `qwen/qwen3.6-27b` | `alibaba` | Alibaba | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
