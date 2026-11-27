@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T15:59:59+00:00 UTC)
+## Current status (2026-11-27T16:24:17+00:00 UTC)
 
 477 models polled, 1429 inference endpoints:
-up 1034, degraded 32, down 10, idle 353.
+up 1029, degraded 33, down 19, idle 348.
 
-Currently down (10):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 33% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 34% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `pearl-research/fp8` | Pearl Research | 43% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 77% | 40% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 10% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 34% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `openai/gpt-5.4` | `azure` | Azure | 44% | 0% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `stepfun/step-5-preview` | `featherless/fp8` | Featherless | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | n/a | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 43% | 0% |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 50% | 50% |
+| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 50% | 25% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
