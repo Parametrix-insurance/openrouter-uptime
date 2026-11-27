@@ -85,26 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T01:23:26+00:00 UTC)
+## Current status (2026-11-27T01:38:30+00:00 UTC)
 
 477 models polled, 1431 inference endpoints:
-up 1014, degraded 32, down 11, idle 374.
+up 1012, degraded 27, down 13, idle 379.
 
-Currently down (11):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 67% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 21% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `openai/gpt-oss-120b` | `venice/int4` | Venice | 29% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 25% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 57% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
+| `moonshotai/kimi-k3` | `river` | River | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 67% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `tencent/hy4-preview` | `deepinfra/fp4` | DeepInfra | n/a | n/a |
 | `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 0% | 0% |
+| `z-ai/glm-5.3-flash` | `darkbloom/fp4` | Darkbloom | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
