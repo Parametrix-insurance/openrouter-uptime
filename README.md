@@ -85,25 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T02:40:40+00:00 UTC)
+## Current status (2026-11-27T02:57:20+00:00 UTC)
 
-477 models polled, 1432 inference endpoints:
-up 1004, degraded 29, down 10, idle 389.
+477 models polled, 1433 inference endpoints:
+up 1002, degraded 24, down 17, idle 390.
 
-Currently down (10):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 64% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 20% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 11% | 50% |
-| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 15% | 50% |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 67% | 40% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 17% | 40% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 33% | 0% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 27% | 60% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `tencent/hy4-preview` | `deepinfra/fp4` | DeepInfra | n/a | n/a |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 9% | 0% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
