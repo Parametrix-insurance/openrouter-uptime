@@ -85,25 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T22:22:00+00:00 UTC)
+## Current status (2026-11-27T22:38:55+00:00 UTC)
 
 476 models polled, 1429 inference endpoints:
-up 1015, degraded 23, down 10, idle 381.
+up 1007, degraded 29, down 7, idle 386.
 
-Currently down (10):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 62% | 100% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | 100% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 57% | n/a |
 | `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 12% | 0% |
+| `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
