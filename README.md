@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T15:38:27+00:00 UTC)
+## Current status (2026-11-27T15:59:59+00:00 UTC)
 
 477 models polled, 1429 inference endpoints:
-up 1030, degraded 34, down 13, idle 352.
+up 1034, degraded 32, down 10, idle 353.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 33% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 42% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 100% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `siliconflow/fp8` | SiliconFlow | 87% | 100% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 33% | n/a |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 57% | n/a |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
+| `openai/gpt-5.4` | `azure` | Azure | 44% | 0% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `stepfun/step-5-preview` | `featherless/fp8` | Featherless | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
