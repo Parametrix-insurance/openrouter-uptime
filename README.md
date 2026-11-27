@@ -85,31 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T18:24:15+00:00 UTC)
+## Current status (2026-11-27T18:40:12+00:00 UTC)
 
 477 models polled, 1432 inference endpoints:
-up 1023, degraded 34, down 16, idle 359.
+up 1010, degraded 30, down 13, idle 379.
 
-Currently down (16):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 70% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `google-vertex/global` | Google | 48% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 100% |
+| `moonshotai/kimi-k2.6` | `inceptron/int4` | Inceptron | 0% | n/a |
 | `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
 | `undi95/remm-slerp-l2-13b` | `mancer/fp8` | Mancer 2 | 100% | n/a |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 33% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `featherless/fp8` | Featherless | 33% | n/a |
-| plus 1 more | | | | |
+| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 17% | 0% |
+| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 43% | 100% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 50% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
