@@ -85,26 +85,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T21:20:28+00:00 UTC)
+## Current status (2026-11-27T21:38:23+00:00 UTC)
 
-477 models polled, 1431 inference endpoints:
-up 1010, degraded 29, down 11, idle 381.
+476 models polled, 1430 inference endpoints:
+up 1011, degraded 28, down 9, idle 382.
 
-Currently down (11):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 13% | 0% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 58% | 75% |
-| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 30% | 60% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 43% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-20b` | `deepinfra/bf16` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 23% | 20% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/flex` | DeepInfra | 100% | 100% |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 55% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 20% | 33% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 36% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
