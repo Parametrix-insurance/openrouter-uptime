@@ -85,29 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-27T08:57:52+00:00 UTC)
+## Current status (2026-11-27T09:24:16+00:00 UTC)
 
-477 models polled, 1430 inference endpoints:
-up 1023, degraded 29, down 14, idle 364.
+477 models polled, 1431 inference endpoints:
+up 1029, degraded 38, down 15, idle 349.
 
-Currently down (14):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 67% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `chutes/fp8` | Chutes | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 43% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 29% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
-| `minimax/minimax-m3.1-flash` | `together` | Together | 23% | 100% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 3% | 20% |
+| `moonshotai/kimi-k3.1-pro` | `fireworks/us` | Fireworks | 80% | 40% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.8-27b` | `modelrun/fp4` | ModelRun | 52% | 50% |
+| `qwen/qwen3.8-27b` | `tenstorrent/fast` | Tenstorrent | 60% | 100% |
+| `qwen/qwen3.8-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
 | `tencent/hy4-preview` | `deepinfra/fp4` | DeepInfra | n/a | n/a |
+| `thinkingmachines/inkling` | `together` | Together | 20% | n/a |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
