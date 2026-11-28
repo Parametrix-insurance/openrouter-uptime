@@ -85,23 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T06:57:44+00:00 UTC)
+## Current status (2026-11-28T07:21:08+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 1017, degraded 21, down 9, idle 385.
+up 1033, degraded 22, down 9, idle 368.
 
 Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 29% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 83% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 12% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 33% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 14% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 63% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | 0% |
 | `xiaomi/mimo-v2.6-flash-mopd` | `featherless/fp8` | Featherless | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
