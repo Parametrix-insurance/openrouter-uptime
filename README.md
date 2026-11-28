@@ -85,30 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T15:37:44+00:00 UTC)
+## Current status (2026-11-28T15:58:11+00:00 UTC)
 
 476 models polled, 1433 inference endpoints:
-up 980, degraded 42, down 16, idle 395.
+up 982, degraded 50, down 16, idle 385.
 
 Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 55% | 100% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 63% | 40% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 43% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 50% |
-| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 71% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 40% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 14% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 30% | n/a |
-| `z-ai/glm-4.7` | `novita/fp8` | Novita | 70% | 60% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 80% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | 100% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 62% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 80% | n/a |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 83% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 37% | 100% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | 0% |
+| `z-ai/glm-4.7` | `novita/fp8` | Novita | 47% | 0% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 73% | 0% |
+| `z-ai/glm-5.3` | `fireworks/flex` | Fireworks | 67% | 60% |
 | plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
