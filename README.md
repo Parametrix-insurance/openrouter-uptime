@@ -85,23 +85,23 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T12:58:24+00:00 UTC)
+## Current status (2026-11-28T13:20:13+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 986, degraded 33, down 8, idle 405.
+up 1005, degraded 36, down 8, idle 383.
 
 Currently down (8):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 40% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 33% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 14% | 100% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 67% | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 22% | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 38% | 67% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 62% | 75% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `z-ai/glm-5.3` | `sambanova` | SambaNova | 82% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
