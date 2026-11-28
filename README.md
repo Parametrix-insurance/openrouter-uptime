@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T09:21:54+00:00 UTC)
+## Current status (2026-11-28T09:39:06+00:00 UTC)
 
 475 models polled, 1429 inference endpoints:
-up 998, degraded 29, down 14, idle 388.
+up 988, degraded 34, down 16, idle 391.
 
-Currently down (14):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 90% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 67% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 62% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 0% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 9% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 43% | n/a |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 17% | 0% |
-| `qwen/qwen3.8-27b` | `modelrun/fp4` | ModelRun | 72% | 0% |
-| `qwen/qwen3.8-27b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `z-ai/glm-5.3-flash` | `relace/fp4` | Relace | 43% | 0% |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 60% | 40% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 50% | 0% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `qwen/qwen3.8-27b` | `modelrun/fp4` | ModelRun | 13% | 20% |
+| `qwen/qwen3.8-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.8-flash` | `featherless/fp8` | Featherless | 50% | 100% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
