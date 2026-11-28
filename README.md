@@ -85,26 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T14:58:29+00:00 UTC)
+## Current status (2026-11-28T15:19:41+00:00 UTC)
 
-476 models polled, 1432 inference endpoints:
-up 984, degraded 33, down 11, idle 404.
+476 models polled, 1433 inference endpoints:
+up 979, degraded 39, down 15, idle 400.
 
-Currently down (11):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 75% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `primeintellect/nvfp4` | PrimeIntellect | 0% | n/a |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 54% | 0% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 47% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 48% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 18% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 57% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 12% | 67% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 33% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 38% | 20% |
+| `z-ai/glm-4.7` | `novita/fp8` | Novita | 80% | 20% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 81% | 20% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
