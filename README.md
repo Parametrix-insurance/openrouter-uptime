@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T15:19:41+00:00 UTC)
+## Current status (2026-11-28T15:37:44+00:00 UTC)
 
 476 models polled, 1433 inference endpoints:
-up 979, degraded 39, down 15, idle 400.
+up 980, degraded 42, down 16, idle 395.
 
-Currently down (15):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 47% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 48% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 18% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 55% | 100% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 79% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 63% | 40% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 57% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 20% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | n/a |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 50% |
+| `moonshotai/kimi-k3` | `fireworks` | Fireworks | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 71% | n/a |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 12% | 67% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 33% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 38% | 20% |
-| `z-ai/glm-4.7` | `novita/fp8` | Novita | 80% | 20% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 81% | 20% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 43% | 40% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 14% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 30% | n/a |
+| `z-ai/glm-4.7` | `novita/fp8` | Novita | 70% | 60% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | 100% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
