@@ -85,21 +85,22 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T03:38:03+00:00 UTC)
+## Current status (2026-11-28T03:57:45+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 993, degraded 30, down 6, idle 402.
+up 999, degraded 28, down 7, idle 397.
 
-Currently down (6):
+Currently down (7):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `coreweave/fp8` | CoreWeave | 80% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 72% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 83% | 80% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 38% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
-| `openai/gpt-6.2-sol` | `azure` | Azure | 23% | 0% |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 23% | 40% |
+| `z-ai/glm-4.7` | `novita/fp8` | Novita | 47% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
