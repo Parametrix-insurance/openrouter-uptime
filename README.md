@@ -85,23 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T13:20:13+00:00 UTC)
+## Current status (2026-11-28T13:37:44+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 1005, degraded 36, down 8, idle 383.
+up 998, degraded 30, down 6, idle 398.
 
-Currently down (8):
+Currently down (6):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 33% | 100% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 38% | 67% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 62% | 75% |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `z-ai/glm-5.3` | `sambanova` | SambaNova | 82% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 67% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 18% | 0% |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 67% | 50% |
+| `z-ai/glm-5.3` | `decart/fp4` | Decart | 71% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
