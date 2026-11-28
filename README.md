@@ -85,25 +85,30 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T01:57:31+00:00 UTC)
+## Current status (2026-11-28T02:25:53+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 992, degraded 35, down 10, idle 394.
+up 969, degraded 35, down 15, idle 412.
 
-Currently down (10):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 25% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 10% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 15% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 89% | 50% |
-| `openai/gpt-5.4` | `azure` | Azure | 60% | 0% |
-| `thinkingmachines/inkling-2-small` | `nebius/fp4` | Nebius | 43% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 40% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
-| `z-ai/glm-5.3` | `makora/fp4` | Makora | 0% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 22% | n/a |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 76% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 33% | n/a |
+| `nvidia/nemotron-3.5-super-vl` | `primeintellect/nvfp4` | PrimeIntellect | 0% | n/a |
+| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
+| `openai/gpt-6.2-sol` | `azure` | Azure | 20% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 40% | n/a |
+| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 36% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
