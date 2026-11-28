@@ -85,25 +85,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T14:37:47+00:00 UTC)
+## Current status (2026-11-28T14:58:29+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 986, degraded 38, down 10, idle 398.
+up 984, degraded 33, down 11, idle 404.
 
-Currently down (10):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 70% | 100% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 53% | 60% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 4% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 7% | 0% |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 67% | 50% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | n/a | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 75% | n/a |
 | `nvidia/nemotron-3.5-super-vl` | `primeintellect/nvfp4` | PrimeIntellect | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `z-ai/glm-5.3` | `fireworks/flex` | Fireworks | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 54% | 0% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
