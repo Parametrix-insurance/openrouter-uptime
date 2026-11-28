@@ -85,28 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T01:24:15+00:00 UTC)
+## Current status (2026-11-28T01:40:17+00:00 UTC)
 
 476 models polled, 1430 inference endpoints:
-up 996, degraded 34, down 13, idle 387.
+up 998, degraded 34, down 13, idle 385.
 
 Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 20% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 47% | 40% |
-| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 79% | n/a |
-| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | n/a |
-| `qwen/qwen3-32b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 50% | n/a |
-| `qwen/qwen3.5-35b-a3b` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `ricursiveai/ripple-65b-preview` | `primeintellect/bf16` | PrimeIntellect | 0% | n/a |
-| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 80% | 100% |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 90% | 40% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 60% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 60% | 100% |
+| `minimax/minimax-m3.1-flash` | `sambanova` | SambaNova | 0% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 75% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 40% | n/a |
+| `openai/gpt-6-sol` | `amazon-bedrock/global` | Amazon Bedrock | 0% | 0% |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 71% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `venice/fp8` | Venice | 0% | n/a |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 63% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
