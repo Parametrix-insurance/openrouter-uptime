@@ -85,21 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T13:37:44+00:00 UTC)
+## Current status (2026-11-28T13:57:38+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 998, degraded 30, down 6, idle 398.
+up 988, degraded 32, down 16, idle 396.
 
-Currently down (6):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 67% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 18% | 0% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | n/a | n/a |
-| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 67% | 50% |
-| `z-ai/glm-5.3` | `decart/fp4` | Decart | 71% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 43% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 18% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 66% | 80% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 50% | 33% |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 89% | 75% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 12% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8` | DeepInfra | 67% | 100% |
+| `qwen/qwen3.6-27b` | `venice/fp8` | Venice | 33% | 100% |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
+| `z-ai/glm-5.3` | `fireworks/flex` | Fireworks | 40% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
