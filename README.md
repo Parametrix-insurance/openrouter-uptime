@@ -85,21 +85,21 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T10:38:03+00:00 UTC)
+## Current status (2026-11-28T10:58:25+00:00 UTC)
 
 476 models polled, 1432 inference endpoints:
-up 1011, degraded 25, down 6, idle 390.
+up 1001, degraded 29, down 6, idle 396.
 
 Currently down (6):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 29% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 25% | n/a |
+| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `qwen/qwen3.6-27b` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
