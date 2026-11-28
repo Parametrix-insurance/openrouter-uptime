@@ -85,28 +85,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-28T16:23:58+00:00 UTC)
+## Current status (2026-11-28T16:39:27+00:00 UTC)
 
 476 models polled, 1433 inference endpoints:
-up 1005, degraded 36, down 13, idle 379.
+up 1001, degraded 36, down 10, idle 386.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 57% | 100% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 60% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 24% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 56% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `qwen/qwen3.5-27b` | `chutes/fp8` | Chutes | 0% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 25% | n/a |
-| `z-ai/glm-4.7` | `novita/fp8` | Novita | 52% | 100% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 60% | 100% |
-| `z-ai/glm-5.3` | `fireworks/flex` | Fireworks | 43% | n/a |
-| `z-ai/glm-5.3` | `decart/fp4` | Decart | 80% | n/a |
-| `z-ai/glm-5.3` | `sambanova` | SambaNova | 80% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 46% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 78% | 20% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 20% |
+| `qwen/qwen3.5-397b-a17b` | `streamlake` | StreamLake | 77% | n/a |
+| `z-ai/glm-5.3` | `sambanova` | SambaNova | 71% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
